@@ -5,11 +5,12 @@
 
 ### [Basic Python](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/01.%20Basic%20Python)
 
-### []()
 
-### []()
+### [Functional Programming](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/02.%20Functional%20Programming)
 
-### []()
+### [Web Development](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/03.%20Web%20Development)
 
-### []()
+### [Data Science](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/04.%20Data%20Science)
+
+### [Machine Learning](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/05.%20Machine%20Learning)
 
