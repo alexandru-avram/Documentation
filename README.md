@@ -21,7 +21,7 @@
 ## Python
 [View **Python** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python)
 
-#### [Basic Python](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/01.%20Basic%20Python)\
+#### [Basic Python](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/01.%20Basic%20Python)
 - Basic non-Numpy maths
 - Strings
 - Lists
@@ -29,7 +29,7 @@
 - Tuples
 - Sets
 
-#### [Functional Programming](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/02.%20Functional%20Programming)\
+#### [Functional Programming](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/02.%20Functional%20Programming)
 - If Statements
 - Loops
 - Functions
@@ -48,6 +48,6 @@
 - Seaborn
 - Interactive Graphs
 
-#### [Machine Learning](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/05.%20Machine%20Learning)\
+#### [Machine Learning](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/05.%20Machine%20Learning)
 - Scikit-Learn
 - Statistics Theory
