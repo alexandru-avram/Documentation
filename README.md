@@ -29,27 +29,25 @@ Bootstrap *under construction*
   + Tuples
   + Sets
 
-- [Functional Programming](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/02.%20Functional%20Programming)  
-   - If Statements  
-   - Loops
-   - Functions
-   - Classes
-   - Error handling
-   - Working with files
+#### [Functional Programming](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/02.%20Functional%20Programming)  
+  - If Statements  
+  - Loops
+  - Functions
+  - Classes
+  - Error handling
+  - Working with files
 
-+ [Web Development](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/03.%20Web%20Development)
+#### [Web Development](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/03.%20Web%20Development)
   + Web scraping
   + *Django*
 
 
-[Data Science](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/04.%20Data%20Science)
-<ul>
-<li>Numpy</li>
-<li>Pandas</li>
-<li>Matplotlib</li>
-</ul>
+#### [Data Science](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/04.%20Data%20Science)
+  - Numpy
+  - Pandas
+  - Matplotlib
   - Seaborn
-- Interactive Graphs
+  - Interactive Graphs
 
 #### [Machine Learning](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/05.%20Machine%20Learning)
 - Scikit-Learn
