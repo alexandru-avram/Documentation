@@ -21,25 +21,25 @@ Bootstrap *under construction*
 ## Python
 ### [View **Python** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python)
 
-[Basic Python](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/01.%20Basic%20Python)
-Basic non-Numpy maths\
-Strings\
-Lists\
-Dictionaries\
-Tuples\
-Sets
++ [Basic Python](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/01.%20Basic%20Python)
+  + Basic non-Numpy maths
+  + Strings
+  + Lists
+  + Dictionaries
+  + Tuples
+  + Sets
 
-#### [Functional Programming](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/02.%20Functional%20Programming)  
-- If Statements  
-- Loops
-- Functions
-- Classes
-- Error handling
-- Working with files
+- [Functional Programming](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/02.%20Functional%20Programming)  
+   - If Statements  
+   - Loops
+   - Functions
+   - Classes
+   - Error handling
+   - Working with files
 
-#### [Web Development](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/03.%20Web%20Development)
-- Web scraping
-- *Django*
++ [Web Development](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/03.%20Web%20Development)
+  + Web scraping
+  + *Django*
 
 #### [Data Science](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/04.%20Data%20Science)
 - Numpy
@@ -51,16 +51,3 @@ Sets
 #### [Machine Learning](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/05.%20Machine%20Learning)
 - Scikit-Learn
 - Statistics Theory
-
-
-- Item 1
-   - SubItem 1
-   - SubItem 2
-
-- Item 2
-  - SubItem 1
-  - SubItem 2
-
-- Item 3
-   - SubItem 1
-   - SubItem 2
