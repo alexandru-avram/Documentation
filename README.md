@@ -41,7 +41,7 @@
 - Web scraping
 - *Django*
 
-#### [Data Science](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/04.%20Data%20Science)\
+#### [Data Science](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/04.%20Data%20Science)
 - Numpy
 - Pandas
 - Matplotlib
