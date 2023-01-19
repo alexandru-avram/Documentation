@@ -11,6 +11,6 @@ For complex numbers, use `cmath`.\
 **tags**: round, ceil, floor, logarithmic values, mathematical constants
 
 [Input](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Maths/Input.ipynb)\
-  > input()
-  > input('...write text...' )
-  > int(input())
+  > input()\
+  > input('...write text...' )\
+  > int(input())\
