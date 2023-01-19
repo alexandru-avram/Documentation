@@ -22,4 +22,16 @@ Under construction :)
 [View **Python** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python)
 
 - [Basic Python](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/01.%20Basic%20Python)\
-safsafas
+Basic non-Numpy maths, Strings, Lists, Dictionaries, Tuples, Sets
+
+- [Functional Programming](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/02.%20Functional%20Programming)\
+If Statements, Loops, Functions, Classes, Error handling, Working with files
+
+- [Web Development](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/03.%20Web%20Development)
+Web scraping, *Django*
+
+- [Data Science](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/04.%20Data%20Science)\
+Numpy, Pandas, Matplotlib, Seaborn, Interactive Graphs
+
+- [Machine Learning](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/05.%20Machine%20Learning)\
+Scikit-Learn, Statistics Theory
