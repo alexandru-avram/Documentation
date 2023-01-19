@@ -9,19 +9,19 @@
 
 
 ## HTML
-[View **HTML** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML)
+### [View **HTML** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML)
 
-#### [HTML Basics](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/01.%20HTML%20Basics)
-#### [CSS](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/02.%20CSS)
-#### Bootstrap *under construction*
+[HTML Basics](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/01.%20HTML%20Basics)\
+[CSS](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/02.%20CSS)\
+Bootstrap *under construction*
 
 ## PHP
 *Under construction :)*
 
 ## Python
-[View **Python** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python)
+### [View **Python** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python)
 
-[Basic Python](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/01.%20Basic%20Python)\
+### [Basic Python](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/01.%20Basic%20Python)
 - Basic non-Numpy maths
 - Strings
 - Lists
