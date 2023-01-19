@@ -21,13 +21,13 @@ Bootstrap *under construction*
 ## Python
 ### [View **Python** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python)
 
-[Basic Python](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/01.%20Basic%20Python)\
-- Basic non-Numpy maths
-- Strings
-- Lists
-- Dictionaries
-- Tuples
-- Sets
+[Basic Python](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/01.%20Basic%20Python)
+Basic non-Numpy maths\
+Strings\
+Lists\
+Dictionaries\
+Tuples\
+Sets
 
 #### [Functional Programming](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/02.%20Functional%20Programming)
 - If Statements
