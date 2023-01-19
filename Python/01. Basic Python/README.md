@@ -27,3 +27,4 @@ Shuffling a list, generating a random number,
 ## Strings
 
 ### [Strings Basics](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Strings/Strings%20Basics.ipynb)
+
