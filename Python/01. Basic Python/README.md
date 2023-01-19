@@ -5,7 +5,7 @@
 ### [Numbers in Python](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Maths/Numbers.ipynb)
 Simple arithmetics and numberic functions in Python.
 
-  **tags**: algebra, arithmetic, numeric functions, power, floor, remainder, square roots, sum, max, min, round, abs
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp**tags**: algebra, arithmetic, numeric functions, power, floor, remainder, square roots, sum, max, min, round, abs
 
 ### [Math Module](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Maths/Math%20Module.ipynb)
 More advanced mathematical functions. For complex numbers, use `cmath`.
@@ -20,7 +20,7 @@ More advanced mathematical functions. For complex numbers, use `cmath`.
   > int(input())
 
 ### [Random](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Maths/Random%20Module.ipynb)
-Crea
+Creating
 
   **tags**: shuffle, randint, random number, random integer, seed, random choice, choice, random uniform, random gauss
 
