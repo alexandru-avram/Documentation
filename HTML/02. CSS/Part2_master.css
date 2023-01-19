@@ -1,0 +1,21 @@
+body{
+  /*background-color: gray;*/
+  background: url(https://img.trackhs.com/x1080/https://track-pm.s3.amazonaws.com/svr/image/26d90c04-01c0-45b9-8815-7d38162db447);
+  background-repeat:no-repeat;
+}
+
+div{
+  background-color: blue;
+  border: orange;
+  border-width: 10px;
+  border-style: dotted;
+  }
+
+p{
+  color: yellow;
+}
+
+span{
+  background: red;
+  color: black;
+}

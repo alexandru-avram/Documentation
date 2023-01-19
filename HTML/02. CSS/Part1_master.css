@@ -1,0 +1,37 @@
+/*
+This is a comment
+*/
+
+/*
+General Form is:
+
+Selected Tag {
+  property: value;
+}
+
+*/
+
+/*Colors can be names, or codes*/
+
+h1{
+  color: blue;
+}
+
+p{
+  color: #000000;
+}
+
+
+/*
+RGB - Red, Green, Blue
+RGBA - Red, Green, Blue and alpha for Transparency 
+*/
+
+li {
+  color: rgb(0,200,0);
+}
+
+h4{
+  color: rgba(13,90,140,0.5)
+}
+

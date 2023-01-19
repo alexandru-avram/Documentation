@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+  <title>Course Sing Up Page</title>
+</head>
+<body>
+
+  <form>
+  <h1>Course Sing Up Page</h1>
+
+  <p>Please Note: First Name, Last Name, Passowrd and Email are required.</p>
+  
+    <!-- First Name & Last Name-->
+  <label for="fname">First Name: </label>
+  <input type="text" id="fname" placeholder="First Name" required>
+  <label for="lname"> Last Name: </label>
+  <input type="text" id="lname" placeholder="Last Name" required>
+  
+  <br>
+  <br>
+  
+  <!-- Email & Passowrd-->
+  <label for="email">Email: </label>
+  <input type="email" name="usermail" placeholder="name@email.com">
+  <label for="password"> Password: </label>
+  <input type="password" name="password">
+
+    
+  <!-- Over 18 or not-->
+  <p>Are you over the age of 18?</p>
+  <label for="yes18">Yes: </label>
+  <input type="radio" id="yes18" name="age_choice" value="">
+  <label for="no18"> No: </label>
+  <input type="radio" id="no18" name="age_choice" value="">
+
+  <!-- Credit card or PayPal-->
+  <p>Do you have a Credit Card or PayPal?</p>
+  <select name="payment">
+    <option value="credit">Credit Card</option>
+    <option value="paypal">PayPal</option>
+  </select>
+    
+  <br>
+  <br>
+  <!-- Submit button-->
+
+  <input type="submit" name="" value="Submit Feedback">
+  </form>
+
+</body>
+</html>
