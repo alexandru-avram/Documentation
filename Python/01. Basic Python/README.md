@@ -2,7 +2,8 @@
 
 ## Maths
 
-#### [Numbers in Python](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Maths/Numbers.ipynb)<br><sup>**tags**: algebra, arithmetic, numeric functions, power, floor, remainder, square roots, sum, max, min, round, abs</sup>
+#### [Numbers in Python](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Maths/Numbers.ipynb)
+**tags**: algebra, arithmetic, numeric functions, power, floor, remainder, square roots, sum, max, min, round, abs
 
 #### [Math Module](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Maths/Math%20Module.ipynb)
 More advanced mathematical functions.\
