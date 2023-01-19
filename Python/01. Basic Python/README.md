@@ -20,10 +20,10 @@ More advanced mathematical functions. For complex numbers, use `cmath`.
   > int(input())
 
 ### [Random](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Maths/Random%20Module.ipynb)
-Creating
+Shuffling a list, generating a random number, 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: shuffle, randint, random number, random integer, seed, random choice, choice, random uniform, random gauss
 
 ## Strings
 
-### [](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Strings/Strings%20Basics.ipynb)
+### [Strings Basics](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Strings/Strings%20Basics.ipynb)
