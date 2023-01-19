@@ -21,7 +21,7 @@ Bootstrap *under construction*
 ## Python
 ### [View **Python** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python)
 
-+ [Basic Python](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/01.%20Basic%20Python)
+#### [Basic Python](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/01.%20Basic%20Python)
   + Basic non-Numpy maths
   + Strings
   + Lists
