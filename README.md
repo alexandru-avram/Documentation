@@ -42,10 +42,12 @@ Bootstrap *under construction*
   + *Django*
 
 #### [Data Science](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/04.%20Data%20Science)
-- Numpy
-- Pandas
-- Matplotlib
-- Seaborn
+<ul>
+<li>Numpy</li>
+<li>Pandas</li>
+<li>Matplotlib</li>
+</ul>
+  - Seaborn
 - Interactive Graphs
 
 #### [Machine Learning](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/05.%20Machine%20Learning)
