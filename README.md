@@ -30,8 +30,8 @@ Tuples\
 Sets
 
 #### [Functional Programming](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/02.%20Functional%20Programming)
-- If Statements
-- Loops
+    - If Statements
+    - Loops
 - Functions
 - Classes
 - Error handling
