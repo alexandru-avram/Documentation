@@ -5,6 +5,9 @@
 
 ## [Basic Python](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/01.%20Basic%20Python)
 - Simple operations and algebra
+- Input
+- Advanced math module
+- Random module
 - String formatting & indexing
 - Regex / Regular Expressions
 - Collections module
