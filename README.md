@@ -1,7 +1,7 @@
 # Documentation
 
 ## B.I. Tools
-<span style="font-size:20px"> [View **B.I. Tools** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/B.I.%20Tools)\
+<span style="font-size:50px"> [View **B.I. Tools** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/B.I.%20Tools)\
 </span>
 [Excel](https://github.com/alexandruavram-rusu/Documentation/tree/main/B.I.%20Tools/Excel)
 [PowerBi](https://github.com/alexandruavram-rusu/Documentation/tree/main/B.I.%20Tools/Power%20Bi)
