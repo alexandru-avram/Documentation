@@ -41,7 +41,7 @@ Bootstrap *under construction*
   + Web scraping
   + *Django*
 
-<p></p>
+
 [Data Science](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/04.%20Data%20Science)
 <ul>
 <li>Numpy</li>
