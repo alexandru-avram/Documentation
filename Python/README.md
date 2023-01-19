@@ -24,8 +24,15 @@
 - Working with files, CSVs, PDFs
 
 ## [Web Development](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/03.%20Web%20Development)
+- Web Scraping
 
 ## [Data Science](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/04.%20Data%20Science)
+- Numpy
+- Pandas
+- Matplotlib
+- Seaborn
+- Interactive graphs
 
 ## [Machine Learning](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/05.%20Machine%20Learning)
-
+- Scikit-Learn
+- Statistics Theory
