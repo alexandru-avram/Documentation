@@ -13,4 +13,7 @@ For complex numbers, use `cmath`.\
 [Input](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Maths/Input.ipynb)\
   > input()\
   > input('...write text...' )\
-  > int(input())\
+  > int(input())
+
+[Random](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Maths/Random%20Module.ipynb)
+**tags**: shuffle, randint, random number, random integer, seed, random choice, choice, random uniform, random gauss
