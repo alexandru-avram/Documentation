@@ -107,3 +107,40 @@ There are many specialized plots we can create, such as barplots, histograms, sc
 Advance customization options using matplotlib.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: logarithmic, ticks, custom label ticks, axis number, label spacing, axis grid, axis spines, twin axes, axes where x & y is zero, fill, text annotation, colormap, 3D figures
+
+## Seaborn
+
+### [Distribution Plots](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Seaborn%20Library/01.%20Distribution%20Plots.ipynb)
+* Distplot
+* Jointplot
+* Pairplot
+* Rugplot
+* Kdeplot
+
+### [Categorial Plots](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Seaborn%20Library/02.%20Categorical%20Plots.ipynb)
+* Factorplot
+* Boxplot
+* Violinplot
+* Stripplot
+* Swarmplot
+* Barplot
+* Countplot
+
+### [Matrix Plots](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Seaborn%20Library/03.%20Matrix%20Plots.ipynb)
+* Heatmap
+* Clustermap
+
+### [Grids](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Seaborn%20Library/04.%20Grids.ipynb)
+Grids are general types of plots that allow you to map plot types to rows and columns of a grid, this helps you create similar plots separated by features.
+* PairGrid
+* PairPlot
+* FacetGrid
+* JointGrid
+
+### [Regression Plots](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Seaborn%20Library/05.%20Regression%20Plots.ipynb)
+`lmplot` allows you to display linear models, but it also conveniently allows you to split up those plots based off of features, as well as coloring the hue based off of features.
+
+### [Style and Color](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Seaborn%20Library/06.%20Style%20and%20Color.ipynb)
+Control figure aesthetics in a seaborn figure.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: styles, colors, despine, soze. aspect, scale, context, 
