@@ -33,3 +33,9 @@ pass: Does nothing at all.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: break, continue, pass
 
+## Functions
+
+### [Functions](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/02.%20Functional%20Programming/Functions/Functions.ipynb)
+Functions are statements or group of statements that can be used more than once, avoiding the need to write the same code more than once. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: creating functions, def, return, if functions, loop functions, interactions between functions, `*args`, `**kwargs`
