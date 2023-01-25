@@ -2,7 +2,7 @@
 
 ## [Statistics Glossary](https://github.com/alexandruavram-rusu/Documentation/edit/main/Python/05.%20Machine%20Learning/Theory%20-%20General%20Statistics/README.md)
 
-#### [Descriptive Statistics](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Theory%20-%20General%20Statistics/01.%20Descriptive%20statistics.pdf) 
+### [Descriptive Statistics](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Theory%20-%20General%20Statistics/01.%20Descriptive%20statistics.pdf) 
 
 - Types of data: Categorical &  Numerical (Discrete or Continuous)
 - Levels of measurements: Qualitative (Nominal or Ordinal) & Quantitative (Interval or Ratio)
