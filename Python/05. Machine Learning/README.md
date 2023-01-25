@@ -7,7 +7,7 @@
 - Types of data: Categorical &  Numerical (Discrete or Continuous)
 - Levels of measurements: Qualitative (Nominal or Ordinal) & Quantitative (Interval or Ratio)
 
-Descriptive statistics graphs
+Descriptive statistics graphs:
 - Frequency distribution table
 - Bar charts
 - Pie chart
