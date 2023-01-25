@@ -10,7 +10,9 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: if, if statements, elif, else
 
-## [Loops](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/02.%20Functional%20Programming/Loops/Loops.ipynb)
+## Loops
+
+### [Loops](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/02.%20Functional%20Programming/Loops/Loops.ipynb)
     for Loops
         for item in object:
             execute something
