@@ -68,4 +68,42 @@ Use `pd.read_file type` to import and `pd.to_file type`.
 
 ### [Matplotlib Overview](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Matplotlib%20Library/01.%20Matplotlib%20Concepts.ipynb)
 Matplotlib allows you to create reproducible figures programmatically. Let's learn how to use it! Before continuing this lecture, I encourage you just to explore the official [Matplotlib web page](http://matplotlib.org/)\
-`import matplotlib.pyplot as plt`
+    
+    import matplotlib.pyplot as plt
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: plot, one plot, line, multiplots, multiple plots, plot in plot, classes, matplotlib classes
+
+### [Subplots](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Matplotlib%20Library/02.%20Subplots.ipynb)
+The `plt.subplots()` object will act as a more automatic axis manager.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: subplots, multiple plots, layout
+
+### [Figure Size](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Matplotlib%20Library/03.%20Picture%20size.ipynb)
+Matplotlib allows the aspect ratio, DPI and figure size to be specified when the Figure object is created. You can use the `figsize` and `dpi` keyword arguments.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: figure size, picture size, figsize, dpi, aspect ratio
+
+### [Legends & Titles](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Matplotlib%20Library/04.%20Legend%20%26%20Titles.ipynb)
+How to create a figure canvas and add axes instances to the canvas, let's look at how decorate a figure with titles, axis labels, and legends.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: titles, labels, legends, xlabel, ylabel
+
+### [Color and Linetypes](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Matplotlib%20Library/05.%20Color%20and%20Linetypes.ipynb)
+Matplotlib gives you a lot of options for customizing colors, linewidths, and linetypes.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: linetypes, colors, marker styles, types of lines
+
+### [Plot Range](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Matplotlib%20Library/06.%20Plot%20Range.ipynb)
+We can configure the ranges of the axes using the `set_ylim` and `set_xlim` methods in the axis object, or `axis('tight')` for automatically getting *tightly fitted* axes ranges.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: plot range, custom range, custom axes range, tight axes
+
+### [Special Plot Types](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Matplotlib%20Library/07.%20Special%20Plot%20Types.ipynb)
+There are many specialized plots we can create, such as barplots, histograms, scatter plots, and much more.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: scatter plot, histogram, boxplot
+
+### [Advanced Matplotlib Concepts](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Matplotlib%20Library/08%20Advanced%20Matplotlib%20Concepts.ipynb)
+Advance customization options using matplotlib.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: logarithmic, ticks, custom label ticks, axis number, label spacing, axis grid, axis spines, twin axes, axes where x & y is zero, fill, text annotation, colormap, 3D figures
