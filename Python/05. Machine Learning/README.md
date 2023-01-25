@@ -1,8 +1,6 @@
 # Statistics & Machine-Learning
 
 [Statistics Glossary](https://github.com/alexandruavram-rusu/Documentation/edit/main/Python/05.%20Machine%20Learning/Theory%20-%20General%20Statistics/README.md)\
-[Scikit-Learn](https://github.com/alexandruavram-rusu/Documentation/edit/main/Python/05.%20Machine%20Learning/Scikit-Learn/README.md)
-
 
 ### [Descriptive Statistics](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Theory%20-%20General%20Statistics/01.%20Descriptive%20statistics.pdf) 
 
@@ -48,6 +46,7 @@ The **p-value** is the smallest level of significance at which we can still reje
 
 
 ### [Regression Analysis](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Theory%20-%20General%20Statistics/04.%20Regression%20analysis.pdf)
+#### [Scikit-Learn Regression](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Scikit-Learn/01.%20Linear%20Regression%20with%20Python.ipynb)
 
 A linear regression is a linear approximation of a causal relationship between two or more variables.
 
@@ -139,6 +138,7 @@ Your model may give you satisfying results when evaluated using a metric say acc
 **Root Mean Square Error (RMSE)** is the standard deviation of the residuals (prediction errors). Residuals are a measure of how far from the regression line data points are; RMSE is a measure of how spread out these residuals are. In other words, it tells you how concentrated the data is around the line of best fit.
 
 ### [Logistic Regression](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Theory%20-%20Machine%20Learning%20Statistics/Logistic%20Regression.pdf)
+#### [Scikit-Learn Logistic Regression](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Scikit-Learn/02.%20Logistic%20Regression%20with%20Python.ipynb)
 
 The convention for **binary classification** is to have two classes 0 and 1 and can be predicted with a **linear regression**. **Logistic regressions** allow us to solve classification problems, where we are trying to predict discrete categories.
 
@@ -146,6 +146,7 @@ The **Sigmoid (aka Logistic)** Function takes in any value and outputs it to be 
 
 
 ### [K Nearest Neighbors (KNN)](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Theory%20-%20Machine%20Learning%20Statistics/K%20Nearest%20Neighbors.pdf)
+#### [Scikit-Learn KNN](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Scikit-Learn/03.%20K%20Nearest%20Neighbors%20with%20Python.ipynb)
 
 K Nearest Neighbors is a classification algorithm that calculates the distance from sorts points in your data in order to group them into different classes.
 
@@ -153,6 +154,7 @@ Choosing a different K-number will affect what class a new point is assigned to.
 
 
 ### [Decision Trees](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Theory%20-%20Machine%20Learning%20Statistics/Tree%20Methods.pdf)
+#### [Scikit-Learn Decision Forests & Random Trees](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Scikit-Learn/04.%20Decision%20Trees%20and%20Random%20Forests.ipynb)
 
 A decision tree is a support tool with a tree-like structure that models probable outcomes, cost of resources, utilities, and possible consequences. Decision trees provide a way to present algorithms with conditional control statements. They include branches that represent decision-making steps that can lead to a favorable result.
 
@@ -160,18 +162,21 @@ To improve performance, we can use many trees with a random sample of features c
 
 
 ### [Support Vector Machines (SVMs)](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Theory%20-%20Machine%20Learning%20Statistics/Support%20Vector%20Machines.pdf)
+#### [Scikit-Learn SVM](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Scikit-Learn/05.%20Support%20Vector%20Machines%20with%20Python.ipynb)
 
 A **support vector machine (SVM)** is a supervised machine learning model that uses classification algorithms for two-group classification problems. After giving an SVM model sets of labeled training data for each category, they’re able to categorize new text. 
 
 A support vector machine takes these data points and outputs the hyperplane (which in two dimensions it’s simply a line) that best separates the tags. This line is the decision boundary. The hyperplane is a line, or a circle or something else, whose distance to the nearest element of each tag is the largest.
 
 ### [K Means Clustering](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Theory%20-%20Machine%20Learning%20Statistics/Support%20Vector%20Machines.pdf)
+#### [Scikit-Learn K Means Clustering](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Scikit-Learn/06.%20K%20Means%20Clustering%20with%20Python.ipynb)
 
 K Means Clustering is an unsupervised learning algorithm that will attempt to group similar clusters together in your data. The overall goal is to divide data into distinct groups such that observations within each group are similar. 
 
 There is no easy answer for choosing a *best K value*. One way is the elbow method in which you compute the sum of **squared error** (SSE) for some values of Ks and choose the K where the SSE decreases abruptly.
 
 ### [Principal Component Analysis](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Theory%20-%20Machine%20Learning%20Statistics/Principal%20Component%20Analysis.pdf)
+#### [Scikit-Learn PCA](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Scikit-Learn/07.%20Principal%20Component%20Analysis.ipynb)
 
 Known as **factor analysis**, it is an unsupervised statistical technique used to examine the interrelations among a set of variables in order to identify the underlying structure of those variables. Where regression determines a line of best fit to a data set,factor analysis determines several orthogonal lines of best
 fit to the data set.
@@ -179,10 +184,13 @@ fit to the data set.
 Components are a linear transformation that chooses a variable system for the data set such that the greatest variance of the data set comes to lie on the first axis.
 
 ### [Recommender Systems](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Theory%20-%20Machine%20Learning%20Statistics/Recommender%20Systems.pdf)
+#### [Scikit-Learn Recommender Systems Basic](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Scikit-Learn/08.%201.Recommender%20Systems%20with%20Python.ipynb)
+#### [Scikit-Learn Recommender Systems Advanced](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Scikit-Learn/08.%202.Advanced%20Recommender%20Systems%20with%20Python.ipynb)
 
 Recommender systems are the systems that are designed to recommend things to the user based on many different factors. These systems predict the most likely product that the users are most likely to purchase and are of interest to. The recommender system deals with a large volume of information present by filtering the most important information based on the data provided by a user and other factors that take care of the user’s preference and interest. It finds out the match between user and item and imputes the similarities between users and items for recommendation. 
 
 ### [Natural Language Processing (NLP)](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Theory%20-%20Machine%20Learning%20Statistics/Natural%20Language%20Processing.pdf)
+#### [Scikit-Learn NLP](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/05.%20Machine%20Learning/Scikit-Learn/09.%20Natural%20Language%20Processing.ipynb)
 
 A document represented as a vector of word counts is called a **Bag of Words**. We can improve on Bag of Words by adjusting word counts based on their frequency in corpus (the group of all the documents).
 
