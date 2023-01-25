@@ -17,11 +17,11 @@
 
 #### [Grabbing a Class](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/03.%20Web%20Development/Web%20Scraping/Web%20Scraping%20-%2002.%20Grabbing%20a%20Class.ipynb)
 
-* **soup.select('div')**	    All elements with the <div> tag
+* **soup.select('div')**	    All elements with the `<div>` tag
 * **soup.select('#some_id')**	The HTML element containing the id attribute of some_id
 * **soup.select('.notice')**	All the HTML elements with the CSS class named notice
-* **soup.select('div span')**	Any elements named <span> that are within an element named <div>
-* **soup.select('div > span')**	Any elements named <span> that are directly within an element named <div>, with no other element in between
+* **soup.select('div span')**	Any elements named <span> that are within an element named `<div>`
+* **soup.select('div > span')**	Any elements named <span> that are directly within an element named `<div>`, with no other element in between
 
 
 #### [Grabbing an Image](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/03.%20Web%20Development/Web%20Scraping/Web%20Scraping%20-%2003.%20Grabbing%20an%20Image.ipynb)
