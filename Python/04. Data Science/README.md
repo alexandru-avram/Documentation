@@ -143,4 +143,4 @@ Grids are general types of plots that allow you to map plot types to rows and co
 ### [Style and Color](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/04.%20Data%20Science/Seaborn%20Library/06.%20Style%20and%20Color.ipynb)
 Control figure aesthetics in a seaborn figure.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: styles, colors, despine, soze. aspect, scale, context, 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: styles, colors, despine, soze. aspect, scale, context
