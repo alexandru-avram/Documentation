@@ -75,6 +75,6 @@ Tuples are sequences of characters, just like lists. The difference is that tupl
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: tuples, tuple unpacking.
 
 ### [Sets](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Tuples%20%26%20Sets/Sets.ipynb)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets are like lists of items, the difference being that sets can include only unique values. 
+Sets are like lists of items, the difference being that sets can include only unique values. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: sets, using sets, lists with unique values.
