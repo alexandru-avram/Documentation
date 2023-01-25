@@ -78,3 +78,28 @@ Tuples are sequences of characters, just like lists. The difference is that tupl
 Sets are like lists of items, the difference being that sets can include only unique values. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: sets, using sets, lists with unique values.
+
+## Other Data Types
+
+### [Booleans](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Other%20Data%20Types/Booleans%20Comparison.ipynb)
+Booleans are data types in Python that contain a basic information, if something is True or is False (in computer language, 1 or 0). Thre is also has a placeholder object called None.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: booleans, true, false, comparison operators
+
+### [Datetime Module](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Other%20Data%20Types/Datetime%20Module.ipynb)
+In data analytics, it is important to be able to work and manipulate date, time and datetime data.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: time, datetime, datetime.time, date formatting, time formatting, datetime formatting, strftime, replace, timedelta
+
+### [Collections Module](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/01.%20Basic%20Python/Other%20Data%20Types/Collections%20Module.ipynb)
+The collections module is a built-in module that implements specialized container data types providing alternatives to Python’s general purpose built-in containers. 
+
+* **Counter**	Dict subclass for counting hashable objects
+* **defaultdict**	Dict subclass that calls a factory function to supply missing values
+* **namedtuple**	Factory function for creating tuple subclasses with named fields
+* **deque**	List-like container with fast appends and pops on either end
+* **ChainMap**	Dict-like class for creating a single view of multiple mappings
+* **OrderedDict**	Dict subclass that remembers the order entries were added
+* **UserDict**	Wrapper around dictionary objects for easier dict subclassing
+* **UserList**	Wrapper around list objects for easier list subclassingg
+* **UserString**	Wrapper around string objects for easier string subclassing
