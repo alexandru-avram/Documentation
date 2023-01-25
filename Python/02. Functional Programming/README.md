@@ -14,6 +14,7 @@
     for Loops
         for item in object:
             execute something
+            
     while Loops
         while condition:
             execute something
