@@ -1,6 +1,11 @@
 # Web Dev
 
 ## Web Scraping
+
+    import requests
+    import lxml
+    import bs4
+
 ### [Basic guide](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/03.%20Web%20Development/Web%20Scraping/Web%20Scraping%20-%200.%20Basic%20guide.ipynb)
 
 ### [Grabbing a Title](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/03.%20Web%20Development/Web%20Scraping/Web%20Scraping%20-%2001.%20Grabbin%20a%20Title.ipynb)
