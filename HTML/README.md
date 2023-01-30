@@ -42,6 +42,7 @@
 #### CSS Basic
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTML - Part 1](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part1.html)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[CSS - Part 1](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part1_master.css)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connecting a CSS file to an HTML file, simple formatting
 
 
