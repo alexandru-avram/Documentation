@@ -1,7 +1,7 @@
 # HTML Documentation
 
 ## Templates 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Basic HTML Template](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part1_html_basics.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Basic HTML Template](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part1_html_basics.html)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTML with Bootstrap Template](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/03.%20Bootstrap/Bootstrap%20example.html)
 
 
