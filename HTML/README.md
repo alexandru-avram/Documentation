@@ -45,7 +45,37 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connecting a CSS file to an HTML file, simple formatting
 
+#### Backgrounds & Borders
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTML - Backgrounds & Borders](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part2.html)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[CSS - Backgrounds & Borders](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part2_master.css)
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setting a background, formatting a border
+
+#### Different Selector Types
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTML - Selector Types](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part3.html)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[CSS - Selector Types](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part3_master.css)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formatting a class, an id, `*` for all elemets, adjecent siblings, descendents & different attributes.
+
+#### Specificity
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTML - Specificity](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part4.html)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[CSS - Specificity](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part4_master.css)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specificity is the algorithm used by browsers to determine the CSS declaration that is the most relevant to an element, which in turn, determines the property value to apply to the element.\
+[CSS Specificity documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+
+
+#### Fonts
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTML - Fonts](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part5%20-%20Fonts.html)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[CSS - Fonts](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part5%20-%20Fonts.css)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using fonts in CSS, customization, bold, italic
+
+#### Box Models
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTML - Box Models](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part6_Box_Models.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[CSS - Box Models](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part6_Box_Models.css)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating box models, top, bottom, padding, borders.
 
 ## Bootstrap
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Bootstrap Cheat Sheet](https://getbootstrap.com/docs/5.3/examples/cheatsheet/)\
