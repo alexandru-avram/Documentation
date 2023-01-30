@@ -14,13 +14,19 @@
 
 ## HTML
 
+### Basic HTML
 #### [Tagging](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part2_basic_tagging.html)
 #### [Lists](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part3_html_lists.html)
 #### [Div Span](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part4_divs_spans.html)
 #### [Attributes](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part5_html_attributes.html)
 #### [Tables](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part6_Tables.html)
+
+### Froms
 #### [Forms Basics](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part7_Forms_Basics.html)
 #### [Forms Labels](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part8_Forms_Labels.html)
-####[Forms_Selections](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part9_Forms_Selections.html)
+#### [Forms_Selections](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part9_Forms_Selections.html)
+
+
+## CSS
 
 
