@@ -73,7 +73,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using fonts in CSS, customization, bold, italic
 
 #### Box Models
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTML - Box Models](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part6_Box_Models.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTML - Box Models](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part6_Box_Models.html)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[CSS - Box Models](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part6_Box_Models.css)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating box models, top, bottom, padding, borders.
