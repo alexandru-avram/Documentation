@@ -81,3 +81,18 @@
 ## Bootstrap
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Bootstrap Cheat Sheet](https://getbootstrap.com/docs/5.3/examples/cheatsheet/)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Bootstrap on W3](https://www.w3schools.com/bootstrap/)
+
+#### [Buttons](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/03.%20Bootstrap/01.%20Buttons.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Different buttons in Bootstrap
+
+#### [Jumbotron](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/03.%20Bootstrap/02.%20Jumbotron.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jumbotron is no longer used as different `container` classes have taken over its' functionalities.
+
+#### [Forms](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/03.%20Bootstrap/03.%20Forms.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customizing forms with Bootstrap
+
+#### [Navbars](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/03.%20Bootstrap/04.%20Navbars.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating different types of navbars for top-up menus
+
+#### [Grids](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/03.%20Bootstrap/05.%20Grids.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grids are used to customize the layout of a webpage. In Bootstrap, webpages are split in 12 column grids.
