@@ -5,9 +5,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTML with Bootstrap Template](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/03.%20Bootstrap/Bootstrap%20example.html)
 
 
-#### [HTML Cheat Sheet](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/Cheat%20Sheet%20-%20HTML.pdf)
-#### [CSS Cheat Sheet](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/Cheat%20Sheet%20-%20CSS.pdf)
-#### [Bootstrap Cheat Sheet](https://getbootstrap.com/docs/5.3/examples/cheatsheet/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTML Cheat Sheet](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/Cheat%20Sheet%20-%20HTML.pdf)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[CSS Cheat Sheet](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/Cheat%20Sheet%20-%20CSS.pdf)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Bootstrap Cheat Sheet](https://getbootstrap.com/docs/5.3/examples/cheatsheet/)
 
 #### [HTML on W3](https://www.w3schools.com/html/)
 #### [CSS on W3](https://www.w3schools.com/css/default.asp)
