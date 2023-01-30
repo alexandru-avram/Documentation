@@ -10,10 +10,20 @@
 
 ### Basic HTML
 #### [Tagging](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part2_basic_tagging.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple HTML example
+
 #### [Lists](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part3_html_lists.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating lists, ordered or unordered
+
 #### [Div Span](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part4_divs_spans.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using `div` to set certain styles in the HTML page.
+
 #### [Attributes](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part5_html_attributes.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attributes and links
+
 #### [Tables](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part6_Tables.html)
+#### [Tables 2](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/HTML_Assessment%202.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating and formatting a table
 
 ### Froms
 #### [Forms Basics](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part7_Forms_Basics.html)
