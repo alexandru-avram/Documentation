@@ -27,13 +27,22 @@
 
 ### Froms
 #### [Forms Basics](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part7_Forms_Basics.html)
-#### [Forms Labels](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part8_Forms_Labels.html)
-#### [Forms_Selections](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part9_Forms_Selections.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating a simple form with an email & username text box and submit button
 
+#### [Forms Labels](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part8_Forms_Labels.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using form labels to add text
+
+#### [Forms_Selections](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/01.%20HTML%20Basics/Part9_Forms_Selections.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More complex form with radio buttons, dropdown, text box & sbutmit button
 
 ## CSS
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[CSS Cheat Sheet](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/Cheat%20Sheet%20-%20CSS.pdf)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[CSS on W3](https://www.w3schools.com/css/default.asp)
+
+#### CSS Basic
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTML - Part 1](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part1.html)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[CSS - Part 1](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part1_master.css)
+
 
 ## Bootstrap
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Bootstrap Cheat Sheet](https://getbootstrap.com/docs/5.3/examples/cheatsheet/)\
