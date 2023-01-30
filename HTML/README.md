@@ -61,7 +61,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTML - Specificity](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part4.html)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[CSS - Specificity](https://github.com/alexandruavram-rusu/Documentation/blob/main/HTML/02.%20CSS/Part4_master.css)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specificity is the algorithm used by browsers to determine the CSS declaration that is the most relevant to an element, which in turn, determines the property value to apply to the element.\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specificity is the algorithm used by browsers to determine the CSS declaration that is the most relevant to an element, which in turn, determines the property value to apply to the element.
+
 [CSS Specificity documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 
 
