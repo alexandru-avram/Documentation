@@ -15,6 +15,13 @@
 #### [CSS](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/02.%20CSS)
 #### Bootstrap *under construction*
 
+## JavaScript
+
+### [View **HTML** folder]
+
+#### [JavaScript Basics]
+#### []
+
 ## PHP
 #### *Under construction :)*
 
