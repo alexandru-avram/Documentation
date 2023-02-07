@@ -18,7 +18,7 @@
 
 ## JavaScript
 
-### [View **HTML** folder]
+### [View **JavaScript** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/Javascript)
 
 #### [JavaScript Basics](https://github.com/alexandruavram-rusu/Documentation/tree/main/Javascript/01.%20JavaScript%20Basics)
 #### [JavaScript - HTML](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/04.%20Document%20Object%20Model)
