@@ -13,14 +13,15 @@
 
 #### [HTML Basics](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/01.%20HTML%20Basics)
 #### [CSS](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/02.%20CSS)
-#### Bootstrap *under construction*
+#### [Bootstrap](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/03.%20Bootstrap)
+#### [Document Object Model](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/04.%20Document%20Object%20Model)
 
 ## JavaScript
 
 ### [View **HTML** folder]
 
-#### [JavaScript Basics]
-#### []
+#### [JavaScript Basics](https://github.com/alexandruavram-rusu/Documentation/tree/main/Javascript/01.%20JavaScript%20Basics)
+#### [JavaScript - HTML](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/04.%20Document%20Object%20Model)
 
 ## PHP
 #### *Under construction :)*
