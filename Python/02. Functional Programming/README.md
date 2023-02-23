@@ -76,6 +76,23 @@ Magic methods, also known as special or dunders are methods which have double un
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: special metohds, magic methods
 
+## Error Handling
+
+### [Exception Handling](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/02.%20Functional%20Programming/Error%20Handling/Exceptions%20Handling.ipynb)
+One of the biggest headache when coding learning how to code is encountering an error message. They appear when something goes wrong, either due to incorrect code or input, causing the program to stop. In Python, these are caused either by a syntax error or an exception.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: errors, exceptions, debugging, synthax errors, raising exceptions, try, except, finally
+
+### [pdb Module](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/02.%20Functional%20Programming/Error%20Handling/pdb%20Module%20(Debugger).ipynb)
+`pdb` is a built-in Python debugger module, allowing the implementation of an interactive debugging environment. It supports setting (conditional) breakpoints and single stepping at the source line level, inspection of stack frames, source code listing, and evaluation of arbitrary Python code in the context of any stack frame. It also supports post-mortem debugging and can be called under program control.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: pdb, debugging, set_trace
+
+### [Getpass Module](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/02.%20Functional%20Programming/Error%20Handling/Getpass%20Module.ipynb)
+The `getpass` module provides a secure way to handle the password prompts where programs interact with the users via the terminal.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: getpass, getuser, passowrd, secure password input
+
 ## Working with Files
 
 ### [Working with Files](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/02.%20Functional%20Programming/Working%20with%20Files/01.%20Working%20with%20Files.ipynb)
@@ -97,20 +114,3 @@ There are many libraries in Python for working with PDFs, each with their pros a
 The Python Imaging Library (PIL) is a 3rd party Python package that adds image processing capabilities to your Python interpreter. It allows you to process photos and do many common image file manipulations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: opening images, cropping images, copy/paste images, resize images, rotate images, saving images
-
-## Error Handling
-
-### [Exception Handling](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/02.%20Functional%20Programming/Error%20Handling/Exceptions%20Handling.ipynb)
-One of the biggest headache when coding learning how to code is encountering an error message. They appear when something goes wrong, either due to incorrect code or input, causing the program to stop. In Python, these are caused either by a syntax error or an exception.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: errors, exceptions, debugging, synthax errors, raising exceptions, try, except, finally
-
-### [pdb Module](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/02.%20Functional%20Programming/Error%20Handling/pdb%20Module%20(Debugger).ipynb)
-`pdb` is a built-in Python debugger module, allowing the implementation of an interactive debugging environment. It supports setting (conditional) breakpoints and single stepping at the source line level, inspection of stack frames, source code listing, and evaluation of arbitrary Python code in the context of any stack frame. It also supports post-mortem debugging and can be called under program control.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: pdb, debugging, set_trace
-
-### [Getpass Module](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/02.%20Functional%20Programming/Error%20Handling/Getpass%20Module.ipynb)
-The `getpass` module provides a secure way to handle the password prompts where programs interact with the users via the terminal.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: getpass, getuser, passowrd, secure password input
