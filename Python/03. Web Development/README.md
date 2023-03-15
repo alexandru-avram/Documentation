@@ -37,4 +37,5 @@
 ## Django
 
 ### Create new environment
+    
 > conda create `--name` django 
