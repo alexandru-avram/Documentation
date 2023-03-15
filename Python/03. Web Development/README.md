@@ -79,3 +79,11 @@ Starting development server: http://127.0.0.1:8000/
 - `wsgi.py`: Python script that acts as the Web Server Gateway Interface, helping us deploy our web app to production
 - `manage.py`: Python script that is associated with many commands as we build our web app
 
+### Django App Basic Structure
+- `__init__.py`: blank Python script that due to its special name let’s Python know that this directory can be treated as a package
+- `admin.py`: register your models here which Django will then use them with Django’s admin interface
+- `apps.py`: you can place application specific configurations
+- `models.py`: store the application’s data models
+- `tests.py`: store test functions to test your code
+- `views.py`: you have functions that handle requests and return responses
+- `Migrations` folder: this directory stores database specific information as it relates to the models
