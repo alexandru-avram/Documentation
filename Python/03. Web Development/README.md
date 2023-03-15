@@ -38,5 +38,5 @@
 
 ### Create new environment
 
-    With `conda`:
+With `conda`:
 > conda create `--name` django 
