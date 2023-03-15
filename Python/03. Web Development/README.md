@@ -43,6 +43,7 @@
 #### Create new environment
 
 With `conda`:
+    
     conda create `--name` django 
     
 #### Create a project
