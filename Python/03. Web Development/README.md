@@ -38,5 +38,8 @@
 
 ### Create new environment
 
+Using a blogal environment:
+> python -m django `--version`    
+    
 With `conda`:
 > conda create `--name` django 
