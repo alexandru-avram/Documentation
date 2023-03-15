@@ -38,7 +38,9 @@
 
 [Django Documentation](https://docs.djangoproject.com/en/4.1/intro/tutorial01/)
 
-[Terminal Commands](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/)    
+[Terminal Commands](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/)
+    
+[django-admin & manage.py](https://docs.djangoproject.com/en/4.1/ref/django-admin/)
     
 #### Create new environment
 
