@@ -73,5 +73,9 @@ Starting development server: http://127.0.0.1:8000/
     2. Add app and path to `ulrs.py`
 
 ### Django Project Basic Structure
-- __init__.py:  blank Python script that due to its special name let’s Python know that this directory can be treated as a package
-- sas
+- `__init__.py`: blank Python script that due to its special name let’s Python know that this directory can be treated as a package
+- `settings.py`: where you will store all your project settings
+- `urls.py`: Python script that will store all the URL patterns for your project. different pages for the web application
+- `wsgi.py`: Python script that acts as the Web Server Gateway Interface, helping us deploy our web app to production
+- `manage.py`: Python script that is associated with many commands as we build our web app
+
