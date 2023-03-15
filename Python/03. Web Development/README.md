@@ -40,12 +40,11 @@
 
 [Terminal Commands](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/)    
     
-### Create new environment
+#### Create new environment
 
 With `conda`:
 > conda create `--name` django 
     
-### Create a project
-> use `cd` to change directory
+#### Create a project
     
 > django-admin startproject `--name`
