@@ -41,6 +41,8 @@
 [Terminal Commands](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/)
     
 [django-admin & manage.py Commands](https://docs.djangoproject.com/en/4.1/ref/django-admin/)
+
+### Django Basic Workflow    
     
 #### Create new environment
 
@@ -65,3 +67,11 @@ Starting development server: http://127.0.0.1:8000/
 #### Create App
     
     python manage.py startapp --app_name
+
+#### Add App to project
+    1. Add app to `settings.py` in the `INSTALLED_APPS` list
+    2. Add app and path to `ulrs.py`
+
+### Django Project Basic Structure
+- __init__.py:  blank Python script that due to its special name let’s Python know that this directory can be treated as a package
+- sas
