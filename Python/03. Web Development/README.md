@@ -46,8 +46,8 @@
 
 With `conda`:
     
-    conda create `--name` django 
+    conda create --name django 
     
 #### Create a project
     
-    django-admin startproject `--name`
+    django-admin startproject --name
