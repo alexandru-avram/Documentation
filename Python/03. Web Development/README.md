@@ -35,3 +35,6 @@
 * Create loop to grab items
 
 ## Django
+
+### Create new environment
+    ` conda create --name 
