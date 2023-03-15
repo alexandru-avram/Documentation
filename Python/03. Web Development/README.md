@@ -46,7 +46,11 @@
 
 With `conda`:
     
-    conda create --name django 
+    conda create --env_name django
+
+#### Activate environment
+
+    activate --env_name
     
 #### Create a project
     
