@@ -36,7 +36,9 @@
 
 ## Django
 
-[Django Documentation](https://docs.djangoproject.com/en/4.1/intro/tutorial01/)    
+[Django Documentation](https://docs.djangoproject.com/en/4.1/intro/tutorial01/)
+
+[Terminal Commands](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/)    
     
 ### Create new environment
 
