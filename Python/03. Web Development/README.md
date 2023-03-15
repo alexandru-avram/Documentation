@@ -42,5 +42,6 @@ With `conda`:
 > conda create `--name` django 
     
 ### Create a project
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;> use `cd` to change directory
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;> django-admin startproject `--name`
+> use `cd` to change directory
+    
+> django-admin startproject `--name`
