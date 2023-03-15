@@ -38,8 +38,9 @@
 
 ### Create new environment
 
-Using a blogal environment:
-> python -m django `--version`    
-    
 With `conda`:
 > conda create `--name` django 
+    
+### Create a project
+> use `cd` to change directory
+> django-admin startproject `--name`
