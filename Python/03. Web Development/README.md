@@ -36,6 +36,8 @@
 
 ## Django
 
+[Django Documentation](https://docs.djangoproject.com/en/4.1/intro/tutorial01/)    
+    
 ### Create new environment
 
 With `conda`:
