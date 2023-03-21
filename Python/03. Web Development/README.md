@@ -107,6 +107,13 @@ Starting development server: http://127.0.0.1:8000/
     ]
     
     
-##### 2. Add app and path to `ulrs.py`
+##### 3. Add app and path to `ulrs.py`
+    from django.contrib import admin
+    from django.urls import path, include
+    from first_app import views
 
+    urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('APP_NAME/', include('APP_NAME.urls')), 
+    ]
     
