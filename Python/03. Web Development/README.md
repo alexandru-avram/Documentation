@@ -110,7 +110,7 @@ Starting development server: http://127.0.0.1:8000/
 ##### 3. Add app and path to `ulrs.py`
     from django.contrib import admin
     from django.urls import path, include
-    from first_app import views
+    from APP_NAME import views
 
     urlpatterns = [
     path('admin/', admin.site.urls),
