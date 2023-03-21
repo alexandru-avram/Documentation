@@ -87,7 +87,7 @@ Starting development server: http://127.0.0.1:8000/
     python manage.py startapp --app_name
 
 #### Add App to project
-    1. Add app to `settings.py` in the `INSTALLED_APPS` list
+##### 1. Add app to `settings.py` in the `INSTALLED_APPS` list
     
     INSTALLED_APPS = [
     'django.contrib.admin',
@@ -99,6 +99,6 @@ Starting development server: http://127.0.0.1:8000/
     'first_app']
  
 
-    2. Add app and path to `ulrs.py`
+##### 2. Add app and path to `ulrs.py`
 
     
