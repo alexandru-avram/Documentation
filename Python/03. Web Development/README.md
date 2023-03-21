@@ -98,7 +98,7 @@ Starting development server: http://127.0.0.1:8000/
     'django.contrib.staticfiles',
     'first_app']
  
- 
+
     2. Add app and path to `ulrs.py`
 
     
