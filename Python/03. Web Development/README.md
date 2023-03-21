@@ -138,3 +138,9 @@ Starting development server: http://127.0.0.1:8000/
         },
     },
     ]
+
+##### 4. Use {{template_tag}} in template documents and differente URLs and `views.py` files
+    
+    def index(request):
+    my_dict = {'template_tag': "Inserting a text using a template tag"}
+    return render(request, 'APP_NAME/index.html', context=my_dict)
