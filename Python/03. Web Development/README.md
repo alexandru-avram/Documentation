@@ -36,6 +36,8 @@
 
 ## Django
 
+[HTML & CSS Documentation](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML)
+
 [Django Documentation](https://docs.djangoproject.com/en/4.1/intro/tutorial01/)
 
 [Terminal Commands](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/)
