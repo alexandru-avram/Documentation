@@ -88,4 +88,17 @@ Starting development server: http://127.0.0.1:8000/
 
 #### Add App to project
     1. Add app to `settings.py` in the `INSTALLED_APPS` list
+    
+    INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'first_app'
+]
+    
     2. Add app and path to `ulrs.py`
+
+    
