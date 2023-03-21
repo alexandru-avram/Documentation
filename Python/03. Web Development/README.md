@@ -156,3 +156,9 @@ Starting development server: http://127.0.0.1:8000/
     
     <img src="{% static 'images/example.jpg' %}" alt="The image didn't appear">
     
+#### Loading CSS styles
+##### 1. Create `css` subfolder in the `static` folder
+##### 2. Make sure the `{%load static %} ` to the templates in which you want to use css
+##### 3. Link the HTML file to the CSS file
+    
+     <link rel= "stylesheet" href="{% static 'css/css_style.css' %}">
