@@ -96,9 +96,17 @@ Starting development server: http://127.0.0.1:8000/
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'first_app']
+    'APP_NAME']
  
+##### 2. Create `urls.py` file in the app directory and add `url patterns`
+    from django.urls import path
+    from . import views
 
+    urlpatterns = [
+    path('', views.index, name='index')
+    ]
+    
+    
 ##### 2. Add app and path to `ulrs.py`
 
     
