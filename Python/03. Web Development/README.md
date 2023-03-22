@@ -144,3 +144,21 @@ Starting development server: http://127.0.0.1:8000/
     def index(request):
     my_dict = {'template_tag': "Inserting a text using a template tag"}
     return render(request, 'APP_NAME/index.html', context=my_dict)
+
+#### Loading static files
+##### 1. Create new `static` folder
+##### 2. Create subfolders for each type of items or for each app
+##### 3. Add `{%load static %} ` to the templates you want to use
+    
+    {%load static %}
+
+##### 4. Files can be used in the templates (* ex: image example.jpg*)
+    
+    <img src="{% static 'images/example.jpg' %}" alt="The image didn't appear">
+    
+#### Loading CSS styles
+##### 1. Create `css` subfolder in the `static` folder
+##### 2. Make sure the `{%load static %} ` to the templates in which you want to use css
+##### 3. Link the HTML file to the CSS file
+    
+     <link rel= "stylesheet" href="{% static 'css/css_style.css' %}">
