@@ -67,6 +67,10 @@
 With `conda`:
     
     conda create --env_name django
+    
+With 'venv':
+
+    python3 -m venv venv
 
 #### Activate environment
 
