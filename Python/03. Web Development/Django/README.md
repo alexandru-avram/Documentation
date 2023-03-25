@@ -144,3 +144,8 @@ Starting development server: http://127.0.0.1:8000/
 #### 2. Run migration scripts
     
     python manage.py migrate
+
+#### 3. Register changes to the application
+
+    python manage.py makemigrations APP_NAME
+    
