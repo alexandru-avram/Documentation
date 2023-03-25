@@ -150,3 +150,12 @@ Starting development server: http://127.0.0.1:8000/
     python manage.py makemigrations APP_NAME
     
 #### 4. Run migration script once more
+
+## Django Admin
+
+#### 1. Import models from `models.py` into `admin.py`
+#### 2. Register models in `admin.py`
+
+    admin.site.register(MODEL_NAME)
+    
+#### 3. Create a Superuser
