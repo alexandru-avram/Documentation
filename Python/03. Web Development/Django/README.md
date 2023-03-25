@@ -141,7 +141,7 @@ Starting development server: http://127.0.0.1:8000/
     class ClassName(models.Model):
         class1 = models.Class(CLASS_CHARACTERISTICS)
 
-#### 2. Run migration scripts
+#### 2. Run migration script
     
     python manage.py migrate
 
@@ -149,3 +149,4 @@ Starting development server: http://127.0.0.1:8000/
 
     python manage.py makemigrations APP_NAME
     
+#### 4. Run migration script once more
