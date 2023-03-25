@@ -29,7 +29,7 @@
 
 ## Django Basic Workflow    
     
-#### Create new environment
+### Create new environment
 
 With `conda`:
     
@@ -39,25 +39,25 @@ With 'venv':
 
     python3 -m venv venv
 
-#### Activate environment
+### Activate environment
 
     activate --env_name
     
-#### Create a project
+### Create a project
     
     django-admin startproject --name
     
-#### Run server
+### Run server
     
     python manage.py runserver
 
 Starting development server: http://127.0.0.1:8000/
 
-#### Create App
+### Create App
     
     python manage.py startapp --app_name
 
-#### Add App to project
+#### Map App to project
 ##### 1. Add app to `settings.py` in the `INSTALLED_APPS` list
     
     INSTALLED_APPS = [
@@ -89,10 +89,10 @@ Starting development server: http://127.0.0.1:8000/
     ]
     
 
-#### Add templates
-##### 1. Create `templates` folder
-##### 2. Create subfolders for each app
-##### 3. Add template path to `TEMPLATES` in `settings.py`
+### Add templates
+#### 1. Create `templates` folder
+#### 2. Create subfolders for each app
+#### 3. Add template path to `TEMPLATES` in `settings.py`
     
     TEMPLATES = [
     {
@@ -110,26 +110,26 @@ Starting development server: http://127.0.0.1:8000/
     },
     ]
 
-##### 4. Use ` {{template_tag}} ` in template documents and differente URLs and `views.py` files
+#### 4. Use ` {{template_tag}} ` in template documents and differente URLs and `views.py` files
     
     def index(request):
     my_dict = {'template_tag': "Inserting a text using a template tag"}
     return render(request, 'APP_NAME/index.html', context=my_dict)
 
-#### Loading static files
-##### 1. Create new `static` folder
-##### 2. Create subfolders for each type of items or for each app
-##### 3. Add `{%load static %} ` to the templates you want to use
+### Loading static files
+#### 1. Create new `static` folder
+#### 2. Create subfolders for each type of items or for each app
+#### 3. Add `{%load static %} ` to the templates you want to use
     
     {%load static %}
 
-##### 4. Files can be used in the templates (* ex: image example.jpg*)
+#### 4. Files can be used in the templates (* ex: image example.jpg*)
     
     <img src="{% static 'images/example.jpg' %}" alt="The image didn't appear">
     
-#### Loading CSS styles
-##### 1. Create `css` subfolder in the `static` folder
-##### 2. Make sure the `{%load static %} ` to the templates in which you want to use css
-##### 3. Link the HTML file to the CSS file
+### Loading CSS styles
+#### 1. Create `css` subfolder in the `static` folder
+#### 2. Make sure the `{%load static %} ` to the templates in which you want to use css
+#### 3. Link the HTML file to the CSS file
     
      <link rel= "stylesheet" href="{% static 'css/css_style.css' %}">
