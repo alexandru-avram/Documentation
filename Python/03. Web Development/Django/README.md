@@ -133,3 +133,10 @@ Starting development server: http://127.0.0.1:8000/
 #### 3. Link the HTML file to the CSS file
     
      <link rel= "stylesheet" href="{% static 'css/css_style.css' %}">
+
+## Create models
+#### 1. Create Django classes in the `models.py` file in the App
+[Django models documentation](https://docs.djangoproject.com/en/4.1/topics/db/models/)
+    
+    class ClassName(models.Model):
+        class1 = models.Class(CLASS_CHARACTERISTICS)
