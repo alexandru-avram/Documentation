@@ -158,4 +158,10 @@ Starting development server: http://127.0.0.1:8000/
 
     admin.site.register(MODEL_NAME)
     
-#### 3. Create a Superuser
+#### 3. Create a Superuser and insert `Username`, `Email` & `Password`
+
+    python manage.py createsuperuser
+
+#### 4. Log in the Django-admin interface
+
+    SERVER_ADDRESS/admin
