@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+{%load static %} <!-- Loading static files & images-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> First App </title>
+    <link rel= "stylesheet" href="{% static 'css/mystyle.css' %}">
+  </head>
+  <body>
+    <h1> This is index.html</h1>
+
+    {{insert_me}} <!-- Template tag-->
+
+    <h2> This is a picture</h2>
+    <sub>The picture is of Django, the actual guitar player after which Django is based on</sub>
+    <br></br>
+    <img src="{% static 'images/djangoguitar.jpg' %}" alt="The image didn't appear">
+  
+</body>
+</html>
