@@ -37,4 +37,3 @@
 ## Django
 
 ### [Django ReadMe File](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/03.%20Web%20Development/Django#readme)
-
