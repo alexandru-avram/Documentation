@@ -2,6 +2,15 @@ import os
 import django
 import random
 from faker import Faker
+
+
+import sys
+
+# Add the parent directory to the Python path
+project_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.append(project_path)
+
+# Import first_app models
 from first_app.models import AccessRecord, Webpage, Topic
 
 # Setting up and configuring the porject settings
@@ -42,7 +51,7 @@ def populate(N=5):
         # create a fake access record for that webpage
         acc_rec = AccessRecord.objects.get_or_create(name = webpg, date=fake_date)[0]
         
-if __name__ = '__main__':
+if __name__ == '__main__':
     print("populating script!")
     populate(20)
     print("populating complete!")
