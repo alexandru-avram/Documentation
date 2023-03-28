@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class App21Config(AppConfig):
+class SecondAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'app_2_1'
+    name = 'second_app'
