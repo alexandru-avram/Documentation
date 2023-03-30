@@ -94,7 +94,8 @@ Starting development server: http://127.0.0.1:8000/
 1. Create `templates` folder
 2. Create subfolders for each app
 3. Add template path to `TEMPLATES` in `settings.py`
-    
+
+
     > TEMPLATES = [
     > {
     >    'BACKEND': 'django.template.backends.django.DjangoTemplates',
