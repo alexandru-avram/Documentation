@@ -5,5 +5,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('', views.form_name_view, name = 'forms_page')
     
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
