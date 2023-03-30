@@ -46,7 +46,7 @@ def form_name_view(request):
         if form.is_valid():
             print("VALIDATION SUCCESS!")
             print("NAME: " +form.cleaned_data['name'])
-            print("EMAIL: " +form.cleaned_data['name'])
+            print("EMAIL: " +form.cleaned_data['email'])
             print("TEXT: " +form.cleaned_data['text'])
 
     return render(request, 'first_app/form_page.html', context={'form':form})
