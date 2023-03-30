@@ -110,66 +110,66 @@ Starting development server: http://127.0.0.1:8000/
     },
     ]
 
-#### 4. Use ` {{template_tag}} ` in template documents and differente URLs and `views.py` files
+4. Use ` {{template_tag}} ` in template documents and differente URLs and `views.py` files
     
     def index(request):
     my_dict = {'template_tag': "Inserting a text using a template tag"}
     return render(request, 'APP_NAME/index.html', context=my_dict)
 
 ## Loading static files
-#### 1. Create new `static` folder
-#### 2. Create subfolders for each type of items or for each app
-#### 3. Add `{%load static %} ` to the templates you want to use
+1. Create new `static` folder
+2. Create subfolders for each type of items or for each app
+3. Add `{%load static %} ` to the templates you want to use
     
     {%load static %}
 
-#### 4. Files can be used in the templates (* ex: image example.jpg*)
+4. Files can be used in the templates (* ex: image example.jpg*)
     
     <img src="{% static 'images/example.jpg' %}" alt="The image didn't appear">
     
 ## Loading CSS styles
-#### 1. Create `css` subfolder in the `static` folder
-#### 2. Make sure the `{%load static %} ` to the templates in which you want to use css
-#### 3. Link the HTML file to the CSS file
+1. Create `css` subfolder in the `static` folder
+2. Make sure the `{%load static %} ` to the templates in which you want to use css
+3. Link the HTML file to the CSS file
     
      <link rel= "stylesheet" href="{% static 'css/css_style.css' %}">
 
 ## Create models
-#### 1. Create Django classes in the `models.py` file in the App
+1. Create Django classes in the `models.py` file in the App
 [Django models documentation](https://docs.djangoproject.com/en/4.1/topics/db/models/)
     
     class ClassName(models.Model):
         class1 = models.Class(CLASS_CHARACTERISTICS)
 
-#### 2. Run migration script
+2. Run migration script
     
     python manage.py migrate
 
-#### 3. Register changes to the application
+3. Register changes to the application
 
     python manage.py makemigrations APP_NAME
     
-#### 4. Run migration script once more
+4. Run migration script once more
 
 ## Django Admin
 
-#### 1. Import models from `models.py` into `admin.py`
-#### 2. Register models in `admin.py`
+1. Import models from `models.py` into `admin.py`
+2. Register models in `admin.py`
 
     admin.site.register(MODEL_NAME)
     
-#### 3. Create a Superuser and insert `Username`, `Email` & `Password`
+3. Create a Superuser and insert `Username`, `Email` & `Password`
 
     python manage.py createsuperuser
 
-#### 4. Log in the Django-admin interface
+4. Log in the Django-admin interface
 
     SERVER_ADDRESS/admin
 
 ## Views
 
-#### 1. In the `views.py` file, we import any models that we will need to use.
-#### 2. Use the view to query the model for data that we will need.
-#### 3. Pass results from the model to the template.
-#### 4. Edit the template so that it is ready to accept and display data from the model.
-#### 5. Map a URL to the view.
+1. In the `views.py` file, we import any models that we will need to use.
+2. Use the view to query the model for data that we will need.
+3. Pass results from the model to the template.
+4. Edit the template so that it is ready to accept and display data from the model.
+5. Map a URL to the view.
