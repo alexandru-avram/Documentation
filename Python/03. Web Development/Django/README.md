@@ -94,21 +94,21 @@ Starting development server: http://127.0.0.1:8000/
 2. Create subfolders for each app
 3. Add template path to `TEMPLATES` in `settings.py`
     
-    TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
-    ]
+    > TEMPLATES = [
+    > {
+    >    'BACKEND': 'django.template.backends.django.DjangoTemplates',
+    >    'DIRS': [BASE_DIR / 'templates'],
+    >    'APP_DIRS': True,
+    >    'OPTIONS': {
+    >        'context_processors': [
+    >            'django.template.context_processors.debug',
+    >            'django.template.context_processors.request',
+    >            'django.contrib.auth.context_processors.auth',
+    >            'django.contrib.messages.context_processors.messages',
+    >        ],
+    >    },
+    >},
+    >]
 
 4. Use ` {{template_tag}} ` in template documents and differente URLs and `views.py` files
     
