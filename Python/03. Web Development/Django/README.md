@@ -58,7 +58,7 @@ Starting development server: http://127.0.0.1:8000/
     python manage.py startapp --app_name
 
 #### Map App to project
-##### 1. Add app to `settings.py` in the `INSTALLED_APPS` list
+1. Add app to `settings.py` in the `INSTALLED_APPS` list
     
     INSTALLED_APPS = [
     'django.contrib.admin',
@@ -69,7 +69,7 @@ Starting development server: http://127.0.0.1:8000/
     'django.contrib.staticfiles',
     'APP_NAME']
  
-##### 2. Create `urls.py` file in the app directory and add `url patterns`
+2. Create `urls.py` file in the app directory and add `url patterns`
     from django.urls import path
     from . import views
 
@@ -78,7 +78,7 @@ Starting development server: http://127.0.0.1:8000/
     ]
     
     
-##### 3. Add app and path to `ulrs.py`
+3. Add app and path to `ulrs.py`
     from django.contrib import admin
     from django.urls import path, include
     from APP_NAME import views
@@ -90,9 +90,9 @@ Starting development server: http://127.0.0.1:8000/
     
 
 ## Add templates
-#### 1. Create `templates` folder
-#### 2. Create subfolders for each app
-#### 3. Add template path to `TEMPLATES` in `settings.py`
+1. Create `templates` folder
+2. Create subfolders for each app
+3. Add template path to `TEMPLATES` in `settings.py`
     
     TEMPLATES = [
     {
