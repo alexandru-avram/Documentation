@@ -14,8 +14,6 @@ class FormName(forms.Form):
     name = forms.CharField()
     email = forms.EmailField()
     
-
-    
     #Catching bots
     botcatcher = forms.CharField(required=False,
                                  widget=forms.HiddenInput,
@@ -32,9 +30,7 @@ class FormName(forms.Form):
         
         if email != vmail:
             raise forms.ValidationError("Emails don't match")
-    
-    
-        
+     
     text = forms.CharField(widget=forms.Textarea)
     
     # Not using built-in validators
@@ -44,4 +40,4 @@ class FormName(forms.Form):
         if len(botcatcher) > 0:
             raise forms.ValidationError("GOTCHA BOT")
         return botcatcher
-        """
+    """
