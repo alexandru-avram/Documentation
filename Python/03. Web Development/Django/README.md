@@ -98,7 +98,9 @@ Starting development server: http://127.0.0.1:8000/
     ]
     ```
 
-## Add templates
+## Templates
+Templates are url pages that make up the front-end of the website & application.
+
 1. Create `templates` folder
 2. Create subfolders for each app
 3. Add template path to `TEMPLATES` in `settings.py`
@@ -172,7 +174,7 @@ Starting development server: http://127.0.0.1:8000/
     
 4. Run migration script once more
 
-## Django Admin
+## Superadmin
 
 1. Import models from `models.py` into `admin.py`
 2. Register models in `admin.py`
