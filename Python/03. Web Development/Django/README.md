@@ -36,9 +36,11 @@ With `conda`:
     conda create --env_name django
     
 With 'venv':
-
+    
+    ```
     python3 -m venv venv
-
+    ```
+    
 ### Activate environment
 
     activate --env_name
@@ -61,6 +63,7 @@ Starting development server: http://127.0.0.1:8000/
 
 1. Add app to `settings.py` in the `INSTALLED_APPS` list
     
+    ```
     INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -69,17 +72,20 @@ Starting development server: http://127.0.0.1:8000/
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'APP_NAME']
+    ```
  
 2. Create `urls.py` file in the app directory and add `url patterns`
+    ```
     from django.urls import path
     from . import views
 
     urlpatterns = [
     path('', views.index, name='index')
     ]
-    
+    ```
     
 3. Add app and path to `ulrs.py`
+    ```
     from django.contrib import admin
     from django.urls import path, include
     from APP_NAME import views
@@ -88,7 +94,7 @@ Starting development server: http://127.0.0.1:8000/
     path('admin/', admin.site.urls),
     path('APP_NAME/', include('APP_NAME.urls')), 
     ]
-    
+    ```
 
 ## Add templates
 1. Create `templates` folder
