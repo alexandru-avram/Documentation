@@ -58,6 +58,7 @@ Starting development server: http://127.0.0.1:8000/
     python manage.py startapp --app_name
 
 #### Map App to project
+
 1. Add app to `settings.py` in the `INSTALLED_APPS` list
     
     INSTALLED_APPS = [
