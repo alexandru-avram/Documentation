@@ -125,7 +125,7 @@ Starting development server: http://127.0.0.1:8000/
 
 4. Files can be used in the templates (* ex: image example.jpg*)
     
-    `<img src="{% static 'images/example.jpg' %}" alt="The image didn't appear">`
+    <code><img src="{% static 'images/example.jpg' %}" alt="The image didn't appear"></code>
     
 ## Loading CSS styles
 1. Create `css` subfolder in the `static` folder
