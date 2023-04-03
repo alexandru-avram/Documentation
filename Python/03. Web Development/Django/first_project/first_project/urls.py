@@ -18,10 +18,22 @@ from django.urls import path, include
 from first_app import views
 
 urlpatterns = [
+    
+    # Will enable you to access the admin page by typing PROJECT_ADDRESS/admin
     path('admin/', admin.site.urls),
+    
+    # Will include any view mapped in the first_app/views.py: PROJECT_ADDRESS/first_app/VIEW_NAME
     path('first_app/', include('first_app.urls')),
+    
+    # When oppening the PROJECT_ADDRESS, it will display the index view
     path('', views.index, name='index'),
-    path('formpage/', views.form_name_view, name="form_name")
+    
+    # Typing PROJECT_ADDRESS/formpage will open the form_name view mapped in frst_app.views.py
+    path('formpage/', views.form_name_view, name="form_name"),
+
+    path('relative/', views.relative, name='relative_url_template'),
+    path('base/', views.base, name='base')
+    
     
     
 ]

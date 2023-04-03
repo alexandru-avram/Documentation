@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<h1>Relative HTML Tagging</h1>
+
+    {% extends "first_app/base.html"%}
+        {% block body_block %}
+    <p><em><a href ="{% url 'admin:index' %}">ADMIN INDEX</a></em></p>
+
+    <br>
+    <br>
+
+
+    <h2><a href ="{% url 'first_app:forms_page' %}">FORMS PAGE</a></h2>
+    <p>Creating and validating forms
+    </p>
+
+    <h2><a href ="{% url 'first_app:relative' %}">RELATIVE URL TEMPLATE TAGGING</a></h2>
+    <p> Using relative template tagging to link up other pages instead of simple absolute links.
+    </p>
+
+    {% endblock %}

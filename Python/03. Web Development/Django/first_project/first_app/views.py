@@ -51,3 +51,10 @@ def form_name_view(request):
 
     return render(request, 'first_app/form_page.html', context={'form':form})
 
+
+# Relative URL Template Tagging
+def relative(request):
+    return render(request, 'first_app/relative_url_template.html')
+
+def base(request):
+    return render(request, 'first_app/base.html')

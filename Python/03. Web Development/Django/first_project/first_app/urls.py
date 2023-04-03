@@ -3,8 +3,13 @@ from django.conf.urls.static import static
 from django.conf import settings
 from . import views
 
+# TEMPLATE TAGGING
+app_name = 'first_app'
+
+# URL PATTERNS
 urlpatterns = [
     path('', views.index, name='index'),
-    path('', views.form_name_view, name = 'forms_page')
+    path('forms_page/', views.form_name_view, name = 'forms_page'),
+    path('relative/', views.relative, name='relative' )
     
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
