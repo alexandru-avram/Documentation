@@ -11,7 +11,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('forms_page/', views.form_name_view, name = 'forms_page'),
     path('templates/', views.t_home, name='templates' ),
-    path('templates/tagging', views.t_tagging, name='template_tagging'),
     path('templates/filters', views.t_filters, name='template_filters'),
     
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

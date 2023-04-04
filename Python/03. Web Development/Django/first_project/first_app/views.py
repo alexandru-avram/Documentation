@@ -60,9 +60,6 @@ def t_home(request):
 def t_base(request):
     return render(request, 'first_app/first_app_templates/t_base.html')
 
-def t_tagging(request):
-    return render(request, 'first_app/first_app_templates/t_tagging.html')
-
 def t_filters(request):
     context_dict = {"text":"This is a context dictionary",
                     "number":100}

@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 
-<h1>Filters</h1>
+<!-- 
+    This page expalains template filters
+
+-->
+
+
+
 
 {% extends "first_app/first_app_templates/t_base.html" %}
 
         {% block body_block %}
 
+        <h1>Template Filters</h1>
 
+    <p>
+        <strong>Template filters</strong> are items attached to the view corresponding to a page.
+        They are usually cread in the <em>app/views.py</em> file, and pass into a dictionary.
+        Afterwards, they can be along with either a built-in Django code, or one created in the <em>app/templatetags</em> folder.
+
+
+        <br>
+        <br>
+
+        Examples below:
+
+    </p>
+
+
+
+    <p>
     {{ text|upper }}
 
     <br>
@@ -18,3 +41,4 @@
     {{number|add:"99"}}
 
     {% endblock %}
+</p>
