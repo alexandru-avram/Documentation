@@ -29,10 +29,9 @@ urlpatterns = [
     path('', views.index, name='index'),
     
     # Typing PROJECT_ADDRESS/formpage will open the form_name view mapped in frst_app.views.py
-    path('formpage/', views.form_name_view, name="form_name"),
+    path('formpage/', views.form_name_view, name="forms_page"),
 
-    path('relative/', views.relative, name='relative_url_template'),
-    path('base/', views.base, name='base')
+    path('templates/', views.t_home, name='templates')
     
     
     

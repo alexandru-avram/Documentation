@@ -31,6 +31,7 @@ def index(request):
 
 # Forth view: Create Django forms
 def index(request):
+
     return render(request, 'first_app/index.html')
 
 # Forms view
@@ -53,8 +54,16 @@ def form_name_view(request):
 
 
 # Relative URL Template Tagging
-def relative(request):
-    return render(request, 'first_app/relative_url_template.html')
+def t_home(request):
+    return render(request, 'first_app/first_app_templates/t_home.html')
 
-def base(request):
-    return render(request, 'first_app/base.html')
+def t_base(request):
+    return render(request, 'first_app/first_app_templates/t_base.html')
+
+def t_tagging(request):
+    return render(request, 'first_app/first_app_templates/t_tagging.html')
+
+def t_filters(request):
+    context_dict = {"text":"This is a context dictionary",
+                    "number":100}
+    return render(request, 'first_app/first_app_templates/t_filters.html', context=context_dict)

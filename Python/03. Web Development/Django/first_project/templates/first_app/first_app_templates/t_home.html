@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<h1>Relative HTML Tagging</h1>
+
+{% extends "first_app/first_app_templates/t_base.html" %}
+
+        {% block body_block %}
+
+
+    <p><em><a href ="{% url 'admin:index' %}">ADMIN INDEX</a></em></p>
+
+
+    <h2><a href ="{% url 'first_app:forms_page' %}">FORMS PAGE</a></h2>
+    <p>Creating and validating forms
+    </p>
+    
+    {% endblock %}
