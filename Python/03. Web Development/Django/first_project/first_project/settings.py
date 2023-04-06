@@ -84,12 +84,25 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
+
+# Passwrod Hashes
+
+PASSWORD = [
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+    'django.contrib.auth.hashers.Argon2PasswordHasher',
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+]
+
+
+# Password validators
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'OPTIONS':{'min_length':9} #setting the minimum length of a password to be 9 characters
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
@@ -115,11 +128,20 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+# Static files URL
 STATIC_URL = '/static/'
 
+# Static files directory
 STATICFILES_DIRS = [
     BASE_DIR / "static",
     
+]
+
+# MEDIA
+MEDIA_URL = '/media/'
+
+MEDIA_DIRS = [
+    BASE_DIR / "media",
 ]
 
 # Default primary key field type
