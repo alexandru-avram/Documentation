@@ -4,7 +4,7 @@ from kivy.uix.label import Label
 
 
 class MyApp(App):
-    def buid(self):
+    def build(self):
         return Label (text="Hello World")
     
 
