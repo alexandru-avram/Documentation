@@ -12,29 +12,61 @@ class MyGridLayout(GridLayout):
         super(MyGridLayout, self).__init__(**kwargs)
 
         # Set number of columns
-        # Kivy will determine how to arrange them
-        self.cols = 2
+        # We will be working with grids in grids
+        self.cols = 1
+        self.row_force_default=True
+        self.row_default_height=200
+        self.col_force_default=True
+        self.col_default_width=400
+
+
+        # Create a second grid layout
+        self.top_grid = GridLayout(
+            row_force_default=True, # Defaulting the size of the second grid
+            row_default_height=100,
+            col_force_default=True,
+            col_default_width=200)
+        
+        self.top_grid.cols = 2
+
+        
 
         # Add widgets
-        self.add_widget(Label(text="Name: "))
+        self.top_grid.add_widget(Label(text="Name: "))
+
+        """
+            ,size_hint_y = None, 
+            height=150,
+            size_hint_x = None,
+            width=400))
+            """
 
         #Add Input Box
-        self.name = TextInput(multiline=False)
+        self.name = TextInput(multiline=True)
         #Always add a self.add_widget to add them
-        self.add_widget(self.name)
+        self.top_grid.add_widget(self.name)
 
         # Widget 2
-        self.add_widget(Label(text="Favorite Pizza: "))
+        self.top_grid.add_widget(Label(text="Favorite Pizza: "))
         self.pizza = TextInput(multiline=False)
-        self.add_widget(self.pizza)
+        self.top_grid.add_widget(self.pizza)
 
         # Widget 3
-        self.add_widget(Label(text="Favorite Color: "))
+        self.top_grid.add_widget(Label(text="Favorite Color: "))
         self.color = TextInput(multiline=False)
-        self.add_widget(self.color)
+        self.top_grid.add_widget(self.color)
+
+        # Add the new top_grid to our app
+        self.add_widget(self.top_grid)
 
         # Create a Submit Button
-        self.submit = Button(text="Submit",font_size=32)
+        self.submit = Button(text="Submit",
+            font_size=32,
+            size_hint_y = None,  #stop changing the height of the button
+            height=50,
+            size_hint_x = None,
+            width=800
+            )
         #Bind the button
         self.submit.bind(on_press=self.press)
         self.add_widget(self.submit)
@@ -59,14 +91,6 @@ class MyApp(App):
     def build(self):
         return MyGridLayout()
 
-
-"""
-Simple class used to create a text with "Hello World"
-
-class MyApp(App):
-    def build(self):
-        return Label (text="Hello World", font_size=72)
-"""    
 
 if __name__== '__main__':
     MyApp().run()
