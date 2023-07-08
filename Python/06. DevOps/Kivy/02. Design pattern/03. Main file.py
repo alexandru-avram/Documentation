@@ -1,13 +1,15 @@
 import kivy
 from kivy.app import App
 from kivy.uix.widget import Widget
-from kivy.lang import BuilderBase
-
-# Import deisgn file
-BuilderBase.load_file("design_file.kv")
+from kivy.lang import Builder
 
 # VS Code will not recognize it, but it will run
 from kivy.properties import ObjectProperty
+
+# Import deisgn file
+Builder.load_file("design_file.kv")
+
+
 
 class MyGridLayout(Widget):
 
