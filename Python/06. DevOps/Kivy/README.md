@@ -74,7 +74,7 @@ Creating a button:
         font_size: 32
         on_press: root.press()
 
-In order to edit the color for buttons or widgets, kivy uses a `RGB - A` model: `red, green, blue and opacity`. They have values between 0 and 1. For a spcific calor, divide the number from a color picker site with **255.0**.
+In order to edit the color for buttons or widgets, kivy uses a `RGB - A` model: `red, green, blue and opacity`. They have values between `0 and 1.` For a spcific calor, divide the number from a color picker site with **255.0**.
 
      
     backgroun_normal: ''
