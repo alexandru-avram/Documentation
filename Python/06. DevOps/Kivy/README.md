@@ -12,9 +12,11 @@ Basic kivy designs, creating buttons and widgets.
 
 
     ```
+    
     self.top_grid.add_widget(Label(text="Name: "))
     self.name = TextInput(multiline=True)
     self.top_grid.add_widget(self.name)
+    
     ```
 
 
