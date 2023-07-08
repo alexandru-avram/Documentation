@@ -16,4 +16,4 @@ Basic kivy designs, creating buttons and widgets.
     self.top_grid.add_widget(self.name)
     
 
-
+sdasdsaa
