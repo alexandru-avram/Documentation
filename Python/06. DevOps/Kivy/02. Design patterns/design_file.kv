@@ -1,3 +1,4 @@
+#: import utils kivy.utils
 <MyGridLayout>
 # COMMENT
 
@@ -35,8 +36,8 @@
             font_size: 32
             on_press: root.press()
 
-            # Color: RGB - A (red, gree, blue and opacity, between 0 and 1)
-            # Color picker website to get the color you want
+            # Color
             backgroun_normal: ''
-            background_color: (0.63, 1, 0.49, 1)
+            #background_color: (0.63, 1, 0.49, 1)
+            background_color: utils.get_color_from_hef('EAF00')
             

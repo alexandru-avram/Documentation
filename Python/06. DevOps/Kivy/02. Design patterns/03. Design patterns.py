@@ -9,8 +9,6 @@ from kivy.properties import ObjectProperty
 # Import deisgn file
 Builder.load_file("design_file.kv")
 
-
-
 class MyGridLayout(Widget):
 
     name = ObjectProperty(None)
