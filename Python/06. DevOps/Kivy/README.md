@@ -47,4 +47,5 @@ Kivy apps work on a grid based layout. Buttons and widgets are inserted in grids
     self.col_default_width=400
     ```
 
-### [Basic design](
+### [Basic design pattern](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/06.%20DevOps/Kivy/02.%20Design%20pattern)
+[Kivy design file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/02.%20Design%20pattern/design_file.kv)
