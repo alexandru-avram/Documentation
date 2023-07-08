@@ -84,3 +84,7 @@ You can also use `hex color codes`
 
     #: import utils kivy.utils
     background_color: utils.get_color_from_hex("#eefa00")
+
+The `background_color: ` acts as a multiplier to the texture colour. The default texture is grey, so just setting the background color will give a darker result. To set a plain color, set the background_normal to `''`.
+
+    background_color:
