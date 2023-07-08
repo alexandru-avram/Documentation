@@ -87,4 +87,4 @@ You can also use `hex color codes`
 
 The `background_color: ` acts as a multiplier to the texture colour. The default texture is grey, so just setting the background color will give a darker result. To set a plain color, set the background_normal to `''`.
 
-    background_color:``
+    background_color:''
