@@ -48,7 +48,9 @@ Kivy apps work on a grid based layout. Buttons and widgets are inserted in grids
     ```
 
 ### [Basic design pattern](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/02.%20Design%20patterns/03.%20Design%20patterns.py)
+
 [Kivy design file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/02.%20Design%20patterns/design_file.kv)
+
 The `.kv` design file is the front-end of the application. The main file will keep the application functionality.
 
 Importing a design file
