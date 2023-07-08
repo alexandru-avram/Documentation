@@ -1,10 +1,10 @@
 import kivy
 from kivy.app import App
-from kivy.uix.label import Label
-from kivy.uix.gridlayout import GridLayout
-from kivy.uix.textinput import TextInput
-from kivy.uix.button import Button
 from kivy.uix.widget import Widget
+from kivy.lang import BuilderBase
+
+# Import deisgn file
+BuilderBase.load_file("design_file.kv")
 
 # VS Code will not recognize it, but it will run
 from kivy.properties import ObjectProperty
@@ -30,11 +30,17 @@ class MyGridLayout(Widget):
         self.color.text = ""
 
 
+""" You can import the deisgn file as a class
+# Example: elder.kv, then class Elder(App):
+# If design file is name my.kv, then MyApp works
+class MyApp(App): 
+    def build(self):
+        return MyGridLayout()
+"""
 
-class MyApp(App):
+class AwsomeApp(App): 
     def build(self):
         return MyGridLayout()
 
-
 if __name__== '__main__':
-    MyApp().run()
+    AwsomeApp().run()
