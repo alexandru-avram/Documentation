@@ -48,7 +48,9 @@ Kivy apps work on a grid based layout. Buttons and widgets are inserted in grids
     ```
 
 ### [Basic design pattern](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/02.%20Design%20patterns/03.%20Design%20patterns.py)
+
 [Kivy design file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/02.%20Design%20patterns/design_file.kv)
+
 The `.kv` design file is the front-end of the application. The main file will keep the application functionality.
 
 Importing a design file
@@ -76,6 +78,13 @@ Creating a button:
 
 In order to edit the color for buttons or widgets, kivy uses a `RGB - A` model: `red, green, blue and opacity`. They have values between `0 and 1.` For a spcific color, divide the number from a color picker site with **255.0**.
 
-    backgroun_normal: ''
     background_color: (233/255.0, 0, 0, 1)
 
+You can also use `hex color codes`
+
+    #: import utils kivy.utils
+    background_color: utils.get_color_from_hex("#eefa00")
+
+The `background_color: ` acts as a multiplier to the texture colour. The default texture is grey, so just setting the background color will give a darker result. To set a plain color, set the background_normal to `''`.
+
+    background_color:''
