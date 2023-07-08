@@ -8,7 +8,7 @@
 Using functions and classes to create a basic app.
 
 ### [Buttons and widgets](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/01.%20First%20designs/02.%20Buttons%20and%20widgets.py)
-Basic kivy designs, creating buttons and widgets.
+Basic kivy designs, creating buttons and widgets. In this example, the design elements are in the same file.
 
 
     self.top_grid.add_widget(Label(text="Name: "))
@@ -17,6 +17,7 @@ Basic kivy designs, creating buttons and widgets.
     
 
 Kivy apps work on a grid based layout. Buttons and widgets are inserted in grids and can be resized by resizing the grid. Default values for girds can be established.
+
 
 1. Set number of columns:
 
@@ -45,3 +46,5 @@ Kivy apps work on a grid based layout. Buttons and widgets are inserted in grids
     self.col_force_default=True
     self.col_default_width=400
     ```
+
+### [Basic design](
