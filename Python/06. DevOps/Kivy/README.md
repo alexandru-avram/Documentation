@@ -16,4 +16,12 @@ Basic kivy designs, creating buttons and widgets.
     self.top_grid.add_widget(self.name)
     
 
-sdasdsaa
+Kivy apps work on a grid based layout. Buttons and widgets are inserted in grids and can be resized by resizing the grid. Default values for girds can be established.
+
+1. Set number of columns:
+
+    ```
+    self.cols = 
+    ```
+
+2. 
