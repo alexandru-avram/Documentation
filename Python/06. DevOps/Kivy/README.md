@@ -24,4 +24,24 @@ Kivy apps work on a grid based layout. Buttons and widgets are inserted in grids
     self.cols = 
     ```
 
-2. 
+2. Specific size for a grid:
+
+    ```
+    self.submit = Button(text="Submit",
+    font_size=32,
+    size_hint_y = None,  #stop changing the height of the button
+    height=50,
+    size_hint_x = None,
+    width=800
+    )
+    ```
+
+
+3. Default sizes for grids:
+
+    ```
+    self.row_force_default=True
+    self.row_default_height=200
+    self.col_force_default=True
+    self.col_default_width=400
+    ```
