@@ -98,6 +98,16 @@ The `background_color: ` acts as a multiplier to the texture colour. The default
 Setting the layout as *box* as opposed to *grid* in the .`kv` design file:
 
      BoxLayout:
-            orientation: "vertical" / "horizontal"
+         orientation: "vertical" / "horizontal"
 
+Button and widgets padding and spacing:
 
+    padding: 50
+    spacing: 20
+
+Button size and orientation: (same thing with widgets)
+
+    Button:
+        text: "Imi place sa mananc"
+        pos_hint: {"center_x": 0.5}
+        size_hint: (0.5, 0.5)
