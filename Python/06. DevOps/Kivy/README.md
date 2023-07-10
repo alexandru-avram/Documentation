@@ -87,4 +87,27 @@ You can also use `hex color codes`
 
 The `background_color: ` acts as a multiplier to the texture colour. The default texture is grey, so just setting the background color will give a darker result. To set a plain color, set the background_normal to `''`.
 
+
+
     background_color:''
+
+
+### [Box Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/03.%20Layout/04.%20Box%20Layout.py)
+[Box Layout Design File](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/03.%20Layout/box.kv)
+
+Setting the layout as *box* as opposed to *grid* in the .`kv` design file:
+
+     BoxLayout:
+         orientation: "vertical" / "horizontal"
+
+Button and widgets padding and spacing:
+
+    padding: 50
+    spacing: 20
+
+Button size and position: (same thing with widgets)
+
+    Button:
+        text: "Imi place sa mananc"
+        pos_hint: {"center_x": 0.5}
+        size_hint: (0.5, 0.5)
