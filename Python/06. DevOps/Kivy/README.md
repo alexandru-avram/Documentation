@@ -105,7 +105,7 @@ Button and widgets padding and spacing:
     padding: 50
     spacing: 20
 
-Button size and orientation: (same thing with widgets)
+Button size and position: (same thing with widgets)
 
     Button:
         text: "Imi place sa mananc"
