@@ -113,7 +113,7 @@ Button size and position: (same thing with widgets)
         size_hint: (0.5, 0.5)
 
 ### [Widgets Inheritence Properties](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/04.%20Widget%20properties%20inheritance/04.%20Inherit.py)
-[Inheritance Design File)(https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/04.%20Widget%20properties%20inheritance/inherit.kv)
+[Inheritance Design File](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/04.%20Widget%20properties%20inheritance/inherit.kv)
 
 You can set default design elements (such as size or background color) for buttons and widgets by declaring them outside the layout:
 
@@ -126,8 +126,34 @@ You can set default design elements (such as size or background color) for butto
         font_size: 32
         background_normal: ""
         background_color: (0.6,0.2,0.6,0.4)
-    
+
+
+In order to modify the `<Label>`, use `canvas.before`:
+
     <Label>
-        font_size: 28
-        background_normal: ""
-        background_color: (0.6,0.7,0.2,1)
+    font_size: 32
+    background_color: (0,0.5,1,1)
+    
+    canvas.before:
+        Color:
+            rgba: self.background_color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    
+    color: (0, 1, 0, 1)
+    bold: True
+    italic: False
+    outline_color: (0,0,0)
+    outline_width: 2
+
+To change the background color of the app:
+
+    <MyLayout>
+        canvas.before:
+            Color:
+                rgba: (0,0,0,1)
+            Rectangle:
+                size: self.size
+                pos: self.pos
+
