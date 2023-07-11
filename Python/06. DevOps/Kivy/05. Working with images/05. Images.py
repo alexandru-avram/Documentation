@@ -2,13 +2,12 @@ import kivy
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.lang import Builder
-#from kivy.core.window import Window
-
-# VS Code will not recognize it, but it will run
 from kivy.properties import ObjectProperty
+from kivy.uix.image import Image
+from kivy.core.window import Window
 
 # Import deisgn file
-Builder.load_file("inherit.kv")
+Builder.load_file("design_images.kv")
 
 class MyLayout(Widget):
     pass
@@ -16,7 +15,7 @@ class MyLayout(Widget):
 
 class AwsomeApp(App): 
     def build(self):
-        #Window.clearcolor = (1,1,1,1)
+        Window.clearcolor = (0,0,0,1)
         return MyLayout()
 
 
