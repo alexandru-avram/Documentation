@@ -146,3 +146,14 @@ In order to modify the `<Label>`, use `canvas.before`:
     italic: False
     outline_color: (0,0,0)
     outline_width: 2
+
+To change the background color of the app:
+
+    <MyLayout>
+        canvas.before:
+            Color:
+                rgba: (0,0,0,1)
+            Rectangle:
+                size: self.size
+                pos: self.pos
+
