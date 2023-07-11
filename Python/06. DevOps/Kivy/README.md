@@ -113,7 +113,7 @@ Button size and position: (same thing with widgets)
         size_hint: (0.5, 0.5)
 
 ### [Widgets Inheritence Properties](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/04.%20Widget%20properties%20inheritance/04.%20Inherit.py)
-[Inheritance Design File)(https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/04.%20Widget%20properties%20inheritance/inherit.kv)
+[Inheritance Design File](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/04.%20Widget%20properties%20inheritance/inherit.kv)
 
 You can set default design elements (such as size or background color) for buttons and widgets by declaring them outside the layout:
 
