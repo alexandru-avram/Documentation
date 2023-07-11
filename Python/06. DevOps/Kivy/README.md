@@ -126,8 +126,23 @@ You can set default design elements (such as size or background color) for butto
         font_size: 32
         background_normal: ""
         background_color: (0.6,0.2,0.6,0.4)
-    
+
+
+In order to modify the `<Label>`, use `canvas.before`:
+
     <Label>
-        font_size: 28
-        background_normal: ""
-        background_color: (0.6,0.7,0.2,1)
+    font_size: 32
+    background_color: (0,0.5,1,1)
+    
+    canvas.before:
+        Color:
+            rgba: self.background_color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    
+    color: (0, 1, 0, 1)
+    bold: True
+    italic: False
+    outline_color: (0,0,0)
+    outline_width: 2
