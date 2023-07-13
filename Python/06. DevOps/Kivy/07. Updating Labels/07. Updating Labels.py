@@ -8,16 +8,26 @@ from kivy.lang import Builder
 from kivy.properties import ObjectProperty
 
 # Import deisgn file
-Builder.load_file("float_layout_design.kv")
+Builder.load_file("updating_labels_design.kv")
 
 class MyLayout(Widget):
-    pass
+    def press(self):
+        # Create variables for our widget
+        name = self.ids.name_input.text
+
+        # Update the label
+        self.ids.name_label.text = f'Hello {name}!'
+
+        # Clear input box
+        self.ids.name_input.text = ''
 
 
-class AwsomeApp(App): 
+
+
+class  MyApp(App): 
     def build(self):
         return MyLayout()
 
 
 if __name__== '__main__':
-    AwsomeApp().run()
+    MyApp().run()
