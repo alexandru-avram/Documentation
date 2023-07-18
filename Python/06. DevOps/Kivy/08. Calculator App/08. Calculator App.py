@@ -2,32 +2,28 @@ import kivy
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.lang import Builder
-
-
-# VS Code will not recognize it, but it will run
 from kivy.properties import ObjectProperty
+from kivy.core.window import Window
+
+# Set the app size
+Window.size = (500,700)
+
 
 # Import deisgn file
-Builder.load_file("updating_labels_design.kv")
+Builder.load_file("calculator_design.kv")
+
+
+
 
 class MyLayout(Widget):
-    def press(self):
-        # Create variables for our widget
-        name = self.ids.name_input.text
-
-        # Update the label
-        self.ids.name_label.text = f'Hello {name}!'
-
-        # Clear input box
-        self.ids.name_input.text = ''
+    pass
 
 
 
-
-class  MyApp(App): 
+class  CalculatorApp(App): 
     def build(self):
         return MyLayout()
 
 
 if __name__== '__main__':
-    MyApp().run()
+    CalculatorApp().run()
