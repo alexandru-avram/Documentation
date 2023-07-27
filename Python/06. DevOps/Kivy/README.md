@@ -20,8 +20,6 @@ Designing a simple app using a single file. We will not use this type, but will 
     from kivy.properties import ObjectProperty
     from kivy.core.window import Window
 
-
-
 This line of code is commonly used when building Kivy applications since the App class is a fundamental part of the Kivy framework. By subclassing the App class and defining the `build()` method, you can create the main entry point for your Kivy application.
 
     from kivy.app import App
