@@ -11,15 +11,31 @@ Designing a simple app using a single file. We will not use this type, but will 
 
 ## Kivy Packages
 
-This line of code is commonly used when building Kivy applications since the App class is a fundamental part of the Kivy framework. By subclassing the App class and defining the build() method, you can create the main entry point for your Kivy application.
+**Most common kivy imports**
+    import kivy
+    from kivy.app import App
+    from kivy.uix.widget import Widget
+    from kivy.lang import Builder
+    from kivy.properties import ObjectProperty
+    from kivy.core.window import Window
+
+
+
+This line of code is commonly used when building Kivy applications since the App class is a fundamental part of the Kivy framework. By subclassing the App class and defining the `build()` method, you can create the main entry point for your Kivy application.
 
     from kivy.app import App
 
-Are
+You can subclass the Widget class to create your own custom widgets with specific behaviors and appearance. By doing this, you have full control over how your custom widget looks and interacts with the user.
 
     from kivy.uix.widget import Widget
 
+Using Builder, you can load Kv language files and apply them to your Kivy application. The `Builder.load_file()` method allows you to load a Kv file and apply its definitions to the current running Kivy application.
 
+    from kivy.lang import Builder
+
+The ObjectProperty class is a property type in Kivy that allows you to create a reference to a widget or any other object. It's often used in the context of creating custom widgets or when you need to refer to other widgets or objects from your Kivy code.
+
+    from kivy.properties import ObjectProperty
 
 ## Layouts
 I
