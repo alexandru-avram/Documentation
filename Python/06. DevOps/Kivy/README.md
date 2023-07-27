@@ -38,6 +38,10 @@ The ObjectProperty class is a property type in Kivy that allows you to create a 
 
     from kivy.properties import ObjectProperty
 
+The Window class in Kivy provides access to various window-related properties and methods, allowing you to interact with the application's main window. You can use the Window class to set the size and position of the window, access input events, retrieve information about the window, and more.
+
+    from kivy.core.window import Window
+
 ## Layouts
 I
 
