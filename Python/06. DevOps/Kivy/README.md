@@ -9,7 +9,12 @@ Using functions and classes to create a basic app.
 Designing a simple app using a single file. We will not use this type, but will use `.kv` files.
 
 
+## Kivy Packages
+
+`from kivy.app import App` : safasafs
+
 ## Layouts
+I
 
 ### [Grid Layout]()
 
