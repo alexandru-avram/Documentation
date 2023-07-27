@@ -5,7 +5,7 @@
 ### [Hello World](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/hello_world.py)
 Using functions and classes to create a basic app.
 
-## [Single File Design](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/single_file_design.py)
+### [Single File Design](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/single_file_design.py)
 Designing a simple app using a single file. We will not use this type, but will use `.kv` files.
 
 1. Layouts
