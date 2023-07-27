@@ -11,11 +11,14 @@ Designing a simple app using a single file. We will not use this type, but will 
 
 ## Kivy Packages
 
+Ana
+
     from kivy.app import App
 
+Are
 
     from kivy.uix.widget import Widget
-asfsafsa
+
 
 
 ## Layouts
