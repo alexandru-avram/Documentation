@@ -12,6 +12,7 @@ Designing a simple app using a single file. We will not use this type, but will 
 ## Kivy Packages
 
 **Most common kivy imports**
+
     import kivy
     from kivy.app import App
     from kivy.uix.widget import Widget
