@@ -4,9 +4,25 @@
 
 ## Begginner Level
 
+
 ### [Hello World](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/01.%20First%20designs/01%20Hello%20World%20-%20first%20script.py)
 Using functions and classes to create a basic app.
 
+1. Layouts
+2. Widgets
+    Types of Widges
+   a. Labels
+   b. Text Inputs
+   c. Buttons
+   d. Images
+
+   Inheritance
+   Updating Labels
+   
+APP EXAMPLES:
+- Calculator App
+
+]
 ### [Buttons and widgets](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/01.%20First%20designs/02.%20Buttons%20and%20widgets.py)
 Basic kivy designs, creating buttons and widgets. In this example, the design elements are in the same file.
 
