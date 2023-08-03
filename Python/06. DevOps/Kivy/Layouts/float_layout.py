@@ -8,7 +8,7 @@ from kivy.lang import Builder
 from kivy.properties import ObjectProperty
 
 # Import deisgn file
-Builder.load_file("float_layout_design.kv")
+Builder.load_file("float_layout.kv")
 
 class MyLayout(Widget):
     pass

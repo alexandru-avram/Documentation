@@ -2,9 +2,11 @@
 <MyGridLayout>
 # COMMENT
 
-    name: name
-    pizza: pizza
-    color: color
+    # Creating variables which will be assigned to TextInput ids and use them as objects in our app
+
+    name1: name1
+    name2: name2
+    name3: name3
 
     GridLayout:
         cols: 1
@@ -14,21 +16,21 @@
             cols: 2
 
             Label:
-                text: "Name"
+                text: "Name 1"
             TextInput:
-                id: name
+                id: name1
                 multiline: False
 
             Label:
-                text: "Favorite Pizza"
+                text: "Name 2"
             TextInput:
-                id: pizza
+                id: name2
                 multiline: False
 
             Label:
-                text: "Favorite Color"
+                text: "Name 3"
             TextInput:
-                id: color
+                id: name3
                 multiline: False
         
         Button:
@@ -40,4 +42,3 @@
             backgroun_normal: ''
             #background_color: (0.63, 1, 0.49, 1)
             background_color: utils.get_color_from_hex("#eefa00")
-            
