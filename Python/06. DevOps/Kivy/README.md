@@ -53,7 +53,7 @@ Import the design `.kv` file.
     from kivy.lang import Builder
     from kivy.properties import ObjectProperty
     
-    # Import deisgn file
+    # Import the deisgn file
     Builder.load_file("design_file.kv")
     
     class MyLayout(Widget):
@@ -68,12 +68,14 @@ Import the design `.kv` file.
 
 Default simple structure of a `.py` file based on the **kivy** design framework.
 
-### [Grid Layout]()
+### [Grid Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/grid_layout.py)
+[Grid layout design kv file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/grid_layout.kv)
 
+### [Box Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/box_layout.py)
+[Box layout design kv file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/box_layout.kv)
 
-### [Box Layout]()
-
-### [Float Layout]()
+### [Float Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/float_layout.py)
+[Float layout design kv file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/float_layout.kv)
 
 
 
