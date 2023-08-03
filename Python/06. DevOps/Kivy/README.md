@@ -89,11 +89,18 @@ Default simple structure of a `.py` file based on the **kivy** design framework.
 #### Text Inputs
 
     TextInput:
-        id: name2
-        multiline: False
-
+        id: text_input_id
+        multiline: False/True
    
-   c. Buttons
+#### Buttons
+
+    Button:
+        text: "Submit"
+        on_press: root.press()
+
+`on_press` will be defined as a function in the `.py` file.
+
+
    d. Images
 
    Inheritance
