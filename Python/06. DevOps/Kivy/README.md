@@ -222,5 +222,5 @@ The `canvas` is the root object used for drawing by a widget.
 
 ## App Examples
 
-### Calculator App
-
+### [Calculator App](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/06.%20DevOps/Kivy/App_Examples/calculator_app)
+A simple calculator app.
