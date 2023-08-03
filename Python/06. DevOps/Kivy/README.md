@@ -79,10 +79,20 @@ Default simple structure of a `.py` file based on the **kivy** design framework.
 
 
 
-2. Widgets
-    Types of Widges
-   a. Labels
-   b. Text Inputs
+## Widgets
+
+#### Labels
+
+    Label:
+        text: "Label Name"
+        
+#### Text Inputs
+
+    TextInput:
+        id: name2
+        multiline: False
+
+   
    c. Buttons
    d. Images
 
