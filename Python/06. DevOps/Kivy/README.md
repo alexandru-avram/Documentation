@@ -41,9 +41,35 @@ The Window class in Kivy provides access to various window-related properties an
     from kivy.core.window import Window
 
 ## Layouts
-I
+
+
+    Builder.load_file("design_file.kv")
+
+Import the design `.kv` file.
+
+    import kivy
+    from kivy.app import App
+    from kivy.uix.widget import Widget
+    from kivy.lang import Builder
+    from kivy.properties import ObjectProperty
+    
+    # Import deisgn file
+    Builder.load_file("design_file.kv")
+    
+    class MyLayout(Widget):
+        pass
+    
+    class MyApp(App): 
+        def build(self):
+            return MyLayout()
+    
+    if __name__== '__main__':
+        MyApp().run()
+
+Default simple structure of a `.py` file based on the **kivy** design framework.
 
 ### [Grid Layout]()
+
 
 ### [Box Layout]()
 
