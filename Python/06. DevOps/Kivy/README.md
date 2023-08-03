@@ -42,7 +42,6 @@ The Window class in Kivy provides access to various window-related properties an
 
 ## Layouts
 
-
     Builder.load_file("design_file.kv")
 
 Import the design `.kv` file.
@@ -78,7 +77,6 @@ Default simple structure of a `.py` file based on the **kivy** design framework.
 [Float layout design kv file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/float_layout.kv)
 
 
-
 ## Widgets
 
 #### Labels
@@ -91,7 +89,9 @@ Default simple structure of a `.py` file based on the **kivy** design framework.
     TextInput:
         id: text_input_id
         multiline: False/True
-   
+
+`multiline` can be set to `True` or `False` and determines if you can write on multiple lines in a text input widget.
+
 #### Buttons
 
     Button:
@@ -100,8 +100,21 @@ Default simple structure of a `.py` file based on the **kivy** design framework.
 
 `on_press` will be defined as a function in the `.py` file.
 
+#### Images
 
-   d. Images
+    Image:
+        source: "image_kivy.jpg"
+
+        # Image properties in the app
+        allow_strech: True
+        keep_ratio: False
+
+### Widget design properties
+
+    font_size: 32
+Setting the font size.
+
+
 
    Inheritance
    Updating Labels
