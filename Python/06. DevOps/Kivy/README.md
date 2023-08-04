@@ -95,6 +95,7 @@ Default simple structure of a `.py` file based on the **kivy** design framework.
         spacing: 20
 ```
 
+<br>
 
 ### [Grid Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/grid_layout.py)
 [Grid layout design kv file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/grid_layout.kv)
@@ -105,7 +106,7 @@ The `GridLayout` requires setting a number of columns and/or rows for your widge
             cals: 4
             rows: 5
 
-
+<br>
 ### [Box Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/box_layout.py)
 [Box layout design kv file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/box_layout.kv)
 
@@ -117,16 +118,18 @@ Specific to `BoxLayout`, you can also choose the orientation.
         size: root.width, root.height
 
 
-
+<br>
 ### [Float Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/float_layout.py)
 [Float layout design kv file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/float_layout.kv)
+
+Apply to a widget in order to determine its possition in the app.
 
     # {"x", "y", "top", "bottom", "left", "right"}
     pos_hint: {"x":0, "top":1}
 
-Apply to a widget in order to determine its possition in the app.
 
 
+<br>
 ## Widgets
 
 #### Labels
