@@ -26,7 +26,6 @@ This line of code is commonly used when building Kivy applications since the App
 
     from kivy.app import App
 
-
 <br>
 You can subclass the Widget class to create your own custom widgets with specific behaviors and appearance. By doing this, you have full control over how your custom widget looks and interacts with the user.
 
