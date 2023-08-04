@@ -79,8 +79,8 @@ Default simple structure of a `.py` file based on the **kivy** design framework.
     if __name__== '__main__':
         MyApp().run()
 <br>
-* You can set the root size of your app.
-* In order to set the spacing between the widgets, specify `padding` and `spacing`.
+- You can set the root size of your app.
+- In order to set the spacing between the widgets, specify `padding` and `spacing`.
 
     Layout:
         # root size
