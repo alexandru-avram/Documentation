@@ -169,13 +169,16 @@ Apply to a widget in order to determine its possition in the app.
 
 #### Size
 
-    font_size: 32
-    
 Setting the font size.
+
+    font_size: 32
+
+<br>
+The size_hint is a tuple of values used by layouts to manage the sizes of their children. It indicates the size relative to the layout’s size instead of an absolute size (in pixels/points/cm/etc).
 
     size_hint: (1, 0.5)
     
-The size_hint is a tuple of values used by layouts to manage the sizes of their children. It indicates the size relative to the layout’s size instead of an absolute size (in pixels/points/cm/etc).
+
 
 #### Color
 
