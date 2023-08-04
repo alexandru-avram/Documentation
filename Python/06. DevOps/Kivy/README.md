@@ -83,6 +83,8 @@ Default simple structure of a `.py` file based on the **kivy** design framework.
 -  You can set the root size of your app.
 -  In order to set the spacing between the widgets, specify `padding` and `spacing`.
 
+
+```
     Layout:
         # root size
         size: root.width, root.height
@@ -90,7 +92,7 @@ Default simple structure of a `.py` file based on the **kivy** design framework.
         # The space between the buttons
         padding: 50
         spacing: 20
-
+```
 
 
 ### [Grid Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/grid_layout.py)
