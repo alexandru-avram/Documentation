@@ -95,11 +95,12 @@ Default simple structure of a `.py` file based on the **kivy** design framework.
 ### [Grid Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/grid_layout.py)
 [Grid layout design kv file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/grid_layout.kv)
 
+The `GridLayout` requires setting a number of columns and/or rows for your widgets.
+
         GridLayout:
             cals: 4
             rows: 5
 
-The `GridLayout` requires setting a number of columns and/or rows for your widgets.
 
 
 ### [Box Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/box_layout.py)
