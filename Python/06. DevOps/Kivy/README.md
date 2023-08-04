@@ -142,19 +142,22 @@ Apply to a widget in order to determine its possition in the app.
         
 #### Text Inputs
 
+`multiline` can be set to `True` or `False` and determines if you can write on multiple lines in a text input widget.
+
     TextInput:
         id: text_input_id
         multiline: False/True
 
-`multiline` can be set to `True` or `False` and determines if you can write on multiple lines in a text input widget.
 
 #### Buttons
+
+`on_press` will be defined as a function in the `.py` file.
 
     Button:
         text: "Submit"
         on_press: root.press()
 
-`on_press` will be defined as a function in the `.py` file.
+
 
 #### Images
 
@@ -179,7 +182,6 @@ The size_hint is a tuple of values used by layouts to manage the sizes of their 
     size_hint: (1, 0.5)
     
 
-
 #### Color
 
 <ul>
@@ -198,15 +200,18 @@ You can also use `hex color codes` by importing the `kivy.utils` package in the 
 
 #### Text formatting
 
+Set to either `True` or `False`
+
     bold: True
     italic: False
 
-Set to either `True` or `False`
+<br>
+Setting the text outliner.
 
     outline_color: (0,0,0)
     outline_width: 2
 
-Setting the text outliner.
+
   
 ### Inheritance
 
@@ -251,6 +256,7 @@ The `canvas` is the root object used for drawing by a widget.
                 size: self.size
                 pos: self.pos
 
+<br>
 
 ## App Examples
 
