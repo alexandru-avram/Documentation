@@ -107,6 +107,7 @@ The `GridLayout` requires setting a number of columns and/or rows for your widge
             rows: 5
 
 <br>
+
 ### [Box Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/box_layout.py)
 [Box layout design kv file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/box_layout.kv)
 
@@ -119,6 +120,7 @@ Specific to `BoxLayout`, you can also choose the orientation.
 
 
 <br>
+
 ### [Float Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/float_layout.py)
 [Float layout design kv file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/float_layout.kv)
 
