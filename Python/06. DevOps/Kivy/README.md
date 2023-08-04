@@ -132,6 +132,7 @@ Apply to a widget in order to determine its possition in the app.
 
 
 <br>
+
 ## Widgets
 
 #### Labels
@@ -178,16 +179,19 @@ The size_hint is a tuple of values used by layouts to manage the sizes of their 
 
 #### Color
 
+<ul>
+<li> * The default texture is grey, so use `background_normal: ""` to set a plain color.</li>
+<li> * In order to edit the color for buttons or widgets, kivy uses a `RGB - A` model: `red, green, blue and opacity`. They have values between `0 and 1.` For a spcific color, divide the number from a color picker site with **255.0**.</li>
+</ul>
+
     background_normal: ""
     background_color: (0.2,0.1,0.5,1)
 
-*  The default texture is grey, so use `background_normal: ""` to set a plain color.
-*  In order to edit the color for buttons or widgets, kivy uses a `RGB - A` model: `red, green, blue and opacity`. They have values between `0 and 1.` For a spcific color, divide the number from a color picker site with **255.0**.
-
-        #: import utils kivy.utils
-        background_color: utils.get_color_from_hex("#eefa00")
-
 You can also use `hex color codes` by importing the `kivy.utils` package in the `.kv` file.
+
+    #: import utils kivy.utils
+    background_color: utils.get_color_from_hex("#eefa00")
+
 
 #### Text formatting
 
