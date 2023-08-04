@@ -79,6 +79,7 @@ Default simple structure of a `.py` file based on the **kivy** design framework.
     if __name__== '__main__':
         MyApp().run()
 <br>
+
 - You can set the root size of your app.
 - In order to set the spacing between the widgets, specify `padding` and `spacing`.
 
@@ -106,11 +107,13 @@ The `GridLayout` requires setting a number of columns and/or rows for your widge
 ### [Box Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/box_layout.py)
 [Box layout design kv file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/box_layout.kv)
 
+
+Specific to `BoxLayout`, you can also choose the orientation. 
+
     BoxLayout:
         orientation: "vertical"
         size: root.width, root.height
 
-Specific to `BoxLayout`, you can also choose the orientation. 
 
 
 ### [Float Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/float_layout.py)
