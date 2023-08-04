@@ -25,27 +25,34 @@ This line of code is commonly used when building Kivy applications since the App
 
     from kivy.app import App
 
+<br>
 You can subclass the Widget class to create your own custom widgets with specific behaviors and appearance. By doing this, you have full control over how your custom widget looks and interacts with the user.
 
     from kivy.uix.widget import Widget
 
+<br>
 Using Builder, you can load Kv language files and apply them to your Kivy application. The `Builder.load_file()` method allows you to load a Kv file and apply its definitions to the current running Kivy application.
 
     from kivy.lang import Builder
 
+<br>
 The ObjectProperty class is a property type in Kivy that allows you to create a reference to a widget or any other object. It's often used in the context of creating custom widgets or when you need to refer to other widgets or objects from your Kivy code.
 
     from kivy.properties import ObjectProperty
 
+<br>
 The Window class in Kivy provides access to various window-related properties and methods, allowing you to interact with the application's main window. You can use the Window class to set the size and position of the window, access input events, retrieve information about the window, and more.
 
     from kivy.core.window import Window
 
 ## Layouts
 
+Import the design `.kv` file.
+
     Builder.load_file("design_file.kv")
 
-Import the design `.kv` file.
+<br>
+Default simple structure of a `.py` file based on the **kivy** design framework.
 
     import kivy
     from kivy.app import App
@@ -65,8 +72,9 @@ Import the design `.kv` file.
     
     if __name__== '__main__':
         MyApp().run()
-
-Default simple structure of a `.py` file based on the **kivy** design framework.
+<br>
+* You can set the root size of your app.
+* In order to set the spacing between the widgets, specify `padding` and `spacing`.
 
     Layout:
         # root size
@@ -76,8 +84,7 @@ Default simple structure of a `.py` file based on the **kivy** design framework.
         padding: 50
         spacing: 20
 
-* You can set the root size of your app.
-* In order to set the spacing between the widgets, specify `padding` and `spacing`.
+
 
 ### [Grid Layout](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/grid_layout.py)
 [Grid layout design kv file](https://github.com/alexandruavram-rusu/Documentation/blob/main/Python/06.%20DevOps/Kivy/Layouts/grid_layout.kv)
