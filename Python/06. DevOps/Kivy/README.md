@@ -185,8 +185,8 @@ The size_hint is a tuple of values used by layouts to manage the sizes of their 
 #### Color
 
 <ul>
-<li> * The default texture is grey, so use `background_normal: ""` to set a plain color.</li>
-<li> * In order to edit the color for buttons or widgets, kivy uses a `RGB - A` model: `red, green, blue and opacity`. They have values between `0 and 1.` For a spcific color, divide the number from a color picker site with **255.0**.</li>
+<li> The default texture is grey, so use `background_normal: ""` to set a plain color.</li>
+<li> In order to edit the color for buttons or widgets, kivy uses a `RGB - A` model: `red, green, blue and opacity`. They have values between <i>0</i> and <i>1</i>. For a spcific color, divide the number from a color picker site with **255.0**.</li>
 </ul>
 
     background_normal: ""
