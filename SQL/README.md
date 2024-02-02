@@ -30,6 +30,27 @@
   - [LEFT JOIN](#left-join)
   - [RIGHT JOIN](#right-join)
   - [FULL OUTER JOIN](#full-outer-join)
+  - [CROSS JOIN](#cross-join)
+- [FUNCTIONS](#functions)
+  - [LEN](#len)
+  - [COALESCE](#coalesce)
+  - [CAST](#cast)
+  - [LEFT](#left)
+  - [RIGHT](#right)
+  - [CHARINDEX](#charindex)
+  - [SUBSTRING](#substring)
+  - [REPLACE](#replace)
+  - [LOWER](#lower)
+  - [UPPER](#upper)
+  - [TRIM](#trim)
+  - [REVERSE](#reverse)
+  - [FORMAT](#format)
+  - [ISNUMERIC](#isnumeric)
+  - [ROUND](#round)
+  - [FLOOR](#floor)
+  - [CEILING](#ceiling)
+
+
 - [SUBQUERIES](#subqueries)
   - [Scalar Subquery](#scalar-subquery)
   - [Correlated Subquery](#correlated-subquery)
@@ -297,4 +318,13 @@ SELECT columns
 FROM table1
 FULL OUTER JOIN table2
 ON table1.column = table2.column;
+```
+
+### CROSS JOIN
+Combines each row from the first table with every row from the second table, resulting in a Cartesian product.
+
+```
+SELECT column1, column2
+FROM table1
+CROSS JOIN table2;
 ```
