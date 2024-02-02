@@ -13,6 +13,10 @@
   - [BETWEEN](#between)
   - [LIKE](#like)
   - [NULL](#null)
+  - [NOT NULL](#not-null)
+  - [IN](#in)
+  - [NOT IN](#not-in)
+  - [CASE](#case)
 - [AGGREGATE FUNCTIONS](#aggregate-functions)
   - [COUNT](#count)
   - [SUM](#sum)
@@ -152,6 +156,46 @@ FROM table_name
 WHERE column1 IS NULL;
 ```
 
+### NOT NULL
+Checks if a column does not have a NULL value.
+
+```
+SELECT *
+FROM table_name
+WHERE column_name IS NOT NULL;
+```
+
+### IN
+Checks if a column's value is in a specified list.
+
+```
+SELECT *
+FROM table_name
+WHERE column_name IN (value1, value2, ...);
+```
+
+### NOT IN
+Checks if a column's value is not in a specified list.
+
+```
+SELECT *
+FROM table_name
+WHERE column_name NOT IN (value1, value2, ...);
+```
+
+### CASE
+Performs conditional logic within a query.
+
+```
+SELECT column1,
+  CASE
+    WHEN condition1 THEN 'Value1'
+    WHEN condition2 THEN 'Value2'
+    ELSE 'DefaultValue'
+  END AS new_column
+FROM table_name;
+```
+
 ## AGGREGATE FUNCTIONS
 
 ### COUNT
@@ -193,3 +237,24 @@ Finds the maximum value in a column.
 SELECT MAX(column)
 FROM table_name;
 ```
+
+### GROUP
+Groups rows that have the same values into summary rows.
+
+```
+SELECT column1, COUNT(column2)
+FROM table_name
+GROUP BY column1;
+```
+
+### HAVING
+Filters the results of a GROUP BY clause.
+
+```
+SELECT column1, COUNT(column2)
+FROM table_name
+GROUP BY column1
+HAVING COUNT(column2) > 1;
+```
+
+
