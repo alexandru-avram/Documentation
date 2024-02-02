@@ -82,16 +82,13 @@
   - [LEAD](#lead)
   - [FIRST_VALUE](#first_value)
   - [LAST_VALUE](#last_value)
-
 - [SUBQUERIES](#subqueries)
   - [Scalar Subquery](#scalar-subquery)
   - [Correlated Subquery](#correlated-subquery)
-- [CASE Statements](#case-statements)
-- [UPDATE](#update)
-- [DELETE](#delete)
-- [INSERT INTO](#insert-into)
-- [CREATE TABLE](#create-table)
-- [ALTER TABLE](#alter-table)
+  - [Subquery in Derived Table](#subquery-in-derived-table)
+  - [Subquery in SELECT Clause](#subquery-in-select-clause)
+    
+
 - [INDEXES](#indexes)
 - [TRANSACTIONS](#transactions)
   - [BEGIN TRANSACTION](#begin-transaction)
@@ -758,4 +755,50 @@ Returns the value of the specified expression for the last row in the window fra
 ```
 SELECT column1, column2, ..., LAST_VALUE(column1) OVER (ORDER BY column1) AS last_value
 FROM table_name;
+```
+
+## SUBQUERIES
+Subqueries (also known as nested queries or inner queries) in SQL are queries embedded within another query. They are enclosed within parentheses and can be used in various parts of a SQL statement where an expression is allowed. Subqueries can return a single value, a column, or a set of rows.
+
+### Scalar Subquery
+A scalar subquery returns a single value and can be used in a context where a single value is expected, such as a comparison or assignment.
+
+```
+-- Find employees whose salary is greater than the average salary in the department
+SELECT employee_name
+FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees WHERE department_id = 101);
+```
+
+### Correlated Subquery
+A correlated subquery is a subquery that references columns from the outer query. It is evaluated once for each row processed by the outer query.
+
+```
+-- Find employees whose salary is greater than the average salary in their department
+SELECT employee_name
+FROM employees e1
+WHERE salary > (SELECT AVG(salary) FROM employees e2 WHERE e1.department_id = e2.department_id);
+```
+
+### Subquery in Derived Table
+A subquery in the FROM clause is used to create a derived table, which is then used in the main query.
+
+```
+-- Find the average salary of employees in each department
+SELECT department_name, avg_salary
+FROM (
+    SELECT department_id, AVG(salary) as avg_salary
+    FROM employees
+    GROUP BY department_id
+) AS department_avg;
+```
+
+### Subquery in SELECT Clause
+A subquery in the SELECT clause is used to retrieve a single value or a set of values to be included in the result set.
+
+```
+-- Display employee names with their corresponding department names
+SELECT employee_name,
+       (SELECT department_name FROM departments WHERE department_id = employees.department_id) AS department_name
+FROM employees;
 ```
