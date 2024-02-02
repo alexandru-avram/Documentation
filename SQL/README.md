@@ -4,9 +4,15 @@
 - [SELECT](#select)
   - [Basic SELECT](#basic-select)
   - [DISTINCT](#distinct)
-  - [WHERE](#where)
   - [ORDER BY](#order-by)
   - [LIMIT](#limit)
+- [CONDITIONS](#conditions)
+  - [WHERE](#where)
+  - [AND](#and)
+  - [OR](#or)
+  - [BETWEEN](#between)
+  - [LIKE](#like)
+  - [NULL](#null)
 - [JOINS](#joins)
   - [INNER JOIN](#inner-join)
   - [LEFT JOIN](#left-join)
@@ -60,11 +66,79 @@ SELECT DISTINCT column1, column2, ...
 FROM table_name;
 ```
 
-### WHERE
-Filters the records based on a condition.
+### ORDER BY
+Sorts the result set in ascending or descending order.
 
 ```
 SELECT column1, column2, ...
 FROM table_name
-WHERE condition;
+ORDER BY column1 [ASC|DESC];
+```
+
+### LIMIT
+Limits the number of rows returned.
+
+```
+SELECT column1, column2, ...
+FROM table_name
+LIMIT number_of_rows;
+```
+
+## Conditions
+
+### WHERE
+Filters the records based on a condition.
+
+```
+SELECT column1, column2
+FROM table_name
+WHERE column1 = 'value';
+```
+
+### AND
+Multiple conditions are used to filter records using AND.
+
+```
+SELECT column1, column2
+FROM table_name
+WHERE column1 = 'value' AND column2 > 100;
+```
+
+### OR
+Multiple conditions are used to filter records using OR.
+
+```
+SELECT column1, column2
+FROM table_name
+WHERE column1 = 'value' OR column2 > 100;
+```
+
+### BETWEEN
+The BETWEEN condition is used to filter records within a specified range.
+
+```
+SELECT column1, column2
+FROM table_name
+WHERE column1 BETWEEN 50 AND 100;
+```
+
+### LIKE
+The LIKE condition is used to search for a specified pattern in a column.
+
+#### Wildcard *%*
+Used to match any sequence of characters (including zero characters).
+
+```
+SELECT column1
+FROM table_name
+WHERE column1 LIKE 'A%';
+```
+
+#### Wildcard *_*
+Used to match a single character.
+
+```
+SELECT column1
+FROM table_name
+WHERE column1 LIKE 'A_';
 ```
