@@ -26,7 +26,6 @@
   - [LEFT JOIN](#left-join)
   - [RIGHT JOIN](#right-join)
   - [FULL OUTER JOIN](#full-outer-join)
-
 - [SUBQUERIES](#subqueries)
   - [Scalar Subquery](#scalar-subquery)
   - [Correlated Subquery](#correlated-subquery)
@@ -171,3 +170,26 @@ SELECT SUM(column)
 FROM table_name;
 ```
 
+### AVG
+Calculates the average of values in a column.
+
+```
+SELECT AVG(column)
+FROM table_name;
+```
+
+### MIN
+Finds the minimum value in a column.
+
+```
+SELECT MIN(column)
+FROM table_name;
+```
+
+### MAX
+Finds the maximum value in a column.
+
+```
+SELECT MAX(column)
+FROM table_name;
+```
