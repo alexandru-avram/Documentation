@@ -108,7 +108,6 @@
   - [COMMIT](#commit)
   - [ROLLBACK](#rollback)
 
-
 ---
 
 ## SELECT
