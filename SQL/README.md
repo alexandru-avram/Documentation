@@ -83,21 +83,31 @@
   - [FIRST_VALUE](#first_value)
   - [LAST_VALUE](#last_value)
 - [SUBQUERIES](#subqueries)
-  - [Scalar Subquery](#scalar-subquery)
-  - [Correlated Subquery](#correlated-subquery)
-  - [Subquery in Derived Table](#subquery-in-derived-table)
-  - [Subquery in SELECT Clause](#subquery-in-select-clause)
-    
-
-- [INDEXES](#indexes)
+  - [SCALAR SUBQUERY](#scalar-subquery)
+  - [CORRELATED SUBQUERY](#correlated-subquery)
+  - [SUBQUERY IN DERIVED TABLE](#subquery-in-derived-table)
+  - [SUBQUERY IN SELECT CLAUSE](#subquery-in-select-clause)
+- [CONTROL FLOW](#control-flow)
+  - [IF-ELSE](#if-else)
+  - [WHILE](#while)
+  - [FOR](#for)
+  - [GOTO](#goto)
+- [VIEWS](#views)
+  - [CREATE VIEW](#create-view)
+  - [SELECT FROM VIEW](#select-view)
+  - [ALTER VIEW](#alter-view)
+  - [DROP VIEW](#drop-view)
+- [STORED PROCEDURES AND FUNCTIONS](#stored-procedures-and-functions)
+  - [USER-DEFINED FUNCTIONS (UDFs)](#user-defined-functions-udfs)
+  - [STORED PROCEDURES](#stored-procedures)
+  - [INLINE TABLE-VALUED FUNCTIONS](#inline-table-valued-functions)
+  - [COMMON TABLE EXPRESSIONS (CTEs)](#common-table-expressions-ctes)
+  - [TRIGGERS](#triggers)
 - [TRANSACTIONS](#transactions)
   - [BEGIN TRANSACTION](#begin-transaction)
   - [COMMIT](#commit)
   - [ROLLBACK](#rollback)
-- [VIEW](#view)
-- [USER DEFINED FUNCTIONS](#user-defined-functions)
-- [Stored Procedures](#stored-procedures)
-- [TRIGGERS](#triggers)
+
 
 ---
 
@@ -760,7 +770,7 @@ FROM table_name;
 ## SUBQUERIES
 Subqueries (also known as nested queries or inner queries) in SQL are queries embedded within another query. They are enclosed within parentheses and can be used in various parts of a SQL statement where an expression is allowed. Subqueries can return a single value, a column, or a set of rows.
 
-### Scalar Subquery
+### SCALAR SUBQUERY
 A scalar subquery returns a single value and can be used in a context where a single value is expected, such as a comparison or assignment.
 
 ```
@@ -770,7 +780,7 @@ FROM employees
 WHERE salary > (SELECT AVG(salary) FROM employees WHERE department_id = 101);
 ```
 
-### Correlated Subquery
+### CORRELATED SUBQUERY
 A correlated subquery is a subquery that references columns from the outer query. It is evaluated once for each row processed by the outer query.
 
 ```
@@ -780,7 +790,7 @@ FROM employees e1
 WHERE salary > (SELECT AVG(salary) FROM employees e2 WHERE e1.department_id = e2.department_id);
 ```
 
-### Subquery in Derived Table
+### SUBQUERY IN DERIVED TABLE
 A subquery in the FROM clause is used to create a derived table, which is then used in the main query.
 
 ```
@@ -793,7 +803,7 @@ FROM (
 ) AS department_avg;
 ```
 
-### Subquery in SELECT Clause
+### SUBQUERY IN SELECT CLAUSE
 A subquery in the SELECT clause is used to retrieve a single value or a set of values to be included in the result set.
 
 ```
@@ -801,4 +811,226 @@ A subquery in the SELECT clause is used to retrieve a single value or a set of v
 SELECT employee_name,
        (SELECT department_name FROM departments WHERE department_id = employees.department_id) AS department_name
 FROM employees;
+```
+
+## CONTROL FLOW
+
+### IF-ELSE
+Allows for conditional execution of SQL statements.
+
+```
+IF condition
+BEGIN
+  -- Statements to execute if condition is true
+END
+ELSE
+BEGIN
+  -- Statements to execute if condition is false
+END;
+```
+
+### WHILE
+Repeats a set of SQL statements as long as the specified condition is true.
+
+WHILE condition
+BEGIN
+  -- Statements to execute
+END;
+
+### FOR
+SQL Server doesn't have a native FOR loop like some other languages. Instead, you can use a WHILE loop with a counter.
+
+```
+DECLARE @counter INT = 1;
+
+WHILE @counter <= 5
+BEGIN
+  PRINT 'Iteration: ' + CAST(@counter AS VARCHAR(10));
+  SET @counter = @counter + 1;
+END;
+```
+
+### GOTO
+Allows for jumping to a specified label within a batch or stored procedure. RUsing GOTO is generally discouraged as it can make code harder to read and maintain. It's often better to use structured control flow constructs like IF-ELSE or CASE when possible.
+
+```
+IF condition
+  GOTO label;
+
+-- Statements to execute if condition is false
+
+:label
+-- Statements to execute if condition is true
+```
+
+## VIEWS
+A SQL view is a virtual table derived from the result of a SELECT query. Unlike physical tables, views do not store the data themselves but provide a way to represent the result of a query as a named, reusable object. Views can be used to simplify complex queries, encapsulate business logic, and provide a security layer by restricting access to specific columns or rows.
+
+### CREATE VIEW
+Creates a virtual table based on the result of a SELECT query.
+
+```
+CREATE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
+
+### SELECT FROM VIEW
+Retrieves data from a view using a SELECT statement.
+
+```
+SELECT column1, column2, ...
+FROM view_name;
+```
+
+### ALTER VIEW
+Modifies the definition of an existing view.
+
+```
+ALTER VIEW view_name AS
+SELECT new_column1, new_column2, ...
+FROM new_table_name
+WHERE new_condition;
+```
+
+### DROP VIEW
+Deletes an existing view.
+
+```
+DROP VIEW view_name;
+```
+
+## STORED PROCEDURES AND FUNCTIONS
+
+### USER-DEFINED FUNCTIONS (UDFs)
+A User-Defined Function (UDF) in SQL is a custom function created by the user to encapsulate a specific piece of logic. UDFs take parameters, perform a computation, and return a single value.
+
+```
+CREATE FUNCTION CalculateDiscount(price DECIMAL, discount_rate DECIMAL)
+RETURNS DECIMAL
+BEGIN
+  DECLARE discounted_price DECIMAL;
+  SET discounted_price = price - (price * discount_rate);
+  RETURN discounted_price;
+END;
+```
+
+### STORED PROCEDURES
+A Stored Procedure is a precompiled collection of one or more SQL statements that can be executed as a single unit. Stored Procedures are typically used to encapsulate business logic, perform operations on the database, or execute a series of SQL statements. They can accept parameters, return values, and can be executed by other programs or scripts.
+
+```
+CREATE PROCEDURE UpdateEmployeeSalary(employee_id INT, new_salary DECIMAL)
+BEGIN
+  UPDATE employees
+  SET salary = new_salary
+  WHERE id = employee_id;
+END;
+```
+
+### INLINE TABLE-VALUED FUNCTIONS
+Similar to UDFs, Inline Table-Valued Functions return a table as a result. They can be used in the FROM clause of a SELECT statement, and their results can be treated like a regular table.
+
+```
+CREATE FUNCTION GetEmployeesByDepartment(@dept_id INT)
+RETURNS TABLE
+AS
+RETURN (
+  SELECT * FROM employees WHERE department_id = @dept_id
+);
+```
+
+### COMMON TABLE EXPRESSIONS (CTEs)
+CTEs provide a way to define temporary result sets within a SELECT, INSERT, UPDATE, or DELETE statement. They make complex queries more readable by breaking them down into smaller, named, and reusable units.
+
+```
+WITH MonthlySales AS (
+  SELECT employee_id, SUM(sales_amount) AS total_sales
+  FROM sales
+  WHERE DATE_PART('month', sale_date) = DATE_PART('month', CURRENT_DATE)
+  GROUP BY employee_id
+)
+SELECT * FROM MonthlySales WHERE total_sales > 10000;
+```
+
+### TRIGGERS
+Triggers are powerful database objects that can automatically respond to events like INSERT, UPDATE, or DELETE on a table. They are useful for maintaining data integrity, logging changes, or enforcing business rules.
+
+```
+-- Create Trigger
+CREATE TRIGGER trigger_name
+AFTER INSERT OR UPDATE OR DELETE ON table_name
+FOR EACH ROW
+BEGIN
+  -- trigger logic
+END;
+```
+
+```
+-- Example Trigger
+DELIMITER //
+CREATE TRIGGER after_insert_example
+AFTER INSERT ON example_table
+FOR EACH ROW
+BEGIN
+  INSERT INTO log_table (event_type, event_description, event_date)
+  VALUES ('INSERT', CONCAT('New record added with ID: ', NEW.id), NOW());
+END;
+//
+
+-- Drop Trigger
+DROP TRIGGER IF EXISTS trigger_name;
+```
+
+In the example trigger above, a trigger named after_insert_example is created. It fires after each INSERT operation on the example_table. It logs the event into a log_table with details about the inserted record.
+
+
+## TRANSACTIONS
+Transactions in the context of databases refer to a set of one or more SQL statements that are executed as a single unit of work. The concept of transactions ensures that database operations are atomic, consistent, isolated, and durable, commonly known as the ACID properties
+
+### BEGIN
+Starts a new transaction. All subsequent SQL statements are part of this transaction until it is explicitly committed or rolled back.
+
+```
+BEGIN TRANSACTION;
+```
+
+### COMMIT
+Saves all the changes made during the current transaction to the database. This makes the changes permanent.
+
+```
+COMMIT;
+```
+
+### ROLEBACK
+Undoes all the changes made during the current transaction. It returns the database to its state before the transaction began.
+
+```
+ROLLBACK;
+```
+
+**Full example**
+
+```
+-- Start a new transaction
+BEGIN TRANSACTION;
+
+-- SQL statements within the transaction
+UPDATE Accounts SET balance = balance - 100 WHERE account_id = 123;  -- Valid update
+-- Simulate an error by attempting to update a non-existing account
+UPDATE Accounts SET balance = balance - 100 WHERE account_id = 999;  -- Error: Account does not exist
+
+-- Check for errors and decide whether to commit or roll back
+IF @@ERROR <> 0
+BEGIN
+    -- An error occurred, roll back the entire transaction
+    ROLLBACK;
+    PRINT 'Transaction rolled back due to an error.';
+END
+ELSE
+BEGIN
+    -- No error occurred, commit the transaction, making the changes permanent
+    COMMIT;
+    PRINT 'Transaction committed successfully.';
+END;
 ```
