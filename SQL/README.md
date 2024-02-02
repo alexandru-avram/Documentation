@@ -39,16 +39,16 @@
   - [RIGHT](#right)
   - [CHARINDEX](#charindex)
   - [SUBSTRING](#substring)
-  - [REPLACE](#replace)
-  - [LOWER](#lower)
-  - [UPPER](#upper)
   - [TRIM](#trim)
+  - [REPLACE](#replace)
   - [REVERSE](#reverse)
   - [FORMAT](#format)
-  - [ISNUMERIC](#isnumeric)
+  - [LOWER](#lower)
+  - [UPPER](#upper)
   - [ROUND](#round)
   - [FLOOR](#floor)
   - [CEILING](#ceiling)
+  - [ISNUMERIC](#isnumeric)
 
 
 - [SUBQUERIES](#subqueries)
@@ -328,3 +328,143 @@ SELECT column1, column2
 FROM table1
 CROSS JOIN table2;
 ```
+
+## FUNCTIONS
+
+### LEN
+Returns the number of characters in a string.
+
+```
+SELECT LEN(column_name) AS length
+FROM table_name;
+```
+
+### COALESCE
+Returns the first non-null expression in the list.
+
+```
+SELECT COALESCE(column1, column2, 'DefaultValue') AS result
+FROM table_name;
+```
+
+### CAST
+Converts a value from one data type to another.
+
+```
+SELECT CAST(column_name AS new_data_type) AS result
+FROM table_name;
+```
+
+### LEFT
+Returns a specified number of characters from the beginning of a string.
+
+```
+SELECT LEFT(column_name, 3) AS left_part
+FROM table_name;
+```
+
+### RIGHT
+Returns a specified number of characters from the end of a string.
+
+```
+SELECT RIGHT(column_name, 3) AS right_part
+FROM table_name;
+```
+
+### CHARINDEX
+Returns the starting position of a substring in a string.
+
+```
+SELECT CHARINDEX('substring', column_name) AS position
+FROM table_name;
+```
+
+### SUBSTRING
+Extracts a substring from a string.
+
+```
+SELECT SUBSTRING(column_name, start_position, length) AS substring
+FROM table_name;
+```
+
+### TRIM
+Removes leading and trailing spaces from a string.
+
+```
+SELECT TRIM(column_name) AS trimmed_value
+FROM table_name;
+```
+
+### REPLACE
+Replaces occurrences of a specified string with another string.
+
+```
+SELECT REPLACE(column_name, 'old_value', 'new_value') AS result
+FROM table_name;
+```
+
+### REVERSE
+Reverses the characters in a string.
+
+```
+SELECT REVERSE(column_name) AS reversed_value
+FROM table_name;
+```
+
+### FORMAT
+Formats a value with the specified format.
+
+```
+SELECT FORMAT(column_name, 'yyyy-MM-dd') AS formatted_date
+FROM table_name;
+```
+
+### LOWER
+Converts a string to lowercase.
+
+```
+SELECT LOWER(column_name) AS lowercase_value
+FROM table_name;
+```
+
+### UPPER
+Converts a string to uppercase.
+
+```
+SELECT UPPER(column_name) AS uppercase_value
+FROM table_name;
+```
+
+### ROUND
+Rounds a numeric value to the specified number of decimal places.
+
+```
+SELECT ROUND(column_name, 2) AS rounded_value
+FROM table_name;
+```
+
+### FLOOR
+Returns the largest integer less than or equal to a numeric value.
+
+```
+SELECT FLOOR(column_name) AS floored_value
+FROM table_name;
+```
+
+### CEILING
+Returns the smallest integer greater than or equal to a numeric value.
+
+```
+SELECT CEILING(column_name) AS ceiling_value
+FROM table_name;
+```
+
+### ISNUMERIC
+Checks if a value is numeric.
+
+```
+SELECT column_name
+FROM table_name
+WHERE ISNUMERIC(column_name) = 1;
+```
+
