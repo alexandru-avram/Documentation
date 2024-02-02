@@ -49,6 +49,22 @@
   - [FLOOR](#floor)
   - [CEILING](#ceiling)
   - [ISNUMERIC](#isnumeric)
+- [DATE and TIME](#date-and-time)
+  - [DATE](#date)
+  - [TIME](#time)
+  - [DATETIME](#datetime)
+  - [CURRENT_DATE](#current_date)
+  - [CURRENT_TIME](#current_time)
+  - [CURRENT_TIMESTAMP](#current_timestamp)
+  - [DATENAME](#datename)
+  - [DATEPART](#datepart)
+  - [DATEDIFF](#datediff)
+  - [DATEADD](#dateadd)
+  - [DATEFROMPARTS](#datefromparts)
+  - [DATETIMEFROMPARTS](#datetimefromparts)
+  - [CONVERT](#convert)
+  - [FIRST DAY OF MONTH](#first-day-of-month)
+  - [LAST DAY OF MONTH](#last-day-of-month)
 
 
 - [SUBQUERIES](#subqueries)
@@ -468,3 +484,115 @@ FROM table_name
 WHERE ISNUMERIC(column_name) = 1;
 ```
 
+## DATE and TIME
+
+### DATE
+Represents a date, usually *YYYY-MM-DD*... but it can have other formats depending on the server.
+
+```
+SELECT DATE '2024-02-02' AS example_date;
+```
+
+### TIME
+Represents a time (HH:MM:SS).
+
+```
+SELECT TIME '12:30:00' AS example_time;
+```
+
+### DATETIME
+Represents a combination of date and time.
+
+```
+SELECT DATETIME '2024-02-02 12:30:00' AS example_datetime;
+```
+
+### CURRENT_DATE
+Returns the current date.
+
+```
+SELECT CURRENT_DATE AS today;
+```
+
+### CURRENT_TIME
+Returns the current time.
+
+```
+SELECT CURRENT_TIME AS current_time;
+```
+
+### CURRENT_TIMESTAMP
+Returns the current date and time.
+
+```
+SELECT CURRENT_TIMESTAMP AS current_datetime;
+```
+
+### DATENAME
+Returns a specified part of a datetime.
+
+```
+SELECT DATENAME(MONTH, '2024-02-02') AS month_name;
+```
+
+```
+SELECT DATENAME(WEEKDAY, '2024-02-02') AS month_name;
+```
+
+### DATEPART
+Extracts parts of a datetime value.
+
+```
+SELECT DATEPART(YEAR, '2024-02-02') AS year,
+       DATEPART(MONTH, '2024-02-02') AS month,
+       DATEPART(DAY, '2024-02-02') AS day;
+```
+
+### DATEDIFF
+Calculates the difference between two dates.
+
+```
+SELECT DATEDIFF(DAY, '2024-02-01', '2024-02-05') AS days_difference;
+```
+
+### DATEADD
+Adds or subtracts a specified time interval to a date.
+
+```
+SELECT DATEADD(MONTH, 1, '2024-02-02') AS one_month_later;
+```
+
+### DATEFROMPARTS
+Creates a date from individual parts.
+
+```
+SELECT DATEFROMPARTS(2024, 2, 2) AS custom_date;
+```
+
+### DATETIMEFROMPARTS
+Creates a datetime from individual parts.
+
+```
+SELECT DATETIMEFROMPARTS(2024, 2, 2, 12, 30, 0, 0) AS custom_datetime;
+```
+
+### CONVERT
+Converts a string to a date.
+
+```
+SELECT CONVERT(DATE, '2024-02-02', 23) AS converted_date;
+```
+
+### FIRST_DAY_OF_MONTH
+Returns the first day of the month.
+
+```
+SELECT DATEADD(MONTH, DATEDIFF(MONTH, 0, '2024-02-02'), 0) AS first_day_of_month;
+```
+
+### LAST_DAY_OF_MONTH
+Returns the last day of the month.
+
+```
+SELECT EOMONTH('2024-02-02') AS last_day_of_month;
+```
