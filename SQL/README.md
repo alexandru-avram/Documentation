@@ -13,19 +13,20 @@
   - [BETWEEN](#between)
   - [LIKE](#like)
   - [NULL](#null)
-- [JOINS](#joins)
-  - [INNER JOIN](#inner-join)
-  - [LEFT JOIN](#left-join)
-  - [RIGHT JOIN](#right-join)
-  - [FULL OUTER JOIN](#full-outer-join)
 - [AGGREGATE FUNCTIONS](#aggregate-functions)
   - [COUNT](#count)
   - [SUM](#sum)
   - [AVG](#avg)
   - [MIN](#min)
   - [MAX](#max)
-- [GROUP BY](#group-by)
-- [HAVING](#having)
+  - [GROUP BY](#group-by)
+  - [HAVING](#having)
+- [JOINS](#joins)
+  - [INNER JOIN](#inner-join)
+  - [LEFT JOIN](#left-join)
+  - [RIGHT JOIN](#right-join)
+  - [FULL OUTER JOIN](#full-outer-join)
+
 - [SUBQUERIES](#subqueries)
   - [Scalar Subquery](#scalar-subquery)
   - [Correlated Subquery](#correlated-subquery)
@@ -142,3 +143,31 @@ SELECT column1
 FROM table_name
 WHERE column1 LIKE 'A_';
 ```
+
+### NULL
+The NULL condition is used to filter records where a column has no value.
+
+```
+SELECT column1, column2
+FROM table_name
+WHERE column1 IS NULL;
+```
+
+## AGGREGATE FUNCTIONS
+
+### COUNT
+Counts the number of rows.
+
+```
+SELECT COUNT(column)
+FROM table_name;
+```
+
+### SUM
+Calculates the sum of values in a column.
+
+```
+SELECT SUM(column)
+FROM table_name;
+```
+
