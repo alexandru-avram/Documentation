@@ -25,12 +25,6 @@
   - [MAX](#max)
   - [GROUP BY](#group-by)
   - [HAVING](#having)
-- [JOINS](#joins)
-  - [INNER JOIN](#inner-join)
-  - [LEFT JOIN](#left-join)
-  - [RIGHT JOIN](#right-join)
-  - [FULL OUTER JOIN](#full-outer-join)
-  - [CROSS JOIN](#cross-join)
 - [FUNCTIONS](#functions)
   - [LEN](#len)
   - [COALESCE](#coalesce)
@@ -49,6 +43,12 @@
   - [FLOOR](#floor)
   - [CEILING](#ceiling)
   - [ISNUMERIC](#isnumeric)
+- [JOINS](#joins)
+  - [INNER JOIN](#inner-join)
+  - [LEFT JOIN](#left-join)
+  - [RIGHT JOIN](#right-join)
+  - [FULL OUTER JOIN](#full-outer-join)
+  - [CROSS JOIN](#cross-join)
 - [DATE and TIME](#date-and-time)
   - [DATE](#date)
   - [TIME](#time)
@@ -72,6 +72,16 @@
   - [ALTER TABLE](#alter)
   - [DELETE](#delete)
   - [DROP TABLE](#drop)
+- [WINDOW FUNCTIONS](#ranking-functions)
+  - [ROW_NUMBER](#row_number)
+  - [RANK](#rank)
+  - [DENSE_RANK](#dense_rank)
+  - [NTILE](#ntile)
+  - [PARTITION BY](#partition-by)
+  - [LAG](#lag)
+  - [LEAD](#lead)
+  - [FIRST_VALUE](#first_value)
+  - [LAST_VALUE](#last_value)
 
 - [SUBQUERIES](#subqueries)
   - [Scalar Subquery](#scalar-subquery)
@@ -300,57 +310,6 @@ GROUP BY column1
 HAVING COUNT(column2) > 1;
 ```
 
-## JOINS
-
-### INNER JOIN
-Returns rows that have matching values in both tables.
-
-```
-SELECT columns
-FROM table1
-INNER JOIN table2
-ON table1.column = table2.column;
-```
-
-### LEFT JOIN
-Returns all rows from the left table and matching rows from the right table.
-
-```
-SELECT columns
-FROM table1
-LEFT JOIN table2
-ON table1.column = table2.column;
-```
-
-### RIGHT JOIN
-Returns all rows from the right table and matching rows from the left table.
-
-```
-SELECT columns
-FROM table1
-RIGHT JOIN table2
-ON table1.column = table2.column;
-```
-
-### FULL OUTER JOIN
-Returns all rows when there is a match in either the left or right table.
-
-```
-SELECT columns
-FROM table1
-FULL OUTER JOIN table2
-ON table1.column = table2.column;
-```
-
-### CROSS JOIN
-Combines each row from the first table with every row from the second table, resulting in a Cartesian product.
-
-```
-SELECT column1, column2
-FROM table1
-CROSS JOIN table2;
-```
-
 ## FUNCTIONS
 
 ### LEN
@@ -488,6 +447,58 @@ Checks if a value is numeric.
 SELECT column_name
 FROM table_name
 WHERE ISNUMERIC(column_name) = 1;
+```
+
+
+## JOINS
+
+### INNER JOIN
+Returns rows that have matching values in both tables.
+
+```
+SELECT columns
+FROM table1
+INNER JOIN table2
+ON table1.column = table2.column;
+```
+
+### LEFT JOIN
+Returns all rows from the left table and matching rows from the right table.
+
+```
+SELECT columns
+FROM table1
+LEFT JOIN table2
+ON table1.column = table2.column;
+```
+
+### RIGHT JOIN
+Returns all rows from the right table and matching rows from the left table.
+
+```
+SELECT columns
+FROM table1
+RIGHT JOIN table2
+ON table1.column = table2.column;
+```
+
+### FULL OUTER JOIN
+Returns all rows when there is a match in either the left or right table.
+
+```
+SELECT columns
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column = table2.column;
+```
+
+### CROSS JOIN
+Combines each row from the first table with every row from the second table, resulting in a Cartesian product.
+
+```
+SELECT column1, column2
+FROM table1
+CROSS JOIN table2;
 ```
 
 ## DATE and TIME
@@ -673,4 +684,78 @@ Removes an entire table from the database.
 
 ```
 DROP TABLE table_name;
+```
+
+## WINDOW FUNCTIONS
+
+### ROW_NUMBER
+Assigns a unique integer to each row within a partition of the result set, starting from 1.
+
+```
+SELECT column1, column2, ..., ROW_NUMBER() OVER (ORDER BY column1) AS row_num
+FROM table_name;
+```
+
+### RANK
+Assigns a unique rank to each distinct row, with ties receiving the same rank, leaving gaps between ranks.
+
+```
+SELECT column1, column2, ..., RANK() OVER (ORDER BY column1) AS ranking
+FROM table_name;
+```
+
+### DENSE_RANK
+Assigns a unique rank to each distinct row, with ties receiving the same rank, without leaving gaps between ranks.
+
+```
+SELECT column1, column2, ..., DENSE_RANK() OVER (ORDER BY column1) AS dense_rank
+FROM table_name;
+```
+
+### NTILE
+Divides the result set into a specified number of roughly equal parts, assigning a bucket number to each row.
+
+```
+SELECT column1, column2, ..., NTILE(4) OVER (ORDER BY column1) AS quartile
+FROM table_name;
+```
+
+### PARTITION BY
+Divides the result set into partitions to perform window functions independently on each partition.
+
+```
+SELECT column1, column2, ..., ROW_NUMBER() OVER (PARTITION BY column3 ORDER BY column1) AS row_num
+FROM table_name;
+```
+
+### LAG
+Accesses data from a previous row within the result set based on the specified column order.
+
+```
+SELECT column1, column2, ..., LAG(column1, 1) OVER (ORDER BY column1) AS prev_value
+FROM table_name;
+```
+
+### LEAD
+Accesses data from a subsequent row within the result set based on the specified column order.
+
+```
+SELECT column1, column2, ..., LEAD(column1, 1) OVER (ORDER BY column1) AS next_value
+FROM table_name;
+```
+
+### FIRST_VALUE
+Returns the value of the specified expression for the first row in the window frame.
+
+```
+SELECT column1, column2, ..., FIRST_VALUE(column1) OVER (ORDER BY column1) AS first_value
+FROM table_name;
+```
+
+### LAST_VALUE
+Returns the value of the specified expression for the last row in the window frame.
+
+```
+SELECT column1, column2, ..., LAST_VALUE(column1) OVER (ORDER BY column1) AS last_value
+FROM table_name;
 ```
