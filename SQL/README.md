@@ -59,3 +59,12 @@ Removes duplicate records from the result set.
 SELECT DISTINCT column1, column2, ...
 FROM table_name;
 ```
+
+### WHERE
+Filters the records based on a condition.
+
+```
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
