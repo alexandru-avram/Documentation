@@ -257,4 +257,44 @@ GROUP BY column1
 HAVING COUNT(column2) > 1;
 ```
 
+## JOINS
 
+### INNER JOIN
+Returns rows that have matching values in both tables.
+
+```
+SELECT columns
+FROM table1
+INNER JOIN table2
+ON table1.column = table2.column;
+```
+
+### LEFT JOIN
+Returns all rows from the left table and matching rows from the right table.
+
+```
+SELECT columns
+FROM table1
+LEFT JOIN table2
+ON table1.column = table2.column;
+```
+
+### RIGHT JOIN
+Returns all rows from the right table and matching rows from the left table.
+
+```
+SELECT columns
+FROM table1
+RIGHT JOIN table2
+ON table1.column = table2.column;
+```
+
+### FULL OUTER JOIN
+Returns all rows when there is a match in either the left or right table.
+
+```
+SELECT columns
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column = table2.column;
+```
