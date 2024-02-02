@@ -65,7 +65,13 @@
   - [CONVERT](#convert)
   - [FIRST DAY OF MONTH](#first-day-of-month)
   - [LAST DAY OF MONTH](#last-day-of-month)
-
+- [DATA MODIFICATION](#data-modification)
+  - [CREATE TABLE](#create-table)
+  - [INSERT INTO](#insert-into)
+  - [UPDATE](#update)
+  - [ALTER TABLE](#alter)
+  - [DELETE](#delete)
+  - [DROP TABLE](#drop)
 
 - [SUBQUERIES](#subqueries)
   - [Scalar Subquery](#scalar-subquery)
@@ -595,4 +601,76 @@ Returns the last day of the month.
 
 ```
 SELECT EOMONTH('2024-02-02') AS last_day_of_month;
+```
+
+## DATA MODIFICATION
+
+### CREATE TABLE
+Creates a new table with specified columns and data types.
+
+```
+CREATE TABLE table_name (
+  column1 datatype,
+  column2 datatype,
+  ...
+);
+```
+
+### INSERT INTO
+Adds new records to a table.
+
+```
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...);
+```
+
+### UPDATE
+Modifies existing records in a table.
+
+```
+UPDATE table_name
+SET column1 = value1, column2 = value2
+WHERE condition;
+```
+
+### ALTER TABLE
+Modifies an existing table (e.g., add, modify, rename or drop columns).
+
+#### Add Column
+```
+ALTER TABLE table_name
+ADD column_name datatype;
+```
+
+#### Modify Column
+```
+ALTER TABLE table_name
+MODIFY column_name new_datatype;
+```
+
+#### Rename Column
+```
+ALTER TABLE table_name
+RENAME COLUMN old_column_name TO new_column_name;
+```
+
+#### Drop Column
+```
+ALTER TABLE table_name
+DROP COLUMN column_name;
+```
+
+### DELETE
+Removes records from a table.
+
+```
+DELETE FROM table_name
+WHERE condition;
+```
+
+### DROP TABLE
+Removes an entire table from the database.
+
+```
+DROP TABLE table_name;
 ```
