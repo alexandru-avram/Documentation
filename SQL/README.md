@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [SELECT](#select)
-  - [Basic SELECT](#basic-select)
+  - [BASIC SELECT](#basic-select)
   - [DISTINCT](#distinct)
   - [ORDER BY](#order-by)
   - [LIMIT](#limit)
@@ -112,7 +112,7 @@
 
 ## SELECT
 
-### Basic SELECT
+### BASIC SELECT
 The basic SQL SELECT statement retrieves data from one or more tables.
 
 ```
