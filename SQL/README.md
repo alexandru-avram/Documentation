@@ -35,6 +35,7 @@
   - [CHARINDEX](#charindex)
   - [SUBSTRING](#substring)
   - [TRIM](#trim)
+  - [CONCAT](#concat)
   - [REPLACE](#replace)
   - [REVERSE](#reverse)
   - [FORMAT](#format)
@@ -407,6 +408,20 @@ Removes leading and trailing spaces from a string.
 ```
 SELECT TRIM(column_name) AS trimmed_value
 FROM table_name;
+```
+
+### CONCAT
+Concatenates two or more strings into a single string.
+
+```
+CONCAT(string1, string2, ...)
+```
+
+#### CONCAT_WS
+Stands for *concatenate with separator*. It concatenates two or more strings into a single string, but it allows you to specify a separator that is placed between the concatenated strings.
+
+```
+CONCAT_WS(separator, string1, string2, ...)
 ```
 
 ### REPLACE
