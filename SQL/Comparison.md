@@ -13,7 +13,7 @@ There are several relational database management system (RDBMS) versions, each w
 
 
 | Feature                   | MySQL             | MS SQL            | Oracle SQL        | PostgreSQL        | SQLite            | IBM Db2            | MariaDB           |
-|---------------------------|-------------------|-------------------|-------------------|-------------------|-------------------|-------------------|-------------------|
+|----------------------|------------------|------------------|------------------|------------------|------------------|------------------|------------------|
 | **License**               | Open Source       | Commercial        | Commercial        | Open Source       | Public Domain     | Commercial        | Open Source       |
 | **Developer/Company**      | Oracle Corporation| Microsoft         | Oracle Corporation| PostgreSQL Global Development Group | SQLite Consortium| IBM               | MariaDB Corporation|
 | **Initial Release**        | 1995              | 1989              | 1979              | 1989              | 2000              | 1983              | 2009              |
