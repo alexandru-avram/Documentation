@@ -55,8 +55,8 @@ There are several relational database management system (RDBMS) versions, each w
 | **Security Features**      | SSL/TLS, Access Control | Transparent Data Encryption (TDE), Role-based Access Control | Advanced Security, Virtual Private Database | SSL/TLS, Row-level Security | File-level Encryption | Advanced Security, Access Control | SSL/TLS, Access Control |
 | **Scalability**            | Excellent         | Excellent         | Excellent         | Excellent         | Limited           | Excellent         | Excellent         |
 | **Performance**            | High              | High              | High              | High              | Fast and Lightweight | High              | High              |
-| **High Availability/Clustering** | MySQL Cluster | AlwaysOn Availability Groups | Oracle RAC, Data Guard | PostgreSQL High Availability | Not built-in, relies on file system | Db2 PureScale, HADR | Galera Cluster     |
-| **Backup and Recovery**    | Various options   | SQL Server Backup, Restore | RMAN (Recovery Manager) | pg_dump, pg_restore | Limited           | IBM Db2 Backup, Restore | MariaDB Backup     |
+| **Clustering** | MySQL Cluster | AlwaysOn Availability Groups | Oracle RAC, Data Guard | PostgreSQL High Availability | Not built-in, relies on file system | Db2 PureScale, HADR | Galera Cluster     |
+| **Backup & Recovery**    | Various options   | SQL Server Backup, Restore | RMAN (Recovery Manager) | pg_dump, pg_restore | Limited           | IBM Db2 Backup, Restore | MariaDB Backup     |
 | **Replication**            | Yes               | Yes               | Yes               | Yes               | No                | Yes               | Yes               |
 | **Community/Support**      | Large Community   | Large Community   | Large Community   | Large Community   | Good Community Support | IBM Support       | Large Community   |
 | **Cost**                   | Free (Community Edition), Commercial (Enterprise Edition) | Commercial (Various Editions) | Commercial (Various Editions) | Free and Open Source | Public Domain, Free | Commercial (Various Editions) | Free and Open Source |
