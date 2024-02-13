@@ -2,12 +2,13 @@
 There are several relational database management system (RDBMS) versions, each with its own features and capabilities. Some of the main SQL database management system versions include:
 
 1. **MySQL**: An open-source RDBMS that is widely used for web applications. It is known for its performance, reliability, and ease of use.
-2. **Microsoft SQL Server (MS SQL)**: Developed by Microsoft, it is a comprehensive RDBMS with various editions catering to different needs, including enterprise-level solutions.
-3. **Oracle Database**: Oracle's RDBMS is known for its scalability, security features, and advanced capabilities. It is often used in large enterprise environments.
-4. **PostgreSQL**: An open-source RDBMS known for its extensibility, standards compliance, and support for advanced data types. It is often used in web applications and is known for its robustness.
-5. **SQLite**: A self-contained, serverless, and zero-configuration database engine. It is often used in embedded systems, mobile applications, and small-scale projects.
-6. **IBM Db2**: Developed by IBM, Db2 is a family of data management products that include database servers, developed for a variety of operating systems.
-7. **MariaDB**: An open-source RDBMS forked from MySQL, designed to remain open and free while also providing additional features and performance improvements.
+2. 
+3. **Microsoft SQL Server (MS SQL)**: Developed by Microsoft, it is a comprehensive RDBMS with various editions catering to different needs, including enterprise-level solutions.
+4. **Oracle Database**: Oracle's RDBMS is known for its scalability, security features, and advanced capabilities. It is often used in large enterprise environments.
+5. **PostgreSQL**: An open-source RDBMS known for its extensibility, standards compliance, and support for advanced data types. It is often used in web applications and is known for its robustness.
+6. **SQLite**: A self-contained, serverless, and zero-configuration database engine. It is often used in embedded systems, mobile applications, and small-scale projects.
+7. **IBM Db2**: Developed by IBM, Db2 is a family of data management products that include database servers, developed for a variety of operating systems.
+8. **MariaDB**: An open-source RDBMS forked from MySQL, designed to remain open and free while also providing additional features and performance improvements.
 9. **SQL LiteSpeed**: A high-performance, highly scalable RDBMS known for its speed and efficiency in handling large datasets.
 
 
