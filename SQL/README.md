@@ -189,12 +189,20 @@ WHERE column1 = 'value' OR column2 > 100;
 ```
 
 ### BETWEEN
-The BETWEEN condition is used to filter records within a specified range.
+The *BETWEEN* condition is used to filter records within a specified range.
 
 ```
 SELECT column1, column2
 FROM table_name
 WHERE column1 BETWEEN 50 AND 100;
+```
+
+The *NOT BETWEEN* condition is used to filter records outside a specified range.
+
+```
+SELECT column1, column2
+FROM table_name
+WHERE column1 NOT BETWEEN 50 AND 100;
 ```
 
 ### LIKE
@@ -216,6 +224,13 @@ Used to match a single character.
 SELECT column1
 FROM table_name
 WHERE column1 LIKE 'A_';
+```
+
+#### ILIKE
+The *ILIKE* condition is specific to some database systems, such as **PostgreSQL**. It performs a case-insensitive pattern match similar to *LIKE*. This means it will match patterns regardless of the case of the letters.
+
+```
+SELECT * FROM employees WHERE first_name ILIKE 'a%';
 ```
 
 ### NULL
