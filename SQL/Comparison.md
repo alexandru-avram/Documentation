@@ -63,3 +63,10 @@ There are several relational database management system (RDBMS) versions, each w
 | **Cost**                   | Free (Community Edition), Commercial (Enterprise Edition) | Commercial (Various Editions) | Commercial (Various Editions) | Free and Open Source | Public Domain, Free | Commercial (Various Editions) | Free and Open Source |
 | **Additional Features**    | JSON Support, NoSQL Features | Integration with Microsoft Ecosystem, Reporting Services | Advanced Analytics, Spatial Data | Extensibility, JSON/JSONB Support | Serverless, Zero Configuration | IBM Integrated Analytics System | Compatibility with MySQL |
 | **Use Cases**              | Web Applications, Data Warehousing | Enterprise Applications, Business Intelligence | Enterprise Applications, Data Warehousing | Web Applications, Enterprise Applications | Mobile Applications, Embedded Systems | Enterprise Applications, Data Warehousing | Web Applications, Enterprise Applications |
+
+## Syntax Comparison
+
+### Column Aliases: 
+All RDBMS support column aliases using `AS` keyword, but PostgreSQL has the additional feature of implicit column aliases using field labels without quotes. </br>
+Example: `SELECT CustomerName AS Name FROM Customers` (works in all), `SELECT Name FROM Customers` (PostgreSQL only).
+
