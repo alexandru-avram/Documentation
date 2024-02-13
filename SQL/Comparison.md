@@ -2,7 +2,7 @@
 There are several relational database management system (RDBMS) versions, each with its own features and capabilities. Some of the main SQL database management system versions include:
 
 1. **MySQL**: An open-source RDBMS that is widely used for web applications. It is known for its performance, reliability, and ease of use.
-2. 
+   
 3. **Microsoft SQL Server (MS SQL)**: Developed by Microsoft, it is a comprehensive RDBMS with various editions catering to different needs, including enterprise-level solutions.
 4. **Oracle Database**: Oracle's RDBMS is known for its scalability, security features, and advanced capabilities. It is often used in large enterprise environments.
 5. **PostgreSQL**: An open-source RDBMS known for its extensibility, standards compliance, and support for advanced data types. It is often used in web applications and is known for its robustness.
