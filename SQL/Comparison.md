@@ -2,41 +2,38 @@
 There are several relational database management system (RDBMS) versions, each with its own features and capabilities. Some of the main SQL database management system versions include:
 
 1. **MySQL**: An open-source RDBMS that is widely used for web applications. It is known for its performance, reliability, and ease of use.
-   
-3. **Microsoft SQL Server (MS SQL)**: Developed by Microsoft, it is a comprehensive RDBMS with various editions catering to different needs, including enterprise-level solutions.
-4. **Oracle Database**: Oracle's RDBMS is known for its scalability, security features, and advanced capabilities. It is often used in large enterprise environments.
-5. **PostgreSQL**: An open-source RDBMS known for its extensibility, standards compliance, and support for advanced data types. It is often used in web applications and is known for its robustness.
-6. **SQLite**: A self-contained, serverless, and zero-configuration database engine. It is often used in embedded systems, mobile applications, and small-scale projects.
-7. **IBM Db2**: Developed by IBM, Db2 is a family of data management products that include database servers, developed for a variety of operating systems.
-8. **MariaDB**: An open-source RDBMS forked from MySQL, designed to remain open and free while also providing additional features and performance improvements.
-9. **SQL LiteSpeed**: A high-performance, highly scalable RDBMS known for its speed and efficiency in handling large datasets.
+2. **Microsoft SQL Server (MS SQL)**: Developed by Microsoft, it is a comprehensive RDBMS with various editions catering to different needs, including enterprise-level solutions.
+3. **Oracle Database**: Oracle's RDBMS is known for its scalability, security features, and advanced capabilities. It is often used in large enterprise environments.
+4. **PostgreSQL**: An open-source RDBMS known for its extensibility, standards compliance, and support for advanced data types. It is often used in web applications and is known for its robustness.
+5. **SQLite**: A self-contained, serverless, and zero-configuration database engine. It is often used in embedded systems, mobile applications, and small-scale projects.
+6. **IBM Db2**: Developed by IBM, Db2 is a family of data management products that include database servers, developed for a variety of operating systems.
+7. **MariaDB**: An open-source RDBMS forked from MySQL, designed to remain open and free while also providing additional features and performance improvements.
+8. **SQL LiteSpeed**: A high-performance, highly scalable RDBMS known for its speed and efficiency in handling large datasets.
 
 
 # Features
 
 1. **License:** - Indicate whether the DBMS is open source, commercial, or has a dual licensing model.
-   
 3. **Developer/Company:** - Specify the entity responsible for developing and maintaining the DBMS.
-   
-5. **Initial Release:** - The year the DBMS was first released.
-6. **Current Version:** - The latest stable version available at the time of comparison.
-7. **Programming Language:** - The primary programming language used in the development of the DBMS.
-8. **Platform Support:** - Supported operating systems and hardware platforms.
-9. **Deployment:** - Whether the DBMS is suitable for on-premises, cloud, or hybrid deployments.
-10. **Data Types:** - List the supported data types for columns (e.g., integer, text, date).
-11. **SQL Compliance:** - Evaluate how well the DBMS adheres to SQL standards.
-12. **Transaction Support:** - Indicate the level of support for transactions, including ACID compliance.
-13. **Concurrency Control:** - How the DBMS handles concurrent access to data.
-14. **Security Features:** - Include features like encryption, authentication, and access control mechanisms.
-15. **Scalability:** - Assess the ability of the DBMS to handle growing datasets and increasing workloads.
-16. **Performance:** - Include benchmarks or performance metrics, if available, for comparison.
-17. **High Availability/Clustering:** - Features related to ensuring system availability and handling failovers.
-18. **Backup and Recovery:** - Describe the capabilities for data backup and recovery.
-19. **Replication:** - The ability to replicate data for redundancy and load balancing.
-20. **Community/Support:** - Availability of community support, official documentation, and professional support options.
-21. **Cost:** - Include any licensing fees, subscription costs, or other relevant expenses.
-22. **Additional Features:** - Any unique or standout features offered by the DBMS.
-23. **Use Cases:** - Examples of industries or scenarios where the DBMS is commonly used.
+4. **Initial Release:** - The year the DBMS was first released.
+5. **Current Version:** - The latest stable version available at the time of comparison.
+6. **Programming Language:** - The primary programming language used in the development of the DBMS.
+7. **Platform Support:** - Supported operating systems and hardware platforms.
+8. **Deployment:** - Whether the DBMS is suitable for on-premises, cloud, or hybrid deployments.
+9. **Data Types:** - List the supported data types for columns (e.g., integer, text, date).
+10. **SQL Compliance:** - Evaluate how well the DBMS adheres to SQL standards.
+11. **Transaction Support:** - Indicate the level of support for transactions, including ACID compliance.
+12. **Concurrency Control:** - How the DBMS handles concurrent access to data.
+13. **Security Features:** - Include features like encryption, authentication, and access control mechanisms.
+14. **Scalability:** - Assess the ability of the DBMS to handle growing datasets and increasing workloads.
+15. **Performance:** - Include benchmarks or performance metrics, if available, for comparison.
+16. **High Availability/Clustering:** - Features related to ensuring system availability and handling failovers.
+17. **Backup and Recovery:** - Describe the capabilities for data backup and recovery.
+18. **Replication:** - The ability to replicate data for redundancy and load balancing.
+19. **Community/Support:** - Availability of community support, official documentation, and professional support options.
+20. **Cost:** - Include any licensing fees, subscription costs, or other relevant expenses.
+21. **Additional Features:** - Any unique or standout features offered by the DBMS.
+22. **Use Cases:** - Examples of industries or scenarios where the DBMS is commonly used.
 
 ## Features Comparison 
 
