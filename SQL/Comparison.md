@@ -64,9 +64,9 @@ There are several relational database management system (RDBMS) versions, each w
 | **Additional Features**    | JSON Support, NoSQL Features | Integration with Microsoft Ecosystem, Reporting Services | Advanced Analytics, Spatial Data | Extensibility, JSON/JSONB Support | Serverless, Zero Configuration | IBM Integrated Analytics System | Compatibility with MySQL |
 | **Use Cases**              | Web Applications, Data Warehousing | Enterprise Applications, Business Intelligence | Enterprise Applications, Data Warehousing | Web Applications, Enterprise Applications | Mobile Applications, Embedded Systems | Enterprise Applications, Data Warehousing | Web Applications, Enterprise Applications |
 
-## Syntax Comparison
-
-### Column Aliases: 
-All RDBMS support column aliases using `AS` keyword, but PostgreSQL has the additional feature of implicit column aliases using field labels without quotes. </br>
-Example: `SELECT CustomerName AS Name FROM Customers` (works in all), `SELECT Name FROM Customers` (PostgreSQL only).
+## Data Type Diversity
+- **Oracle**: Excels in customizability with user-defined data types (UDTs) and PL/SQL block types, catering to complex modeling needs.
+- **PostgreSQL**: Embraces flexibility with hstore for key-value pairs, range types for specialized intervals, and JSONB for semi-structured data, making it adept at handling diverse data formats.
+- **Db2**: Prioritizes data integrity with DISTINCT types for enforcing data uniqueness and structured types for composite data, ensuring data quality and consistency.
+- **MariaDB**: Caters to geospatial applications with dedicated GIS data types and offers the year data type for efficient date handling, aligning with domain-specific requirements.
 
