@@ -62,8 +62,31 @@ There are several relational database management system (RDBMS) versions, each w
 | **Use Cases**              | Web Applications, Data Warehousing | Enterprise Applications, Business Intelligence | Enterprise Applications, Data Warehousing | Web Applications, Enterprise Applications | Mobile Applications, Embedded Systems | Enterprise Applications, Data Warehousing | Web Applications, Enterprise Applications |
 
 ## Data Type Diversity
-- **Oracle**: Excels in customizability with user-defined data types (UDTs) and PL/SQL block types, catering to complex modeling needs.
-- **PostgreSQL**: Embraces flexibility with hstore for key-value pairs, range types for specialized intervals, and JSONB for semi-structured data, making it adept at handling diverse data formats.
-- **Db2**: Prioritizes data integrity with DISTINCT types for enforcing data uniqueness and structured types for composite data, ensuring data quality and consistency.
-- **MariaDB**: Caters to geospatial applications with dedicated GIS data types and offers the year data type for efficient date handling, aligning with domain-specific requirements.
+- **Oracle**: Excels in customizability with **user-defined data types** (UDTs) and **PL/SQL** block types, catering to complex modeling needs.
+- **PostgreSQL**: Embraces flexibility with hstore for key-value pairs, range types for specialized intervals, and **JSONB** for semi-structured data, making it adept at handling diverse data formats.
+- **Db2**: Prioritizes data integrity with `DISTINCT` types for enforcing data uniqueness and structured types for composite data, ensuring data quality and consistency.
+- **MariaDB**: Caters to geospatial applications with dedicated **GIS** data types and offers the year data type for efficient date handling, aligning with domain-specific requirements.
 
+## DDL Deviations
+- **MySQL**: Storage engine choice between **InnoDB** and **MyISAM** impacts transaction support and performance. Temporary tables offer convenient data manipulation within a session.
+- **MS SQL**: `IDENTITY` columns automatically generate unique values, simplifying primary key management. `CHECK` constraints enhance data validation at the table level.
+- **Oracle**: `CREATE INDEX` provides granular control over indexing options, optimizing query performance. Materialized views pre-compute complex queries for faster retrieval.
+- **PostgreSQL**: Exclusion constraints prevent duplicate data insertion, strengthening data integrity. Triggers automate actions based on specific events, streamlining database operations.
+- **Db2**: **BLU Acceleration** storage engine delivers exceptional performance for data warehouses and analytics. Partitioned tables efficiently manage large datasets by dividing them based on specific criteria.
+- **MariaDB**: Galera cluster support enables high availability and disaster recovery, ensuring data accessibility even in case of failures.
+
+## DML Divergences
+- **MySQL**: `LIMIT` clause variations allow for flexible result pagination. `GROUP BY` with `ROLLUP/CUBE` facilitates hierarchical data aggregation.
+- **MS SQL**: `TOP` clause retrieves a limited number of rows, useful for top-N queries. `MERGE` statement combines `INSERT`, `UPDATE`, and `DELETE` operations in a single command, enhancing efficiency.
+- **Oracle**: `BULK COLLECT` efficiently loads large datasets, optimizing bulk data import. `CONNECT BY` clause enables hierarchical queries, traversing parent-child relationships within data.
+- **PostgreSQL**: **Common Table Expressions** (CTEs) simplify complex queries by defining temporary named result sets. Window functions empower advanced aggregations within result sets, offering powerful analytical capabilities.
+- **Db2**: `FETCH FIRST/ROWS` clauses control the number of rows retrieved, providing granular result set navigation. Recursive queries with the `WITH` clause enable self-referencing data exploration.
+- **MariaDB**: Virtual columns provide calculated data without requiring additional storage, improving query performance. **GIS** functions cater to geospatial data manipulation.
+
+## Advanced Feature Forays:
+
+- **Oracle**: Stored procedures and **PL/SQL** blocks enable complex logic execution within the database, automating tasks and enhancing security. Triggers react to specific database events, automating data manipulation and maintenance.
+- **MS SQL**: **CLR integration** allows embedding Common Language Runtime code within stored procedures, leveraging .NET capabilities for complex logic. Full-text search facilitates efficient text content retrieval.
+- **PostgreSQL**: Advanced indexing options, including **GiST** and **GIN**, optimize performance for specific data types. Stored procedures in **PL/pgSQL** enable custom logic execution while maintaining database control.
+- **Db2**: **User-defined functions** (UDFs) extend database functionality with custom logic, tailored to specific needs. **BLU Acceleration** offers exceptional performance for analytics workloads.
+- **MariaDB**: **Galera cluster** provides high availability and disaster recovery, ensuring data accessibility across multiple nodes.
