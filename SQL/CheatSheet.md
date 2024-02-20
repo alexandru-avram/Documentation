@@ -1030,7 +1030,7 @@ In the example trigger above, a trigger named after_insert_example is created. I
 ## TRANSACTIONS
 Transactions in the context of databases refer to a set of one or more SQL statements that are executed as a single unit of work. The concept of transactions ensures that database operations are atomic, consistent, isolated, and durable, commonly known as the ACID properties
 
-### BEGIN
+### BEGIN TRANSACTION
 Starts a new transaction. All subsequent SQL statements are part of this transaction until it is explicitly committed or rolled back.
 
 ```
