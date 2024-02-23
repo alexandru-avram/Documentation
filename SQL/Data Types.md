@@ -69,6 +69,7 @@ Custom Types
 - **MONEY**: Currency amount.
 - **INTERVAL**: A duration of time.
 - **JSONB**: Binary JSON.
+- **ARRAY**: A variable-length array of any data type. For example, `INTEGER[]` represents an array of integers.
 
 ### SQLite
 - **INTEGER (AUTOINCREMENT)**: Auto-incrementing integer.
