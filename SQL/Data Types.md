@@ -70,6 +70,7 @@ Custom Types
 - **INTERVAL**: A duration of time.
 - **JSONB**: Binary JSON.
 - **ARRAY**: A variable-length array of any data type. For example, `INTEGER[]` represents an array of integers.
+- **hstore**: A key-value store where both keys and values are treated as strings.
 
 ### SQLite
 - **INTEGER (AUTOINCREMENT)**: Auto-incrementing integer.
