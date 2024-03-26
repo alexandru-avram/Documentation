@@ -113,6 +113,7 @@ This is a generalized list of SQL functions that are common accross most standar
 - [USER-DEFINED DATA TYPE](#user-defined-data-type)
   - [CREATE DOMAIN](#create-domain)
   - [CREATE TYPE](#create-type)
+  - [DROP DOMAIN](#drop-domain)
 ---
 
 ## SELECT
@@ -1117,4 +1118,17 @@ CREATE TYPE AddressType AS (
   state CHAR(2),
   zip_code VARCHAR(10)
 );
+```
+
+### DROP DOMAIN
+Delete a custom domain created on the schema.
+
+```
+DROP DOMAIN domain_name
+```
+
+If the domain is used, it will not be deleted unless you use `CASCADE`. However, unless you want to loose the data on the columns using a custom domain-type, ensure you ALTER the data type on the columns.
+
+```
+DROP DOMAIN domain_name CASCADE
 ```
