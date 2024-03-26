@@ -23,9 +23,6 @@
 #### [JavaScript Basics](https://github.com/alexandruavram-rusu/Documentation/tree/main/Javascript/01.%20JavaScript%20Basics)
 #### [JavaScript - HTML](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/04.%20Document%20Object%20Model)
 
-## PHP
-#### *Under construction :)*
-
 ## Python
 ### [View **Python** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python)
 
@@ -60,3 +57,5 @@
 #### [Machine Learning](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/05.%20Machine%20Learning)
 - Scikit-Learn
 - Statistics Theory 
+
+## [SQL](https://github.com/alexandruavram-rusu/Documentation/tree/main/SQL)
