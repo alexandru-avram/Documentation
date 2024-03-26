@@ -110,7 +110,9 @@ This is a generalized list of SQL functions that are common accross most standar
   - [BEGIN TRANSACTION](#begin-transaction)
   - [COMMIT](#commit)
   - [ROLLBACK](#rollback)
-
+- [USER-DEFINED DATA TYPE](#user-defined-data-type)
+  - [CREATE DOMAIN](#create-domain)
+  - [CREATE TYPE](#create-type)
 ---
 
 ## SELECT
@@ -1028,7 +1030,7 @@ In the example trigger above, a trigger named after_insert_example is created. I
 
 
 ## TRANSACTIONS
-Transactions in the context of databases refer to a set of one or more SQL statements that are executed as a single unit of work. The concept of transactions ensures that database operations are atomic, consistent, isolated, and durable, commonly known as the ACID properties
+Transactions in the context of databases refer to a set of one or more SQL statements that are executed as a single unit of work. The concept of transactions ensures that database operations are atomic, consistent, isolated, and durable, commonly known as the ACID properties.
 
 ### BEGIN TRANSACTION
 Starts a new transaction. All subsequent SQL statements are part of this transaction until it is explicitly committed or rolled back.
@@ -1075,4 +1077,44 @@ BEGIN
     COMMIT;
     PRINT 'Transaction committed successfully.';
 END;
+```
+
+## USER-DEFINED DATA TYPES
+
+### CREATE DOMAIN
+`CREATE DOMAIN` allows you to define a new data type with optional constraints. It's useful when you need to ensure consistency and enforce rules for a specific type of data across multiple columns or tables.
+
+```
+CREATE DOMAIN domain_name AS data_type [DEFAULT default_value] [CHECK constraint];
+```
+
+**Example (email address)**
+
+```
+CREATE DOMAIN EmailAddress VARCHAR(255) NOT NULL
+CHECK (VALUE LIKE '%@%.%');
+```
+
+**Example ENUM or SET values**
+
+```
+CREATE DOMAIN colors VARCHAR(30) NOT NULL
+CHECK (VALUE IN ('red', 'blue', 'yellow'));
+```
+
+### CREATE TYPE
+`CREATE TYPE` enables you to define a new composite type or custom data type in PostgreSQL. It's handy when you want to bundle together multiple fields under a single data type, especially if you intend to reuse that structure across tables or queries.
+
+```
+CREATE TYPE type_name AS (attribute1 data_type, attribute2 data_type, ...);
+```
+
+**Example full address**
+```
+CREATE TYPE AddressType AS (
+  street_address VARCHAR(255),
+  city VARCHAR(100),
+  state CHAR(2),
+  zip_code VARCHAR(10)
+);
 ```
