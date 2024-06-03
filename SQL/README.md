@@ -1,5 +1,16 @@
 # SQL Index
 
+## SQL SYNTAX ORDER
+
+SELECT [DISTINCT]
+FROM
+WHERE
+GROUP BY
+HAVING
+ORDER BY
+LIMIT
+
+
 ## [CheatSheet](https://github.com/alexandruavram-rusu/Documentation/blob/main/SQL/CheatSheet.md)
 A general cheat sheet.
 
