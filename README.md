@@ -59,3 +59,5 @@
 - Statistics Theory 
 
 ## [SQL](https://github.com/alexandruavram-rusu/Documentation/tree/main/SQL)
+
+https://confluence.bcr.wan:4443/pages/viewpageattachments.action?pageId=260768367&metadataLink=true&preview=/260768367/260769346/ExportFromJira_20240716_145755.csv
