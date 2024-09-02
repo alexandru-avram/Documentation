@@ -1,12 +1,17 @@
-# User Defined Functions & Procedures
+# User Defined Elements (Functions, Procedures, Data Types)
 
 
 - [USER-DEFINED FUNCTIONS (UDFs)](#user-defined-functions-udfs)
 - [STORED PROCEDURES](#stored-procedures)
 - [INLINE TABLE-VALUED FUNCTIONS](#inline-table-valued-functions)
 - [COMMON TABLE EXPRESSIONS (CTEs)](#common-table-expressions-ctes)
+- [USER-DEFINED DATA TYPE](#user-defined-data-type)
+  - [CREATE DOMAIN](#create-domain)
+  - [CREATE TYPE](#create-type)
+  - [DROP DOMAIN](#drop-domain)
 
 
+<BR>
 
 ### USER-DEFINED FUNCTIONS (UDFs)
 A User-Defined Function (UDF) in SQL is a custom function created by the user to encapsulate a specific piece of logic. UDFs take parameters, perform a computation, and return a single value.
@@ -56,4 +61,60 @@ WITH MonthlySales AS (
   GROUP BY employee_id
 )
 SELECT * FROM MonthlySales WHERE total_sales > 10000;
+```
+
+<BR>
+
+
+## USER-DEFINED DATA TYPES
+
+### CREATE DOMAIN
+`CREATE DOMAIN` allows you to define a new data type with optional constraints. It's useful when you need to ensure consistency and enforce rules for a specific type of data across multiple columns or tables.
+
+```
+CREATE DOMAIN domain_name AS data_type [DEFAULT default_value] [CHECK constraint];
+```
+
+**Example (email address)**
+
+```
+CREATE DOMAIN EmailAddress VARCHAR(255) NOT NULL
+CHECK (VALUE LIKE '%@%.%');
+```
+
+**Example ENUM or SET values**
+
+```
+CREATE DOMAIN colors VARCHAR(30) NOT NULL
+CHECK (VALUE IN ('red', 'blue', 'yellow'));
+```
+
+### CREATE TYPE
+`CREATE TYPE` enables you to define a new composite type or custom data type in PostgreSQL. It's handy when you want to bundle together multiple fields under a single data type, especially if you intend to reuse that structure across tables or queries.
+
+```
+CREATE TYPE type_name AS (attribute1 data_type, attribute2 data_type, ...);
+```
+
+**Example full address**
+```
+CREATE TYPE AddressType AS (
+  street_address VARCHAR(255),
+  city VARCHAR(100),
+  state CHAR(2),
+  zip_code VARCHAR(10)
+);
+```
+
+### DROP DOMAIN
+Delete a custom domain created on the schema.
+
+```
+DROP DOMAIN domain_name
+```
+
+If the domain is used, it will not be deleted unless you use `CASCADE`. However, unless you want to loose the data on the columns using a custom domain-type, ensure you ALTER the data type on the columns.
+
+```
+DROP DOMAIN domain_name CASCADE
 ```
