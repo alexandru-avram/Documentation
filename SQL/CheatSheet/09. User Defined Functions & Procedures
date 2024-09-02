@@ -1,0 +1,46 @@
+# User Defined Functions & Procedures
+
+
+- [USER-DEFINED FUNCTIONS (UDFs)](#user-defined-functions-udfs)
+- [STORED PROCEDURES](#stored-procedures)
+- [INLINE TABLE-VALUED FUNCTIONS](#inline-table-valued-functions)
+- [COMMON TABLE EXPRESSIONS (CTEs)](#common-table-expressions-ctes)
+
+
+
+### USER-DEFINED FUNCTIONS (UDFs)
+A User-Defined Function (UDF) in SQL is a custom function created by the user to encapsulate a specific piece of logic. UDFs take parameters, perform a computation, and return a single value.
+
+```
+CREATE FUNCTION CalculateDiscount(price DECIMAL, discount_rate DECIMAL)
+RETURNS DECIMAL
+BEGIN
+  DECLARE discounted_price DECIMAL;
+  SET discounted_price = price - (price * discount_rate);
+  RETURN discounted_price;
+END;
+```
+
+### STORED PROCEDURES
+A Stored Procedure is a precompiled collection of one or more SQL statements that can be executed as a single unit. Stored Procedures are typically used to encapsulate business logic, perform operations on the database, or execute a series of SQL statements. They can accept parameters, return values, and can be executed by other programs or scripts.
+
+```
+CREATE PROCEDURE UpdateEmployeeSalary(employee_id INT, new_salary DECIMAL)
+BEGIN
+  UPDATE employees
+  SET salary = new_salary
+  WHERE id = employee_id;
+END;
+```
+
+### INLINE TABLE-VALUED FUNCTIONS
+Similar to UDFs, Inline Table-Valued Functions return a table as a result. They can be used in the FROM clause of a SELECT statement, and their results can be treated like a regular table.
+
+```
+CREATE FUNCTION GetEmployeesByDepartment(@dept_id INT)
+RETURNS TABLE
+AS
+RETURN (
+  SELECT * FROM employees WHERE department_id = @dept_id
+);
+```
