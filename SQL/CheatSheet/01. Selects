@@ -1,1 +1,11 @@
+# INDEX
 
+
+## SYNTAX ORDER
+SELECT [DISTINCT]<br>
+FROM<br>
+WHERE<br>
+GROUP BY<br>
+HAVING<br>
+ORDER BY<br>
+LIMIT<br>
