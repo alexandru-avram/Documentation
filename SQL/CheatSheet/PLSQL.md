@@ -156,3 +156,68 @@ BEGIN
         RAISE NOTICE 'Employee Name: %', result.name;
     END LOOP;
 ```
+
+### IN, OUT, INOUT
+In PL/pgSQL, `IN` and `OUT` parameters are used primarily in functions and procedures to control how parameters are passed and returned. They define whether a parameter is for input only, output only, or both (using `INOUT`).
+
+#### IN Parameters
+They pass data into the function or procedure. These parameters are read-only and cannot be modified within the function or procedure. Parameters in PL/pgSQL are `IN` by default, so if you don’t specify `IN`, PostgreSQL will assume it.
+
+```
+CREATE OR REPLACE FUNCTION get_employee_salary(emp_id INTEGER)
+RETURNS NUMERIC AS $$
+DECLARE
+    emp_salary NUMERIC;
+BEGIN
+    SELECT salary INTO emp_salary FROM employees WHERE id = emp_id;
+    RETURN emp_salary;
+END;
+$$ LANGUAGE plpgsql;
+```
+
+#### OUT Parameters
+Defines an output parameter that will hold the result to be returned to the caller. `OUT` parameters act as variables initialized to NULL and can be assigned values within the function or procedure.
+
+```
+CREATE OR REPLACE FUNCTION get_employee_details(emp_id INTEGER, OUT emp_name VARCHAR, OUT emp_salary NUMERIC)
+AS $$
+BEGIN
+    SELECT name, salary INTO emp_name, emp_salary FROM employees WHERE id = emp_id;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Calling an OUT Function: The function automatically returns the values of emp_name and emp_salary.
+
+SELECT * FROM get_employee_details(1);
+```
+
+#### INOUT Parameters
+Use `INOUT` parameters when you need a parameter to serve both as an input and output. The caller provides an initial value, and the function can modify and return it.
+
+```
+CREATE OR REPLACE FUNCTION update_salary(emp_id INTEGER, INOUT emp_salary NUMERIC)
+AS $$
+BEGIN
+    UPDATE employees SET salary = emp_salary WHERE id = emp_id;
+    SELECT salary INTO emp_salary FROM employees WHERE id = emp_id;  -- Updated value
+END;
+$$ LANGUAGE plpgsql;
+```
+
+### EXAMPLE
+This is a function that performs two calculations and returns the value.
+
+```
+CREATE OR REPLACE FUNCTION fn_my_sum_2_par1(IN x int, IN y int, OUT w int, OUT z int) AS
+$$
+	BEGIN
+
+		z := x + y;
+		w := x * y;
+
+	END;
+$$
+LANGUAGE PLPGSQL;
+
+SELECT * FROM fn_my_sum_2_par1(1,2);
+```
