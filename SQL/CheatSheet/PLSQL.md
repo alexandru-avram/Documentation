@@ -204,7 +204,7 @@ END;
 $$ LANGUAGE plpgsql;
 ```
 
-### EXAMPLE
+##### EXAMPLE
 This is a function that performs two calculations and returns the value.
 
 ```
@@ -220,4 +220,192 @@ $$
 LANGUAGE PLPGSQL;
 
 SELECT * FROM fn_my_sum_2_par1(1,2);
+```
+
+## Control Flow Structures
+
+### IF-ELSE
+
+The `IF-ELSE` statement is used to execute code conditionally based on Boolean expressions.
+
+```
+IF condition THEN
+    -- Code to execute if condition is true
+ELSIF another_condition THEN
+    -- Code to execute if the previous condition is false and this condition is true
+ELSE
+    -- Code to execute if none of the above conditions are true
+END IF;
+```
+
+Example with a table:
+
+```
+DO $$
+DECLARE
+    emp RECORD;
+BEGIN
+    FOR emp IN SELECT * FROM employees LOOP
+        IF emp.salary > 50000 THEN
+            UPDATE employees
+            SET status = 'Senior'
+            WHERE id = emp.id;
+            RAISE NOTICE 'Updated % to Senior status', emp.name;
+        ELSE
+            UPDATE employees
+            SET status = 'Junior'
+            WHERE id = emp.id;
+            RAISE NOTICE 'Updated % to Junior status', emp.name;
+        END IF;
+    END LOOP;
+END $$;
+
+```
+
+### CASE statement
+
+The `CASE` statement is similar to the `IF-ELSE` structure but is often more concise and easier to read when dealing with multiple conditions.
+
+#### Simple CASE
+The simple `CASE` evaluates a single expression and matches it against multiple values.
+
+```
+CASE expression
+    WHEN value1 THEN
+        -- Code if expression equals value1
+    WHEN value2 THEN
+        -- Code if expression equals value2
+    ELSE
+        -- Code if no match is found
+END CASE;
+```
+
+#### Searched CASE
+The searched `CASE` evaluates multiple Boolean expressions, similar to an `IF-ELSE` structure.
+
+```
+CASE
+    WHEN condition1 THEN
+        -- Code if condition1 is true
+    WHEN condition2 THEN
+        -- Code if condition2 is true
+    ELSE
+        -- Code if none of the conditions are true
+END CASE;
+```
+
+Example:
+```
+DECLARE
+    grade CHAR := 'B';
+BEGIN
+    CASE grade
+        WHEN 'A' THEN
+            RAISE NOTICE 'Excellent!';
+        WHEN 'B' THEN
+            RAISE NOTICE 'Good job!';
+        WHEN 'C' THEN
+            RAISE NOTICE 'Satisfactory.';
+        ELSE
+            RAISE NOTICE 'Improvement needed.';
+    END CASE;
+END;
+```
+
+### Loop Structures
+The basic `LOOP` construct repeats a block of code indefinitely until an `EXIT` statement is encountered.
+
+```
+LOOP
+    -- Code to repeat
+    EXIT WHEN condition;
+END LOOP;
+```
+
+#### FOR Loop
+The `FOR` loop is commonly used for iterating over a range of numbers or the results of a query.
+
+```
+FOR counter IN start_value..end_value LOOP
+    -- Code to execute
+END LOOP;
+```
+
+```
+BEGIN
+    FOR i IN 1..5 LOOP
+        RAISE NOTICE 'i: %', i;
+    END LOOP;
+END;
+```
+
+The `FOR` loop can also iterate over each row returned by a query.
+
+```
+FOR record IN SELECT * FROM employees LOOP
+    -- Use record.field_name to access column data
+END LOOP;
+```
+
+```
+BEGIN
+    FOR emp IN SELECT name, salary FROM employees LOOP
+        RAISE NOTICE 'Employee: %, Salary: %', emp.name, emp.salary;
+    END LOOP;
+END;
+```
+
+#### WHILE Loop
+The `WHILE` loop repeats a block of code as long as a specified condition remains true.
+
+```
+WHILE condition LOOP
+    -- Code to execute
+END LOOP;
+```
+
+```
+DECLARE
+    counter INTEGER := 1;
+BEGIN
+    WHILE counter <= 5 LOOP
+        RAISE NOTICE 'Counter: %', counter;
+        counter := counter + 1;
+    END LOOP;
+END;
+```
+
+
+#### FOREACH Loop
+The `FOREACH` loop iterates over elements of an array. This is useful for operations on each element in a collection.
+
+```
+DECLARE
+    num_array INTEGER[] := ARRAY[1, 2, 3, 4, 5];
+BEGIN
+    FOREACH num IN ARRAY num_array LOOP
+        RAISE NOTICE 'Number: %', num;
+    END LOOP;
+END;
+```
+
+### CONTINUE and EXIT Statements
+
+- **EXIT**: Used to exit a loop when a specific condition is met.
+- **CONTINUE**: Skips the current iteration and continues with the next iteration of the loop.
+
+```
+DECLARE
+    i INTEGER;
+BEGIN
+    FOR i IN 1..10 LOOP
+        IF i = 3 THEN
+            CONTINUE;  -- Skips the current iteration when i = 3
+        END IF;
+        IF i = 8 THEN
+            EXIT;  -- Exits the loop when i = 8
+        END IF;
+        RAISE NOTICE 'Value of i: %', i;
+    END LOOP;
+END;
 ```
