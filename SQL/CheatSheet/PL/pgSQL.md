@@ -1,11 +1,24 @@
 # PL/pgSQL
 
-- [Basic Syntax and Structure](Basic-Syntax-and-Structure)
-	- [Block Structure](block-structure)
+- [BASIC SYNTAX and STRUCTURE](#Basic-Syntax-and-Structure)
+  - [Block Structure](#block-structure)
+  - [Anonymous Blocks](#Anonymous-Blocks)
+  - [Named Blocks](#Named-Blocks)
+  - [Statements](#Statements)
+- [VARIABLES](#variables)
+  - [ALIAS](#alias)
+  - [Assigning Values to Variables](#Assigning-Values-to-Variables)
+  - [Type Casting and Conversion](#Type-Casting-and-Conversion)
+  - [VARIABLE SCOPE](#variable-scope)
+  - [Compound Data Types](#Compound-Data-Types)
+  - [IN OUT INOUT](#IN-OUT-INOUT)
+- [Control Flow Structures](#control-flow-structures)
+  - [Conditional Statements](#conditional-statements)
+  - [CASE Statement](#case-statement)
+  - [LOOP Strcutures](#loop-structures)
 
 
-
-## Basic Syntax and Structure
+## BASIC SYNTAX and STRUCTURE
 
 ### Block Structure
 Every PL/pgSQL program consists of three sections in order to form a block:
@@ -138,8 +151,7 @@ BEGIN
 END;
 ```
 
-### ALIAS and %TYPE and %ROWTYPE
-
+### ALIAS
 You can also use an `ALIAS FOR` to declare variables as well.
 
 ```
@@ -264,7 +276,7 @@ BEGIN
     END LOOP;
 ```
 
-### IN, OUT, INOUT
+### IN OUT INOUT
 In PL/pgSQL, `IN` and `OUT` parameters are used primarily in functions and procedures to control how parameters are passed and returned. They define whether a parameter is for input only, output only, or both (using `INOUT`).
 
 #### IN Parameters
@@ -332,7 +344,7 @@ SELECT * FROM fn_my_sum_2_par1(1,2);
 
 ### Conditional statements
 
-he `IF-ELSE` statement is used to execute code conditionally based on Boolean expressions.
+The `IF-ELSE` statement is used to execute code conditionally based on Boolean expressions.
 
 ```
 IF condition THEN
