@@ -5,6 +5,13 @@
   - [Anonymous Blocks](#Anonymous-Blocks)
   - [Named Blocks](#Named-Blocks)
   - [Statements](#Statements)
+    - [RAISE](#raise)
+    - [RETURN](#return)
+    - [PERFORM](#perform)
+    - [EXECUTE](#execute)
+    - [RETURN QUERY](#return-query)
+    - [ASSERT](#assert)
+    - [LOOP and EXIT](#loop-and-exit)
 - [VARIABLES](#variables)
   - [ALIAS](#alias)
   - [Assigning Values to Variables](#Assigning-Values-to-Variables)
@@ -123,7 +130,7 @@ Used to validate assumtpions in code and raising an error if conditions are not 
 ASSERT condition, 'Error message if condition fails';
 ```
 
-#### LOOP and EXIT Statements
+#### LOOP and EXIT
 They are used to create and end loops with PL/pgSQL.
 
 ```
