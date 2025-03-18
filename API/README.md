@@ -1,64 +1,9 @@
-# Documentation
+# API Documentation Index
 
-## B.I. Tools
-### [View **B.I. Tools** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/B.I.%20Tools)
-
-#### [Excel](https://github.com/alexandruavram-rusu/Documentation/tree/main/B.I.%20Tools/Excel)
-#### [PowerBi](https://github.com/alexandruavram-rusu/Documentation/tree/main/B.I.%20Tools/Power%20Bi)
-#### [Google Looker](https://github.com/alexandruavram-rusu/Documentation/tree/main/B.I.%20Tools/Google%20Looker)
-
-
-## HTML
-### [View **HTML** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML)
-
-#### [HTML Basics](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/01.%20HTML%20Basics)
-#### [CSS](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/02.%20CSS)
-#### [Bootstrap](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/03.%20Bootstrap)
-#### [Document Object Model](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/04.%20Document%20Object%20Model)
-
-
-## Python
-### [View **Python** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python)
-
-#### [Basic Python](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/01.%20Basic%20Python)
-  + Basic non-Numpy maths
-  + Strings
-  + Lists
-  + Dictionaries
-  + Tuples
-  + Sets
-
-#### [Functional Programming](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/02.%20Functional%20Programming)  
-  - If Statements  
-  - Loops
-  - Functions
-  - Classes
-  - Error handling
-  - Working with files
-
-#### [Web Development](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/03.%20Web%20Development)
-  + Web scraping
-  + Django
-
-
-#### [Data Science](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/04.%20Data%20Science)
-  - Numpy
-  - Pandas
-  - Matplotlib
-  - Seaborn
-  - Interactive Graphs
-
-#### [Machine Learning](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/05.%20Machine%20Learning)
-- Scikit-Learn
-- Statistics Theory 
-
-
-## JavaScript
-
-### [View **JavaScript** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/Javascript)
-
-#### [JavaScript Basics](https://github.com/alexandruavram-rusu/Documentation/tree/main/Javascript/01.%20JavaScript%20Basics)
-#### [JavaScript - HTML](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/04.%20Document%20Object%20Model)
-
-
-## [SQL](https://github.com/alexandruavram-rusu/Documentation/tree/main/SQL)
+## 1. API Basics
+## 2. Using Postman for API Testing
+## 3. Advanced API Concepts
+## 4. Working with APIs in Python
+## 5. APIs in Data Pipelines & ETL
+## 6. API Development & Documentation
+## 7. API Security Best Practices
