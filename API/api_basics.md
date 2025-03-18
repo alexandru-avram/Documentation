@@ -31,3 +31,44 @@ REST APIs use standard **HTTP methods** to perform operations on resources.
 * **PUT**	Update an entire existing resource
 * **PATCH**	Partially update an existing resource
 * **DELETE**	Remove a resource from the server
+
+## 4. HTTP Status Codes
+Every API request gets a response with a status code.
+
+* **200 OK**	Request was successful
+* **201 Created**	New resource was created
+* **400 Bad Request**	Client error (e.g., missing required fields)
+* **401 Unauthorized**	Authentication required
+* **403 Forbidden**	Access denied
+* **404 Not Found**	Requested resource doesn’t exist
+* **500 Internal Server Error**	Server issue
+
+
+## 5. 5. Request & Response Structure
+APIs exchange data using requests and responses.
+
+API Request Example (GET request to fetch user data)
+```
+GET https://api.example.com/users/123
+Headers:
+  Authorization: Bearer YOUR_TOKEN
+  Accept: application/json
+```
+
+API Response Example (JSON format)
+```
+{
+  "id": 123,
+  "name": "John Doe",
+  "email": "johndoe@example.com"
+}
+```
+
+
+## 6. 6. API Authentication Methods
+APIs often require authentication to ensure secure access.
+
+* **API Key**	A unique key (sent in headers or URL)
+* **OAuth 2.0**	Token-based authentication for secure access
+* **JWT (JSON Web Token)**	Encoded user info for session-based authentication
+* **Basic Auth**	Username & password (encoded in Base64)
