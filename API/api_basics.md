@@ -46,12 +46,13 @@ API Response Example (JSON format)
 An API request consists of the following components:
 
 * **Endpoint (URL)**	The address where the API is hosted (e.g., https://api.example.com/users).
-* **HTTP Method	Defines the action (GET, POST, PUT, DELETE, etc.).
+* **HTTP Method**	Defines the action (GET, POST, PUT, DELETE, etc.).
 * **Headers**	Metadata sent with the request (e.g., authentication, content type).
 * **Body (Payload)**	Data sent with POST/PUT requests (usually in JSON or XML format).
 * **Query Parameters**	Key-value pairs appended to the URL to modify the request.
 * **Path Parameters**	Variables within the URL that specify resources.
 
+#### Endpoints
 APIs have structured endpoints that define resources and actions.
 
 Example API Endpoint Structure
