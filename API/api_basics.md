@@ -24,6 +24,7 @@ Think of an API as a waiter in a restaurant:
 * **WebSockets APIs** → Real-time communication (e.g., chat applications).
 
 <br>
+
 ## 3. Request & Response Structure
 APIs exchange data using requests and responses.
 
@@ -75,8 +76,53 @@ GET https://api.example.com/users?age=25&status=active
 * `?age=25` Filters users who are 25 years old.
 * `&status=active`  Filters users who are active.
 
+Common use cases
+* `?limit=10`	Limits results to 10 records.
+* `?sort=asc`	Sorts data in ascending order.
+* `?filter=category:books`	Filters data by category.
+* `?fields=name,email`	Returns only the name and email fields.
+
+
+#### Path Parameters
+Path parameters are variables within the URL that identify specific resources.
+
+```
+GET https://api.example.com/users/123
+```
+* `{user_id} = 123` Fetches details for user 123.
+
+Example with multiple parameters
+```
+GET https://api.example.com/users/123/orders/456
+```
+* `{user_id} = 123` Fetches orders for user 123.
+* `{order_id} = 456` Retrieves order 456.
+
+#### Path Parameters vs. Query Parameters
+
+* **Path Parameter**	Used for identifying a specific resource (/users/123).
+* **Query Parameter**	Used for filtering, sorting, or modifying data (?limit=10).
+
+
+#### Request Headers
+Headers provide metadata about the request, such as authentication details and content type.
+
+Common API Headers
+* **Authorization**	Sends API keys or tokens.	`Bearer YOUR_ACCESS_TOKEN`
+* **Content-Type**	Defines the request body format.	`application/json`
+* **Accept**	Specifies the expected response format.	`application/json`
+* **User-Agent**	Identifies the client making the request.	`PostmanRuntime/7.29.0`
+
+
+#### Response Headers
+Similar to request headers, response headers provide useful information.
+
+* **Content-Type**	Defines the response format.	`application/json`
+* **Cache-Control**	Controls caching behavior.	`no-cache`
+* **RateLimit-Limit**	API rate limit.	`1000 requests/hour`
 
 <br>
+
 ## 4. Rest API Methods
 REST APIs use standard **HTTP methods** to perform operations on resources.
 
@@ -96,8 +142,6 @@ Every API request gets a response with a status code.
 * **403 Forbidden**	Access denied
 * **404 Not Found**	Requested resource doesn’t exist
 * **500 Internal Server Error**	Server issue
-
-
 
 ## 6. API Authentication Methods
 APIs often require authentication to ensure secure access.
