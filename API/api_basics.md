@@ -64,6 +64,7 @@ https://api.example.com/users/{user_id}/orders
 * /users/{user_id}/orders → Resource Path
 * `{user_id}` → Path Parameter
 
+<br>
 
 
 
