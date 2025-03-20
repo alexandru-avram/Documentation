@@ -16,6 +16,7 @@ Think of an API as a waiter in a restaurant:
 * The server prepares the food and sends it back via the API.
 
 <br>
+
 ## 2. Types of APIs
 * **REST** (Representational State Transfer) APIs → Most common, follows HTTP rules.
 * **SOAP** (Simple Object Access Protocol) APIs → More structured, uses XML.
