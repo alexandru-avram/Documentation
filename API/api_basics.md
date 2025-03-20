@@ -1,6 +1,6 @@
 # API Basics
 
-## What is an API
+## 1. What is an API
 
 An API defines a set of rules that allow one application to interact with another.
 APIs enable:
@@ -15,14 +15,14 @@ Think of an API as a waiter in a restaurant:
 * The API (waiter) takes your order to the server (kitchen).
 * The server prepares the food and sends it back via the API.
 
-
+<br>
 ## 2. Types of APIs
 * **REST** (Representational State Transfer) APIs → Most common, follows HTTP rules.
 * **SOAP** (Simple Object Access Protocol) APIs → More structured, uses XML.
 * **GraphQL APIs** → Allows fetching only required data (flexible queries).
 * **WebSockets APIs** → Real-time communication (e.g., chat applications).
 
-
+<br>
 ## 3. Request & Response Structure
 APIs exchange data using requests and responses.
 
@@ -52,22 +52,30 @@ An API request consists of the following components:
 * **Query Parameters**	Key-value pairs appended to the URL to modify the request.
 * **Path Parameters**	Variables within the URL that specify resources.
 
-#### Endpoints
+#### Endpoints & Paths
 APIs have structured endpoints that define resources and actions.
 
 Example API Endpoint Structure
 ```
 https://api.example.com/users/{user_id}/orders
 ```
-
 * https://api.example.com/ → Base URL
 * /users/{user_id}/orders → Resource Path
 * `{user_id}` → Path Parameter
 
+
+#### Query Parameters
+Query parameters are key-value pairs added to the URL to filter or modify the request.
+
+Query Parameter Example
+```
+GET https://api.example.com/users?age=25&status=active
+```
+* `?age=25` Filters users who are 25 years old.
+* `&status=active`  Filters users who are active.
+
+
 <br>
-
-
-
 ## 4. Rest API Methods
 REST APIs use standard **HTTP methods** to perform operations on resources.
 
