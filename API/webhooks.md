@@ -31,3 +31,16 @@ https://abc123.ngrok.io/webhook
 ```
 
 Register that URL in the external service as your webhook endpoint.
+
+## Common security in webhooks
+* **Secret Tokens	API**: sends a token in headers or payload — your app verifies it.
+* **HMAC Signature Verification	Server**: signs payload with a secret → you recreate and compare the signature.
+* **IP Whitelisting**	Only accept calls from specific IPs or ranges.
+
+## Best Pratices:
+* Respond quickly (within 3-5 seconds) — long tasks should be done async.
+* Return HTTP 200 OK if processed correctly.
+* Log all webhook events, especially failures.
+* Retry handling: Many services retry 3–5 times on failure.
+* Use unique webhook endpoints per source (e.g., /webhooks/github, /webhooks/stripe).
+* Add a dead-letter queue (like Kafka or Redis) to track failed webhook events.
