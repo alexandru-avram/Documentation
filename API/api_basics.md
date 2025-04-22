@@ -150,3 +150,10 @@ APIs often require authentication to ensure secure access.
 * **OAuth 2.0**	Token-based authentication for secure access
 * **JWT (JSON Web Token)**	Encoded user info for session-based authentication
 * **Basic Auth**	Username & password (encoded in Base64)
+
+## 7. Pagination
+APIs return data in chunks to avoid overloading the server or client.
+Method | Description
+?page=2&limit=20 | Page-based pagination
+?offset=40&limit=20 | Offset-based pagination
+?cursor=abc123 | Cursor-based (best for real-time data, like Twitter)
