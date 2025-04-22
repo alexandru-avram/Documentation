@@ -102,7 +102,7 @@ if __name__ == "__main__":
     unittest.main()
 ```
 
-12. Save API Response to File
+### Save API Response to File
 ```
 with open("response.json", "w") as f:
     f.write(res.text)
