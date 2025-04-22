@@ -1,20 +1,20 @@
  # Postman Test Script Cheat Sheet (JavaScript)
 
- ## 1. Check Status Code
+ ### 1. Check Status Code
  ```
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
 ```
 
-## 2. Check Response Time
+### 2. Check Response Time
 ```
 pm.test("Response time is less than 500ms", function () {
     pm.expect(pm.response.responseTime).to.be.below(500);
 });
 ```
 
-## 3. Check Response is JSON
+### 3. Check Response is JSON
 ```
 pm.test("Content-Type is JSON", function () {
     pm.response.to.have.header("Content-Type");
@@ -22,7 +22,7 @@ pm.test("Content-Type is JSON", function () {
 });
 ```
 
-## 4. Validate Response Body Content
+### 4. Validate Response Body Content
 
 **Example**: `userId` should be `1`
 
@@ -41,14 +41,14 @@ pm.test("Has 10 items", function () {
 });
 ```
 
-## 5. Validate Authentication
+### 5. Validate Authentication
 ```
 pm.test("Should be unauthorized", function () {
     pm.response.to.have.status(401);
 });
 ```
 
-## 6. Loop Through Array of Objects
+### 6. Loop Through Array of Objects
 ```
 pm.test("All users have an email", function () {
     let data = pm.response.json();
@@ -58,14 +58,14 @@ pm.test("All users have an email", function () {
 });
 ```
 
-## 7. Set Environment or Global Variables from Response
+### 7. Set Environment or Global Variables from Response
 ```
 let jsonData = pm.response.json();
 pm.environment.set("authToken", jsonData.token);
 pm.globals.set("userId", jsonData.id);
 ```
 
-## 8. Use Variables in Request Body/Header
+### 8. Use Variables in Request Body/Header
 In body or header, the following JSON:
 
 ```
@@ -81,17 +81,17 @@ pm.environment.set("user_email", "alex@example.com");
 pm.environment.set("user_password", "1234");
 ```
 
-## 9. Clear Variables After Test
+### 9. Clear Variables After Test
 ```
 pm.environment.unset("authToken");
 ```
 
-## 10. Log Output to Postman Console
+### 10. Log Output to Postman Console
 ```
 console.log("Response Body:", pm.response.text());
 ```
 
-## 11. Advanced Assertions (Chai JS Syntax)
+### 11. Advanced Assertions (Chai JS Syntax)
 ```
 pm.expect(true).to.be.true;
 pm.expect(10).to.be.above(5);
