@@ -153,7 +153,19 @@ APIs often require authentication to ensure secure access.
 
 ## 7. Pagination
 APIs return data in chunks to avoid overloading the server or client.
-Method | Description
-?page=2&limit=20 | Page-based pagination
-?offset=40&limit=20 | Offset-based pagination
-?cursor=abc123 | Cursor-based (best for real-time data, like Twitter)
+
+**Examples**:
+* `?page=2&limit=20`: Page-based pagination
+* `?offset=40&limit=20`: Offset-based pagination
+* `?cursor=abc123`: Cursor-based (best for real-time data, like Twitter)
+
+## 8. Rate Limiting & Retry Strategies
+Rate limiting controls how many API requests a client can make in a given time frame. Most APIs return an `HTTP 429 – Too Many Requests` status code when you exceed your rate.
+
+Rate limiting headers to watch:
+* `X-RateLimit-Limit`:	Max requests per period
+* `X-RateLimit-Remaining`:	How many requests left
+* `X-RateLimit-Reset`:	When limit resets (UNIX timestamp)
+* `Retry-After`:	Seconds until retry allowed
+
+Retries are used when the error is transient (temporary) — like a 429 or 500.
