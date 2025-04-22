@@ -21,6 +21,6 @@ A cheat sheet of the most useful JavaScript snippets you can use in Postman to a
 
 ## [5. Webhooks](https://github.com/alexandruavram-rusu/Documentation/blob/main/API/webhooks.md)
 
-## 6. APIs in Data Pipelines & ETL
+## [6. APIs in Data Pipelines & ETL](https://github.com/alexandruavram-rusu/Documentation/blob/main/API/pipelines_etl.md)
 
 ## 7. API Development & Documentation
