@@ -3,7 +3,7 @@
 ## [1. API Basics](https://github.com/alexandruavram-rusu/Documentation/blob/main/API/api_basics.md)
 Concept fundamentals about APIs
 
-## 2. JavaScript API Testing
+## [2. JavaScript API Testing](https://github.com/alexandruavram-rusu/Documentation/blob/main/API/javascript_snippets.md)
 A cheat sheet of the most useful JavaScript snippets you can use in Postman to automate and validate API tests.
 
 ## 3. Advanced API Concepts
