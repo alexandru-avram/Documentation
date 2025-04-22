@@ -15,11 +15,11 @@ Concept fundamentals about APIs
 ## [2. JavaScript API Testing](https://github.com/alexandruavram-rusu/Documentation/blob/main/API/javascript_snippets.md)
 A cheat sheet of the most useful JavaScript snippets you can use in Postman to automate and validate API tests.
 
-## 3. Python API Testing
+## [3. Python API Testing](https://github.com/alexandruavram-rusu/Documentation/blob/main/API/python_snippets.md)
 
-## 4. Rate Limiting & Retry Strategies
+## [4. Rate Limiting & Retry Strategies](https://github.com/alexandruavram-rusu/Documentation/blob/main/API/rate_limiting_retry.md)
 
-## 5. Webhooks
+## [5. Webhooks](https://github.com/alexandruavram-rusu/Documentation/blob/main/API/webhooks.md)
 
 ## 6. APIs in Data Pipelines & ETL
 
