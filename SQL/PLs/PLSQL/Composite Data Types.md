@@ -1,0 +1,121 @@
+# Composite Data Types
+
+A composite data type is a data structure that can hold multiple values (unlike scalar types like NUMBER or VARCHAR2 that hold only one value). They're extremely useful for:
+* Grouping related data
+* Returning or storing rows
+* Working with collections of items (like arrays or tables)
+
+PL/SQL Has 3 Main Composite Types:
+* **RECORD** -	Group of fields (like a row)	*A row in a table*
+* **TABLE** -	Indexed collection of elements	*Associative array or hash*
+* **VARRAY** -	Ordered collection with fixed size	*Array with max length*
+
+## RECORD
+
+A `RECORD` in PL/SQL is a composite variable that groups multiple related values (called fields), similar to:
+* A row in a table
+* A struct in C
+* An object without methods
+
+Each field can have a different data type, and you access them using dot notation (`record_name.field_name`).
+
+### Declaring a RECORD
+
+#### %ROWTYPE
+This automatically creates a RECORD that matches the structure of a table or view.
+
+```
+DECLARE
+  v_emp employees%ROWTYPE;
+BEGIN
+  SELECT * INTO v_emp FROM employees WHERE id = 101;
+  DBMS_OUTPUT.PUT_LINE('Name: ' || v_emp.name || ', Salary: ' || v_emp.salary);
+END;
+```
+
+#### TYPE ... IS RECORD (Custom Definition)
+Gives you full control over the structure and fields.
+
+```
+DECLARE
+  TYPE emp_record_type IS RECORD (
+    id employees.id%TYPE,
+    name employees.name%TYPE,
+    hire_date DATE
+  );
+
+  v_emp emp_record_type;
+BEGIN
+  v_emp.id := 105;
+  v_emp.name := 'Alex';
+  v_emp.hire_date := SYSDATE;
+
+  DBMS_OUTPUT.PUT_LINE('ID: ' || v_emp.id || ', Name: ' || v_emp.name);
+END;
+```
+
+### Accessing RECORD Fields
+You access each field using dot notation:
+
+```
+v_emp.name := 'Maria';
+DBMS_OUTPUT.PUT_LINE(v_emp.name);
+```
+
+### Using RECORDs in SELECT INTO
+
+```
+DECLARE
+  v_emp employees%ROWTYPE;
+BEGIN
+  SELECT * INTO v_emp
+  FROM employees
+  WHERE id = 101;
+
+  DBMS_OUTPUT.PUT_LINE('Salary: ' || v_emp.salary);
+END;
+```
+
+### RECORDs in Loops (Cursor FOR Loop)
+A powerful use case: process query results row-by-row.
+
+```
+FOR emp_rec IN (SELECT id, name FROM employees) LOOP
+  DBMS_OUTPUT.PUT_LINE('ID: ' || emp_rec.id || ', Name: ' || emp_rec.name);
+END LOOP;
+```
+
+### RECORDs in Procedures and Functions
+You can pass records as IN, OUT, or IN OUT parameters.
+
+```
+PROCEDURE show_employee(p_emp IN employees%ROWTYPE) IS
+BEGIN
+  DBMS_OUTPUT.PUT_LINE('Name: ' || p_emp.name);
+END;
+```
+
+### Nested RECORDs (Advanced)
+You can nest one record inside another:
+
+```
+DECLARE
+  TYPE address_type IS RECORD (
+    city VARCHAR2(50),
+    zip  VARCHAR2(10)
+  );
+
+  TYPE person_type IS RECORD (
+    name VARCHAR2(100),
+    address address_type
+  );
+
+  v_person person_type;
+BEGIN
+  v_person.name := 'Alex';
+  v_person.address.city := 'Iasi';
+  v_person.address.zip := '700000';
+
+  DBMS_OUTPUT.PUT_LINE(v_person.name || ' lives in ' || v_person.address.city);
+END;
+```
