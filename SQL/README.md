@@ -17,7 +17,7 @@ ORDER BY
 LIMIT
 
 
-## [SQL INDEX](https://github.com/alexandruavram-rusu/Documentation/blob/main/SQL/CheatSheet/00.CheatSheet_Index.md)
+## [SQL INDEX](https://github.com/alexandruavram-rusu/Documentation/blob/main/SQL/CheatSheet/00.SQL%20CheatSheet_Index.md)
 
 ## [Cheat Sheet Folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/SQL/CheatSheet)
 
