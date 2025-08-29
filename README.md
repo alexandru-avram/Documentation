@@ -36,9 +36,8 @@
   - Error handling
   - Working with files
 
-#### [Web Development](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/03.%20Web%20Development)
+#### [Web Development](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/03.%20Web)
   + Web scraping
-  + Django
 
 
 #### [Data Science](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/04.%20Data%20Science)
@@ -49,17 +48,6 @@
   - Interactive Graphs
   - Scikit-Learn
   - Statistics Theory 
-
-#### [Machine Learning](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/05.%20Machine%20Learning)
-
-
-
-## JavaScript
-
-### [View **JavaScript** folder](https://github.com/alexandruavram-rusu/Documentation/tree/main/Javascript)
-
-#### [JavaScript Basics](https://github.com/alexandruavram-rusu/Documentation/tree/main/Javascript/01.%20JavaScript%20Basics)
-#### [JavaScript - HTML](https://github.com/alexandruavram-rusu/Documentation/tree/main/HTML/04.%20Document%20Object%20Model)
 
 
 ## [SQL](https://github.com/alexandruavram-rusu/Documentation/tree/main/SQL)
