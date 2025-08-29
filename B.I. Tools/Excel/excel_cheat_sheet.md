@@ -146,6 +146,3 @@ This document contains a structured reference of the **most commonly used and ad
 - Combine formulas with **conditional formatting** for dashboards.
 - Apply **structured references** in tables for clarity.
 - Use **INDIRECT & OFFSET carefully**—they are volatile and can slow down large workbooks.
-
----
-
