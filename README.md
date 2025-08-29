@@ -47,10 +47,11 @@
   - Matplotlib
   - Seaborn
   - Interactive Graphs
+  - Scikit-Learn
+  - Statistics Theory 
 
 #### [Machine Learning](https://github.com/alexandruavram-rusu/Documentation/tree/main/Python/05.%20Machine%20Learning)
-- Scikit-Learn
-- Statistics Theory 
+
 
 
 ## JavaScript
