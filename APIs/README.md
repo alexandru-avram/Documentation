@@ -1,6 +1,6 @@
 # API Documentation Index
 
-## [1. API Basics](https://github.com/alexandruavram-rusu/Documentation/blob/main/API/api_basics.md)
+## [1. API Basics](https://github.com/alexandruavram-rusu/Documentation/blob/main/APIs/api_basics.md)
 Concept fundamentals about APIs
 - What is an API
 - Types of APIs
