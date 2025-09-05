@@ -25,6 +25,6 @@ Rate limiting controls how many API requests a client can make in a given time f
 A webhook is a way for an API or application to send real-time data to another system when a specific event occurs.
 
 ## [6. APIs in Data Pipelines & ETL](https://github.com/alexandruavram-rusu/Documentation/blob/main/APIs/pipelines_etl.md)
-
+APIs are often the source (Extract) in data pipelines, or sometimes the destination (Load). They can even provide transformation logic via external services.
 
 ## 7. API Development & Documentation
