@@ -52,6 +52,6 @@
 
 ## [SQL](https://github.com/alexandruavram-rusu/Documentation/tree/main/SQL)
 
-### [SQL Cheat Sheet Index](https://github.com/alexandruavram-rusu/Documentation/blob/main/SQL/CheatSheet/00.SQL%20CheatSheet_Index.md)
-### [PL/SQL](https://github.com/alexandruavram-rusu/Documentation/blob/main/SQL/PLs/PL-SQL/00.PLSQL%20CheatSheet_Index.md)
-### [PL/pgSQL](https://github.com/alexandruavram-rusu/Documentation/blob/main/SQL/PLs/PL-pgSQL/00.Index.md)
+#### [SQL Cheat Sheet Index](https://github.com/alexandruavram-rusu/Documentation/blob/main/SQL/CheatSheet/00.SQL%20CheatSheet_Index.md)
+#### [PL/SQL](https://github.com/alexandruavram-rusu/Documentation/blob/main/SQL/PLs/PL-SQL/00.PLSQL%20CheatSheet_Index.md)
+#### [PL/pgSQL](https://github.com/alexandruavram-rusu/Documentation/blob/main/SQL/PLs/PL-pgSQL/00.Index.md)
