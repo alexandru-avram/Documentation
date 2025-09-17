@@ -7,14 +7,7 @@ PostgreSQL has built-in support for:
 - Collations (rules for sorting text depending on locale, e.g. en_US, ro_RO)
 - Date/time formatting in different languages.
 
-So if you read internalization, it may be shorthand for making Postgres work with multiple languages and locales.
-
-```
-CREATE DATABASE mydb
-LC_COLLATE='ro_RO.UTF-8'
-LC_CTYPE='ro_RO.UTF-8'
-TEMPLATE=template0;
-```
+UTF8 is strongly recommended for almost all modern PostgreSQL setups.
 
 ## Internalization of Queries (Execution)
 
@@ -34,3 +27,35 @@ In this sense, internalization means “turning SQL into Postgres’ internal ex
 - JSONB stored in a binary tree-like structure for fast search.
 
 So when you insert data, Postgres internalizes it → i.e., converts external input ('123.45') into internal storage format.
+
+## Server Encoding
+
+- Server encoding is the character set PostgreSQL uses internally to store text (CHAR, VARCHAR, TEXT).
+- If you want to handle English, Romanian, German, Japanese, Arabic all in one database → you need an encoding that supports all characters.
+- It determines how bytes are interpreted as characters.
+
+Example: UTF8 vs. LATIN1 → same bytes may represent different characters.
+
+```
+SHOW SERVER_ENCODING;
+```
+
+When creating a database, you can specify:
+```
+CREATE DATABASE mydb
+  ENCODING 'UTF8'
+  LC_COLLATE='ro_RO.UTF-8'
+  LC_CTYPE='ro_RO.UTF-8'
+  TEMPLATE=template0;
+```
+- `ENCODING` = how text is stored (UTF8, LATIN1, WIN1252, etc.).
+- `LC_COLLATE` = how text is sorted (dictionary order, accents, locale rules).
+- `LC_CTYPE` = character classification (uppercase/lowercase rules, e.g. ß in German → SS in uppercase).
+
+
+| Encoding    | Use Case                                                                          |
+| ----------- | --------------------------------------------------------------------------------- |
+| `UTF8`      | ✅ Best choice, supports all Unicode. Standard for multi-language systems.         |
+| `LATIN1`    | Western Europe (legacy).                                                          |
+| `WIN1252`   | Windows apps, legacy text files.                                                  |
+| `SQL_ASCII` | ⚠️ Dangerous (no validation, can store invalid bytes). Avoid unless you know why. |
