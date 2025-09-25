@@ -1,0 +1,98 @@
+# PostgreSQL Utilities – psql Cheat Sheet
+`psql` is your Swiss army knife for quickly exploring databases. You’ll use it a lot when debugging ETL pipelines or checking schemas before building transformations.
+
+## Connect to Database
+
+Local
+```
+psql -U username -d dbname
+```
+
+Remote:
+```
+psql -h host -p port -U username -d dbname
+```
+
+## Switch Database
+Inside `psql`:
+
+```
+\c dbname
+
+```
+
+## List Databases and Tables
+
+List databases:
+```
+\l
+\list
+```
+
+List tables (in current database):
+```
+\dt
+\dt schema.*
+```
+
+### List Tablespaces, Schemas, Indices
+
+
+Tablespaces:
+```
+\db
+```
+
+Schemas:
+```
+\dn
+```
+
+Indexes:
+```
+\di
+```
+
+### List Sequences, Roles, Data Types, Domains
+
+Sequences:
+```
+\ds
+```
+
+Role:
+```
+\du
+```
+
+Data types:
+```
+\dT
+```
+
+Domains:
+```
+\dD
+```
+
+### Describe Objects
+Describe a table:
+
+```
+\d tablename
+```
+
+Detailed description (with storage, policies, etc.):
+```
+\d+ tablename
+```
+
+Describe a view:
+```
+\dv viewname
+```
+
+Describe a sequence:
+```
+\ds+ seqname
+```
