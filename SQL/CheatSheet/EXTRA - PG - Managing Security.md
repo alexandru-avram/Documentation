@@ -19,3 +19,18 @@ CREATE ROLE analyst LOGIN PASSWORD 'secret';
 GRANT CONNECT ON DATABASE sales TO analyst;
 ```
 
+### Database & Schema Level Security
+
+Database: control CONNECT privileges.
+
+```
+REVOKE CONNECT ON DATABASE mydb FROM PUBLIC;
+GRANT CONNECT ON DATABASE mydb TO analyst;
+```
+
+Schema: control USAGE and CREATE.
+
+```
+GRANT USAGE ON SCHEMA analytics TO analyst;
+GRANT CREATE ON SCHEMA analytics TO data_engineer;
+```
