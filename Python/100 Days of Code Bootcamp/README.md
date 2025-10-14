@@ -50,7 +50,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: dictionary calling out functions, function with output, return, recursion
 
-### DAY 010 - Blackjack CAPSTONE PROJECT
+### DAY 011 - Blackjack CAPSTONE PROJECT
 `Design a simple game of blackjack`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: dictionary, function, operation with dictionary
