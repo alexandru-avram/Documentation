@@ -44,3 +44,8 @@
 `A secret auction simulator`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: dictionary, key, value
+
+### DAY 010 - My First Calculator
+`Simple calculator with simple operations`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: dictionary calling out functions, function with output, return, recursion
