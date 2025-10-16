@@ -56,6 +56,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: dictionary, function, operation with dictionary
 
 ### DAY 012 - Number Guessing Game
-`Design a simple game of blackjack`
+`Create a simple number guessing game where the user has to guess a random number`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: function, variable scope global, random
