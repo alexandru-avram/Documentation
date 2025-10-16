@@ -58,4 +58,4 @@
 ### DAY 012 - Number Guessing Game
 `Create a simple number guessing game where the user has to guess a random number`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: function, variable scope global, random
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: function, variable scope global, random, exception handling, try/except
