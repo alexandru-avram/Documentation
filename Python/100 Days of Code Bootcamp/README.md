@@ -1,7 +1,8 @@
 # 100 DAYS OF CODE
 
+## BEGINNER
 
-## DAY 001 - Band Name Generator
+### DAY 001 - Band Name Generator
 `Generate a name for a band by asking two inputs from the user.`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: print, input
@@ -59,3 +60,16 @@
 `Create a simple number guessing game where the user has to guess a random number`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: function, variable scope global, random, exception handling, try/except
+
+### DAY 014 - Higher Lower
+`Simple guessing game to see if you can guess who has more Instagram followers`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: dictionary, loop, function, global variables
+
+## INTERMEDIATE
+
+### DAY 015 - Cofee Machine
+`Simple program to order drinks off a coffee machine`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: dictionary, loop, function, complex function
+
