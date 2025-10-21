@@ -73,3 +73,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: dictionary, loop, function, complex function
 
+### DAY 016 - Cofee Machine OOP
+`Using OOP to make the same coffee machine program`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: class, OOP, loop
