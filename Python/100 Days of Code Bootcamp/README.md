@@ -77,3 +77,8 @@
 `Using OOP to make the same coffee machine program`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: class, OOP, loop
+
+### DAY 017 - Quizz Game
+`Create a simple quizz game using OOP`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: class, OOP, loop, dictionary, unpacking dictionary
