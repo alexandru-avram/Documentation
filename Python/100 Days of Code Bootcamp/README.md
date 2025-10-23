@@ -82,3 +82,8 @@
 `Create a simple quizz game using OOP`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: class, OOP, loop, dictionary, unpacking dictionary
+
+### DAY 017 - Turle
+`Using the turle package to draw shapes`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: turtle, random, GUI, tupple
