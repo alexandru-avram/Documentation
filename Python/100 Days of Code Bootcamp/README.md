@@ -83,7 +83,12 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: class, OOP, loop, dictionary, unpacking dictionary
 
-### DAY 017 - Turle
+### DAY 018 - Turle & Colorgram
 `Using the turle package to draw shapes`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: turtle, random, GUI, tupple
+
+### DAY 019 - Turtle Drawing & Turle Race
+`Design a turtle program that lets you draw and use the turle. The second program is creating a 6 turtle race.`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: turtle, random, GUI, user input
