@@ -1,6 +1,7 @@
 import turtle
 
-starting_position = [(0,0), (20, 0), (-40,0)]
+starting_position = [(0, 0), (-20, 0), (-40, 0)]
+
 move_distance = 20
 up = 90
 down = 270
@@ -15,19 +16,26 @@ class Snake:
         self.create_snake()
         self.head = self.segments[0] # In order to reuse the head of the snake
 
+
     def create_snake(self):
         # Create a 3 square snake
         for position in starting_position:
-            snake_segment = turtle.Turtle(shape="square")
-            snake_segment.shapesize(1,1)
-            snake_segment.color("white")
-            snake_segment.penup()
-            snake_segment.goto(position)
-            self.segments.append(snake_segment)
+            self.add_segment(position)
+
+    def add_segment(self, position):
+        snake_segment = turtle.Turtle(shape="square")
+        snake_segment.shapesize(1,1)
+        snake_segment.color("white")
+        snake_segment.penup()
+        snake_segment.goto(position)
+        self.segments.append(snake_segment)
+
+    def extend_snake(self):
+        self.add_segment(self.segments[-1].position())
     
     def move(self):
         # Move the snake
-        for segment in range(len(self.segments) - 1, 0, -1 ): # start, stop, step
+        for segment in range(len(self.segments) - 1, 0, -1): # start, stop, step
             new_x = self.segments[segment - 1].xcor()
             new_y = self.segments[segment - 1].ycor()
             self.segments[segment].goto(new_x, new_y)
@@ -53,3 +61,6 @@ class Snake:
         if self.head.heading() != left:
             self.head.setheading(right)
         
+
+
+    
