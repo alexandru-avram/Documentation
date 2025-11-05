@@ -92,3 +92,8 @@
 `Design a turtle program that lets you draw and use the turle. The second program is creating a 6 turtle race.`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: turtle, random, GUI, user input
+
+### DAY 020 & 021 - Snake Game
+`Using the turtle package, design a snake game`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: turtle, class, class inheritance, list slicing
