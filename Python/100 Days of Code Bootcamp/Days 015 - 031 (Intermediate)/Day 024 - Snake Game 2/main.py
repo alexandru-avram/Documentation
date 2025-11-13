@@ -58,5 +58,3 @@ while game_on:
         # This error occurs when the turtle window is closed.
         print("Turtle window closed. Exiting game.")
         game_on = False
-
-
