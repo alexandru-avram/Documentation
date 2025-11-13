@@ -97,3 +97,13 @@
 `Using the turtle package, design a snake game`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: turtle, class, class inheritance, list slicing
+
+### DAY 022 - Pong Game
+`Using the turtle package, design a pong game`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: turtle, class, class inheritance, exception handling
+
+### DAY 024 - Snake Game 2
+`Upgrade the snake game with a highscore`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: turtle, class, class inheritance, writing to files
