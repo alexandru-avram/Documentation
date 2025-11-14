@@ -107,3 +107,9 @@
 `Upgrade the snake game with a highscore`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: turtle, class, class inheritance, writing to files
+
+### DAY 025 - US States
+
+`Create a guessing game for US states`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: turtle, pandas, working with files, .csv
