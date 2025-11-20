@@ -113,3 +113,9 @@
 `Create a guessing game for US states`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: turtle, pandas, working with files, .csv
+
+### DAY 026 - NATO Alphabet
+
+`Use the NATO Alphabet for letters in a word`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: pandas, list comprehension, dictionary comprehension, dataFrame comprehension
