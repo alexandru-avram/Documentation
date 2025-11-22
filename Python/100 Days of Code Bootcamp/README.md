@@ -119,3 +119,9 @@
 `Use the NATO Alphabet for letters in a word`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: pandas, list comprehension, dictionary comprehension, dataFrame comprehension
+
+### DAY 027 - Miles to Km Convertor
+
+`Converts miles to km`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**tags**: thiker, GUI, *args, **kwargs
